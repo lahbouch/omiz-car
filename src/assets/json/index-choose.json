@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "Class": "choose-img choose-black",
+        "Image": "bx-selection.svg",
+        "Title": "Easy & Fast Booking",
+        "Content": "Completely carinate e business testing process whereas fully researched customer service. Globally extensive content with quality."
+    },
+    {
+        "id": 2,
+        "Class": "choose-img choose-secondary",
+        "Image": "bx-crown.svg",
+        "Title": "Many Pickup Location",
+        "Content": "Enthusiastically magnetic initiatives with cross-platform sources. Dynamically target testing procedures through effective."
+    },
+    {
+        "id": 3,
+        "Class": "choose-img choose-primary",
+        "Image": "bx-user-check.svg",
+        "Title": "Customer Satisfaction",
+        "Content": "Globally user centric method interactive. Seamlessly revolutionize unique portals corporate collaboration."
+    }
+]

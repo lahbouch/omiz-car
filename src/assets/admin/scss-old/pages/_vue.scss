@@ -1,0 +1,275 @@
+.scroll-area {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: calc(100vh - 30px);
+    background-color: transparent !important;
+}
+.settings-sidebar .sidebar-menu .sidebar-links .active a span {
+    color: #fff;
+}
+.scroll-area-1 {
+    position: relative;
+      margin: auto;
+      width: 100%;
+      height: calc(100vh - 30px);
+      background-color: transparent !important;
+  }
+
+.ant-picker-suffix .anticon-clock-circle{
+    display: none;
+}
+
+.stickysidebar {
+    position: sticky;
+    top: 0;
+}
+.vue-tel-input{
+    display: flex !important;
+}
+
+.ant-picker-dropdown{
+    z-index: 1055 !important;
+}
+.ant-picker-suffix .anticon-calendar{
+    display: none !important;
+}
+
+.ti.ti-player-play-filled{
+    font-size: large;
+}
+
+.sidebar-inner .scroll-area .ps__rail-x{
+    display: none !important;
+}
+
+.sidebar-logo{
+    background-color: #fff;
+    z-index: 99;
+}
+.dark-mode .sidebar-logo{
+    background-color: #0E1114;
+}
+
+.dark-mode .ant-table-cell {
+    background: #0E1114 !important;
+    border-top: #252525 !important;
+}
+.dark-mode .ant-table-column-title {
+    color: #ffffff !important;
+}
+.dark-mode .ant-table-cell.ant-table-cell-row-hover {
+    background: #0E1114 !important;
+}
+.dark-mode .ant-table {
+    border: #1a1e22 !important;
+}
+.dark-mode .ant-table-row.ant-table-row-selected {
+    background: #0E1114 !important;
+}
+.dark-mode .ant-table-row-selected .ant-table-cell{
+    background: #0E1114 !important;
+}
+.vue-select .control .single-value .indicators-container .clear-button{
+    display: none;
+}
+
+.dark-mode .ant-table-thead .ant-table-cell{
+    background: #0E1114 !important;
+}
+.ant-pagination .ant-pagination-prev .ant-pagination-item-link {
+    margin-top: -8px;
+}
+.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    margin-top: -8px;
+}
+.dark-mode {
+    .ant-picker {
+      
+      .ant-picker-input {
+        background: #121212 !important;
+        
+        input {
+          background: #121212 !important;
+          color: #FAFCFF !important;
+          border: none !important;
+          
+          &::placeholder {
+            color: #6B7280 !important;
+          }
+        }
+        
+        .ant-picker-suffix {
+          color: #FAFCFF !important;
+          
+          .anticon {
+            color: #FAFCFF !important;
+          }
+        }
+      }
+    }
+    
+    .ant-picker-dropdown {
+      background: #0D0D0D !important;
+      border-color: #17222C !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+      
+      .ant-picker-panel {
+        background: #0D0D0D !important;
+        border-color: #17222C !important;
+        
+        .ant-picker-header {
+          background: #0D0D0D !important;
+          border-bottom-color: #17222C !important;
+          
+          .ant-picker-header-view {
+            color: #FAFCFF !important;
+            
+            button {
+              color: #FAFCFF !important;
+              
+              &:hover {
+                color: #FF4667 !important;
+              }
+            }
+          }
+          
+          .ant-picker-header-super-prev-btn,
+          .ant-picker-header-super-next-btn,
+          .ant-picker-header-prev-btn,
+          .ant-picker-header-next-btn {
+            color: #FAFCFF !important;
+            
+            &:hover {
+              color: #1F6DB2 !important;
+            }
+          }
+        }
+        
+        .ant-picker-content {
+          background: #0D0D0D !important;
+          
+          .ant-picker-cell {
+            color: #FAFCFF !important;
+            
+            &.ant-picker-cell-in-view {
+              color: #FAFCFF !important;
+            }
+            
+            &.ant-picker-cell-today .ant-picker-cell-inner {
+              border-color: #1F6DB2 !important;
+              color: #1F6DB2 !important;
+            }
+            
+            &.ant-picker-cell-selected .ant-picker-cell-inner {
+              background: #1F6DB2 !important;
+              color: #FFFFFF !important;
+            }
+            
+            &:hover .ant-picker-cell-inner {
+              background: rgba(207, 52, 37, 0.1) !important;
+            }
+          }
+          
+          .ant-picker-cell-disabled {
+            color: #6B7280 !important;
+            
+            .ant-picker-cell-inner {
+              color: #6B7280 !important;
+              background: transparent !important;
+            }
+          }
+        }
+        
+        .ant-picker-footer {
+          background: #0D0D0D !important;
+          border-top-color: #17222C !important;
+          
+          .ant-picker-today-btn {
+            color: #1F6DB2 !important;
+            
+            &:hover {
+              color: #1F6DB2 !important;
+            }
+          }
+        }
+      }
+    }
+    
+    .ant-picker-range {
+      background: #121212 !important;
+      border-color: #17222C !important;
+      
+      .ant-picker-input {
+        background: #121212 !important;
+        
+        input {
+          background: #121212 !important;
+          color: #FAFCFF !important;
+        }
+      }
+      
+      .ant-picker-separator {
+        color: #FAFCFF !important;
+      }
+    }
+    
+    .ant-picker-panel-container {
+      background: #0D0D0D !important;
+      border-color: #17222C !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+    }
+    
+    .ant-picker-time-panel {
+      background: #0D0D0D !important;
+      border-color: #17222C !important;
+      
+      .ant-picker-time-panel-column {
+        background: #0D0D0D !important;
+        border-color: #17222C !important;
+        
+        .ant-picker-time-panel-cell {
+          color: #FAFCFF !important;
+          
+          &.ant-picker-time-panel-cell-selected {
+            background: #1F6DB2 !important;
+            color: #FFFFFF !important;
+          }
+          
+          &:hover {
+            background: rgba(207, 52, 37, 0.1) !important;
+          }
+        }
+      }
+    }
+    .ant-picker .ant-picker-clear {
+      background: #000 !important;
+    }
+    .ant-picker-year-panel,
+    .ant-picker-month-panel,
+    .ant-picker-decade-panel {
+      background: #0D0D0D !important;
+      
+      .ant-picker-cell {
+        color: #FAFCFF !important;
+        
+        &.ant-picker-cell-selected .ant-picker-cell-inner {
+          background: #1F6DB2 !important;
+          color: #FFFFFF !important;
+        }
+        
+        &:hover .ant-picker-cell-inner {
+          background: rgba(207, 52, 37, 0.1) !important;
+        }
+      }
+    }
+  }
+
+  .vue-select.open .vue-select-1-listbox .menu-option {
+    background-color :#392c7d
+}
+
+.vue-select .control{
+    border: 1px solid #e8e8e9;
+    background-color: #f8f9fa;
+}

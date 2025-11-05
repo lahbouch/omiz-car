@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "Slider": [
+            {"id": 1, "Image": "rental-car-01.jpg"}
+        ],
+        "Price": "$400",
+        "Rating": "(5.0)",
+        "Title": "BMW 640 XI Gran Turismo",
+        "Drive": "Auto",
+        "KM": "10 KM",
+        "liquid": "Diesel",
+        "Steering": "Power",
+        "Car": "AC",
+        "Seat": "5 Persons"
+    },
+    {
+        "id": 2,
+        "Slider": [
+            {"id": 1, "Image": "rental-car-02.jpg"}
+        ],
+        "Price": "$210",
+        "Rating": "(5.0)",
+        "Title": "Camz Ferrari Portofino M",
+        "Drive": "Auto",
+        "KM": "30 KM",
+        "liquid": "Diesel",
+        "Steering": "Power",
+        "Car": "AC",
+        "Seat": "5 Persons"
+    },
+    {
+        "id": 3,
+        "Slider": [
+            {"id": 1, "Image": "rental-car-03.jpg"},
+            {"id": 2, "Image": "rental-car-03-slider1.jpg"},
+            {"id": 3, "Image": "rental-car-03-slider2.jpg"},
+            {"id": 4, "Image": "rental-car-03-slider3.jpg"}
+        ],
+        "Price": "$380",
+        "Rating": "(5.0)",
+        "Title": "Mercedes-Benz",
+        "Drive": "Auto",
+        "KM": "30 KM",
+        "liquid": "Diesel",
+        "Steering": "Power",
+        "Car": "AC",
+        "Seat": "5 Persons"
+    },
+    {
+        "id": 4,
+        "Slider": [
+            {"id": 1, "Image": "rental-car-04.jpg"}
+        ],
+        "Price": "$250",
+        "Rating": "(4.5)",
+        "Title": "Range Rover",
+        "Drive": "Auto",
+        "KM": "28 KM",
+        "liquid": "Petrol",
+        "Steering": "Power",
+        "Car": "AC",
+        "Seat": "5 Persons"
+    }
+]

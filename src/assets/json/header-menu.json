@@ -1,0 +1,474 @@
+[
+    {
+        "tittle": "Home",
+        "showAsTab": false,
+        "separateRoute": true,
+        "active_link": "/home/",
+        "menu": [
+            {
+                "menuValue": "Car Rental",
+                "version": "New",
+                "routes": "/home/index",
+                "image":"home-01.svg",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/home/index",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Car Rental 1",
+                "version": "Hot",
+                "routes": "/home/index-2",
+                "image":"home-02.svg",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/home/index-2",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Bike Rental",
+                "version": "New",
+                "routes": "/home/index-3",
+                "image":"home-03.svg",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/home/index-3",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Yacht Rental",
+                "version": "New",
+                "routes": "/home/index-4",
+                "image":"home-04.svg",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/home/index-4",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Listings",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "listing",
+        "menu": [
+            {
+                "menuValue": "Listing Grid",
+                "routes": "/listing/listing-grid",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/listing/listing-grid",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Listing List",
+                "routes": "/listing/listing-list",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/listing/listing-list",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Listing With Map",
+                "routes": "/listing/listing-map",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/listing/listing-map",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Listing Details",
+                "routes": "/listing/listing-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/listing/listing-details",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Pages",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "pages",
+        "active_link1": "pages-booking",
+        "menu": [
+            {
+                "menuValue": "About Us",
+                "routes": "/pages/about-us",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/about-us",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Authentication",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "Signup",
+                        "routes": "/authentication/register",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Signin",
+                        "routes": "/",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Forgot Password",
+                        "routes": "/authentication/forgot-password",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Reset Password",
+                        "routes": "/authentication/reset-password",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Booking",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "active_link": "pages-booking",
+                "subMenus": [
+                    {
+                        "menuValue": "Booking Checkout",
+                        "routes": "/pages-booking/booking-checkout",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/pages-booking/booking-checkout",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Booking",
+                        "routes": "/pages-booking/booking-order",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/pages-booking/booking-order",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Invoice Details",
+                        "routes": "/pages-booking/invoice-details",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/pages-booking/invoice-details",
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Error Page",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "404 Error",
+                        "routes": "/error/error-404",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "500 Error",
+                        "routes": "/error/error-500",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Pricing",
+                "routes": "/pages/pricing",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/pricing",
+                "subMenus": []
+            },
+            {
+                "menuValue": "FAQ",
+                "routes": "/pages/faq",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/faq",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Gallery",
+                "routes": "/pages/gallery",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/gallery",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Our Team",
+                "routes": "/pages/our-team",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/our-team",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Testimonials",
+                "routes": "/pages/testimonial",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/testimonial",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Terms & Conditions",
+                "routes": "/pages/terms-condition",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/terms-condition",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Privacy Policy",
+                "routes": "/pages/privacy-policy",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/privacy-policy",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Maintenance",
+                "routes": "/pages/maintenance",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "maintenance",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Coming Soon",
+                "routes": "/pages/coming-soon",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "coming-soon",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Blog",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "blog",
+        "menu": [
+            {
+                "menuValue": "Blog List",
+                "routes": "/blog/blog-list",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blog/blog-list",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Blog Grid",
+                "routes": "/blog/blog-grid",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blog/blog-grid",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Blog Details",
+                "routes": "/blog/blog-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blog/blog-details",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Dashboard",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "user",
+        "menu": [
+            {
+                "menuValue": "User Dashboard",
+                "active_link": "user",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "Dashboard",
+                        "routes": "/user/user-dashboard",
+                        "active_link": "/user/user-dashboard",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "My Bookings",
+                        "routes": "/user/user-bookings",
+                        "active_link": "/user/user-bookings",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Reviews",
+                        "routes": "/user/user-reviews",
+                        "active_link": "/user/user-reviews",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Wishlist",
+                        "routes": "/user/user-wishlist",
+                        "active_link": "/user/user-wishlist",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Messages",
+                        "routes": "/user/user-messages",
+                        "active_link": "/user/user-messages",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "My Wallet",
+                        "routes": "/user/user-wallet",
+                        "active_link": "/user/user-wallet",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Payments",
+                        "routes": "/user/user-payment",
+                        "active_link": "/user/user-payment",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Settings",
+                        "routes": "/user/user-settings",
+                        "active_link": "/user/user-settings",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Admin Dashboard",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "Dashboard",
+                        "routes": "/admin-template/index",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Bookings",
+                        "routes": "/admin-template/bookings/reservations",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Manage",
+                        "routes": "/admin-template/manage/customers",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rentals",
+                        "routes": "/admin-template/rentals/cars",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Finance & Accounts",
+                        "routes": "/admin-template/finance/invoices",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Others",
+                        "routes": "/admin-template/others/coupons",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "CMS",
+                        "routes": "/admin-template/cms/pages",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Support",
+                        "routes": "/admin-template/support/contact-messages",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "User Management",
+                        "routes": "/admin-template/users/users-list",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Reports",
+                        "routes": "/admin-template/reports/earnings-report",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Settings & Configuration",
+                        "routes": "/admin-template/account-settings/profile-setting",
+                        "admin":true,
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            }
+        ]
+    }
+]

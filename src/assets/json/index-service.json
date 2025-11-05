@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "ServiceClass": "services-group service-date flex-fill",
+        "IconClass": "services-icon border-secondary",
+        "Image": "services-icon-01.svg",
+        "Title": "1. Choose Date & Locations",
+        "Class": "services-icon border-secondary",
+        "ImgClass": "icon-img bg-secondary",
+        "Content": "Determine the date & location for your car rental. Consider factors such as your travel itinerary, pickup/drop-off locations (e.g., airport, city center), and duration of rental."
+    },
+    {
+        "id": 2,
+        "ServiceClass": "services-group service-loc flex-fill",
+        "IconClass": "services-icon border-warning",
+        "Image": "services-icon-02.svg",
+        "Title": "2. Pick-Up Locations",
+        "Class": "services-icon border-warning",
+        "ImgClass": "icon-img bg-warning",
+        "Content": "Check the availability of your desired vehicle type for your chosen dates and location. Ensure that the rental rates, taxes, fees, and any additional charges."
+    },
+    {
+        "id": 3,
+        "ServiceClass": "services-group service-book flex-fill",
+        "IconClass": "services-icon border-dark",
+        "Image": "services-icon-03.svg",
+        "Title": "3. Book your Car",
+        "Class": "services-icon border-dark",
+        "ImgClass": "icon-img bg-dark",
+        "Content": "Once you've found car rental option, proceed to make a reservation. Provide the required information, including your details, driver's license, contact info, and payment details."
+    }
+]
