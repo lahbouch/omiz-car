@@ -1,38 +1,40 @@
 <template>
   <div class="review-sec mb-0">
     <div class="review-header">
-      <h4>Description of Listing</h4>
+      <h4>Description du véhicule</h4>
     </div>
     <div class="description-list">
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-        unknown printer took a galley of type and scrambled it to make a type specimen
-        book. It has survived not only five centuries, but also the leap into electronic
-        typesetting, remaining essentially unchanged.
+        La Toyota Corolla est une berline économique fiable et confortable,
+        parfaite pour vos déplacements dans la région de Tanger-Tétouan. Avec sa
+        consommation réduite et son entretien régulier, cette voiture vous
+        garantit une expérience de conduite agréable et sans souci.
       </p>
       <p>
-        It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like
-        Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s
-        with the release of Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        Équipée de toutes les commodités modernes, la Corolla offre un excellent
+        rapport qualité-prix pour les touristes et les hommes d'affaires. Son
+        intérieur spacieux et son coffre généreux vous permettront de
+        transporter vos bagages en toute commodité.
       </p>
       <p>
-        It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like
-        Aldus PageMaker including versions of Lorem Ipsum.
+        Avec Omiz Car, vous bénéficiez d'un service professionnel et rapide,
+        avec une livraison possible directement à l'aéroport de Tanger. Notre
+        flotte de 15 véhicules est régulièrement entretenue pour votre sécurité
+        et votre confort.
       </p>
       <div class="read-more">
         <div class="more-text" v-show="showMore">
           <p>
-            It was popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the
-            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-            more recently with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            La Toyota Corolla est idéale pour les déplacements en ville comme
+            pour les trajets plus longs dans la région. Son système de
+            navigation GPS intégré vous permettra de trouver facilement votre
+            chemin dans les rues de Tanger et ses environs.
+          </p>
+          <p>
+            Avec son moteur efficace et ses commandes intuitives, cette voiture
+            convient aussi bien aux conducteurs expérimentés qu'aux débutants.
+            Réservez dès maintenant via WhatsApp et profitez de nos prix
+            compétitifs.
           </p>
         </div>
         <a href="javascript:void(0);" class="more-link" @click="toggleMore">{{
@@ -51,7 +53,7 @@ export default {
   },
   computed: {
     buttonText() {
-      return this.showMore ? "Show Less" : "Show More";
+      return this.showMore ? "Afficher moins" : "Afficher plus";
     },
   },
   methods: {

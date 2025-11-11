@@ -3,19 +3,31 @@
     <div class="stickysidebar">
       <form action="#" autocomplete="off" class="sidebar-form">
         <div class="sidebar-heading">
-          <h3>What Are You Looking For</h3>
+          <h3>Que recherchez-vous ?</h3>
         </div>
         <div class="product-search">
           <div class="form-custom">
-            <input type="text" class="form-control" id="member_search1" placeholder="" />
+            <input
+              type="text"
+              class="form-control"
+              id="member_search1"
+              placeholder="Rechercher..."
+            />
             <span><img src="@/assets/img/icons/search.svg" alt="img" /></span>
           </div>
         </div>
         <div class="product-availability">
-          <h6>Availability</h6>
+          <h6>Disponibilité</h6>
           <div class="status-toggle">
-            <input id="mobile_notifications" class="check" type="checkbox" checked="" />
-            <label for="mobile_notifications" class="checktoggle">checkbox</label>
+            <input
+              id="mobile_notifications"
+              class="check"
+              type="checkbox"
+              checked=""
+            />
+            <label for="mobile_notifications" class="checktoggle"
+              >checkbox</label
+            >
           </div>
         </div>
         <div class="accord-list">
@@ -30,8 +42,10 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Car Brand
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Marque
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -48,34 +62,34 @@
                       <div class="selectBox-cont">
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Tesla
+                          <span class="checkmark"></span> Toyota
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Ford
+                          <span class="checkmark"></span> Renault
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Mercediz Benz
+                          <span class="checkmark"></span> Peugeot
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Audi
+                          <span class="checkmark"></span> Volkswagen
                         </label>
                         <!-- View All -->
                         <div class="view-content">
                           <div class="viewall-One">
                             <label class="custom_check w-100">
                               <input type="checkbox" name="username" />
-                              <span class="checkmark"></span> Kia
+                              <span class="checkmark"></span> Dacia
                             </label>
                             <label class="custom_check w-100">
                               <input type="checkbox" name="username" />
-                              <span class="checkmark"></span> Honda
+                              <span class="checkmark"></span> Citroën
                             </label>
                             <label class="custom_check w-100">
                               <input type="checkbox" name="username" />
-                              <span class="checkmark"></span> Toyota
+                              <span class="checkmark"></span> Fiat
                             </label>
                           </div>
                         </div>
@@ -98,8 +112,10 @@
                   aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
-                  Car Category
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Catégorie
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -114,19 +130,19 @@
                   <div class="selectBox-cont">
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Convertible (25)
+                      <span class="checkmark"></span> Berline (25)
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Coupe (15)
+                      <span class="checkmark"></span> Citadine (15)
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Sedan (10)
+                      <span class="checkmark"></span> SUV (10)
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> EV (5)
+                      <span class="checkmark"></span> Électrique (5)
                     </label>
                     <!-- View All -->
                     <div class="view-content">
@@ -137,15 +153,15 @@
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Luxury (06)
+                          <span class="checkmark"></span> Luxe (06)
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> SUV (6)
+                          <span class="checkmark"></span> Monospace (6)
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Wagon (5)
+                          <span class="checkmark"></span> Cabriolet (5)
                         </label>
                       </div>
                     </div>
@@ -166,8 +182,10 @@
                   aria-expanded="true"
                   aria-controls="collapseYear"
                 >
-                  Year
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Année
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -209,7 +227,7 @@
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> 2019
+                          <span class="checkmark"></span> 2017
                         </label>
                       </div>
                     </div>
@@ -230,8 +248,10 @@
                   aria-expanded="true"
                   aria-controls="collapsefuel"
                 >
-                  Fuel Type
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Type de carburant
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -253,7 +273,7 @@
                           value="red"
                           checked=""
                         />
-                        <label for="petrol">Petrol</label>
+                        <label for="petrol">Essence</label>
                       </div>
                     </li>
                     <li>
@@ -277,7 +297,7 @@
                           value="red"
                           checked=""
                         />
-                        <label for="electric">Electric</label>
+                        <label for="electric">Électrique</label>
                       </div>
                     </li>
                     <li>
@@ -289,7 +309,7 @@
                           value="red"
                           checked=""
                         />
-                        <label for="cng">CNG</label>
+                        <label for="cng">GPL</label>
                       </div>
                     </li>
                   </ul>
@@ -308,8 +328,10 @@
                   aria-expanded="true"
                   aria-controls="collapsemileage"
                 >
-                  Mileage
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Kilométrage
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -331,7 +353,7 @@
                           value="red"
                           checked=""
                         />
-                        <label for="limited">Limited</label>
+                        <label for="limited">Limité</label>
                       </div>
                     </li>
                     <li>
@@ -343,7 +365,7 @@
                           value="red"
                           checked=""
                         />
-                        <label for="unlimited">Unlimited</label>
+                        <label for="unlimited">Illimité</label>
                       </div>
                     </li>
                   </ul>
@@ -362,8 +384,10 @@
                   aria-expanded="true"
                   aria-controls="collapserental"
                 >
-                  Rental Type
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Type de location
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -379,25 +403,31 @@
                     <li>
                       <div class="input-selection">
                         <input type="radio" name="any" id="any" />
-                        <label for="any">Any</label>
+                        <label for="any">Tous</label>
                       </div>
                     </li>
                     <li>
                       <div class="input-selection">
                         <input type="radio" name="day" id="day" checked="" />
-                        <label for="day">Per Day</label>
+                        <label for="day">Par jour</label>
                       </div>
                     </li>
                     <li>
                       <div class="input-selection">
                         <input type="radio" name="hour" id="hour" checked="" />
-                        <label for="hour">Per Hour</label>
+                        <label for="hour">Par heure</label>
                       </div>
                     </li>
                     <li>
                       <div class="input-selection">
                         <input type="radio" name="week" id="week" />
-                        <label for="week">Per Week</label>
+                        <label for="week">Par semaine</label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="input-selection">
+                        <input type="radio" name="month" id="month" />
+                        <label for="month">Par mois</label>
                       </div>
                     </li>
                   </ul>
@@ -416,8 +446,10 @@
                   aria-expanded="true"
                   aria-controls="collapsespec"
                 >
-                  Car Specifications
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Spécifications
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -432,15 +464,15 @@
                   <div class="selectBox-cont">
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Air Conditioners
+                      <span class="checkmark"></span> Climatisation
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Keyless
+                      <span class="checkmark"></span> Démarrage sans clé
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
-                      <span class="checkmark"></span> Panoramic
+                      <span class="checkmark"></span> Toit panoramique
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="username" />
@@ -451,19 +483,19 @@
                       <div class="viewall-One">
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Aux
+                          <span class="checkmark"></span> Prise auxiliaire
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Top Window
+                          <span class="checkmark"></span> Vitres électriques
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Speakers
+                          <span class="checkmark"></span> Système de navigation
                         </label>
                         <label class="custom_check w-100">
                           <input type="checkbox" name="username" />
-                          <span class="checkmark"></span> Automatic Window
+                          <span class="checkmark"></span> Régulateur de vitesse
                         </label>
                       </div>
                     </div>
@@ -484,8 +516,10 @@
                   aria-expanded="true"
                   aria-controls="collapseColor"
                 >
-                  Colors
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Couleurs
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -523,13 +557,23 @@
                     </li>
                     <li>
                       <div class="input-themeselects">
-                        <input type="radio" name="color" id="brownColor" value="blue" />
+                        <input
+                          type="radio"
+                          name="color"
+                          id="brownColor"
+                          value="blue"
+                        />
                         <label for="brownColor" class="brown-clr"></label>
                       </div>
                     </li>
                     <li>
                       <div class="input-themeselects">
-                        <input type="radio" name="color" id="blackColor" value="green" />
+                        <input
+                          type="radio"
+                          name="color"
+                          id="blackColor"
+                          value="green"
+                        />
                         <label for="blackColor" class="black-clr"></label>
                       </div>
                     </li>
@@ -547,7 +591,12 @@
                     </li>
                     <li>
                       <div class="input-themeselects">
-                        <input type="radio" name="color" id="grayColor" value="blue" />
+                        <input
+                          type="radio"
+                          name="color"
+                          id="grayColor"
+                          value="blue"
+                        />
                         <label for="grayColor" class="gray-clr"></label>
                       </div>
                     </li>
@@ -564,13 +613,23 @@
                     </li>
                     <li>
                       <div class="input-themeselects">
-                        <input type="radio" name="color" id="blueColor" value="yellow" />
+                        <input
+                          type="radio"
+                          name="color"
+                          id="blueColor"
+                          value="yellow"
+                        />
                         <label for="blueColor" class="blue-clr"></label>
                       </div>
                     </li>
                     <li>
                       <div class="input-themeselects">
-                        <input type="radio" name="color" id="whiteColor" value="yellow" />
+                        <input
+                          type="radio"
+                          name="color"
+                          id="whiteColor"
+                          value="yellow"
+                        />
                         <label for="whiteColor" class="white-clr"></label>
                       </div>
                     </li>
@@ -590,8 +649,10 @@
                   aria-expanded="true"
                   aria-controls="collapseThree"
                 >
-                  Capacity
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Capacité
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -606,19 +667,19 @@
                   <div class="selectBox-cont">
                     <label class="custom_check w-100">
                       <input type="checkbox" name="bystatus" />
-                      <span class="checkmark"></span> 2 Seater
+                      <span class="checkmark"></span> 2 Places
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="bystatus" />
-                      <span class="checkmark"></span> 4 Seater
+                      <span class="checkmark"></span> 4 Places
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="bystatus" />
-                      <span class="checkmark"></span> 5 Seater
+                      <span class="checkmark"></span> 5 Places
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="bystatus" />
-                      <span class="checkmark"></span> 7 Seater
+                      <span class="checkmark"></span> 7 Places
                     </label>
                   </div>
                 </div>
@@ -636,8 +697,10 @@
                   aria-expanded="true"
                   aria-controls="collapseFour"
                 >
-                  Price
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Prix
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -666,7 +729,9 @@
                   aria-controls="collapsetransmission"
                 >
                   Transmission
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -681,20 +746,29 @@
                   <ul>
                     <li>
                       <div class="input-selection">
-                        <input type="radio" name="transmission" id="manual" checked="" />
-                        <label for="manual">Manual </label>
+                        <input
+                          type="radio"
+                          name="transmission"
+                          id="manual"
+                          checked=""
+                        />
+                        <label for="manual">Manuelle</label>
                       </div>
                     </li>
                     <li>
                       <div class="input-selection">
                         <input type="radio" name="transmission" id="semi" />
-                        <label for="semi">Semi Automatic</label>
+                        <label for="semi">Semi-automatique</label>
                       </div>
                     </li>
                     <li>
                       <div class="input-selection">
-                        <input type="radio" name="transmission" id="automatic" />
-                        <label for="automatic">Automatic</label>
+                        <input
+                          type="radio"
+                          name="transmission"
+                          id="automatic"
+                        />
+                        <label for="automatic">Automatique</label>
                       </div>
                     </li>
                   </ul>
@@ -713,8 +787,10 @@
                   aria-expanded="true"
                   aria-controls="collapseFive"
                 >
-                  Rating
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Note
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -793,8 +869,10 @@
                   aria-expanded="true"
                   aria-controls="collapseSix"
                 >
-                  Customer Recommendation
-                  <span class="float-end"><i class="fa-solid fa-chevron-down"></i></span>
+                  Recommandation client
+                  <span class="float-end"
+                    ><i class="fa-solid fa-chevron-down"></i
+                  ></span>
                 </a>
               </h6>
             </div>
@@ -809,24 +887,24 @@
                   <div class="selectBox-cont">
                     <label class="custom_check w-100">
                       <input type="checkbox" name="category" />
-                      <span class="checkmark"></span> 70% & up
+                      <span class="checkmark"></span> 70% & plus
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="category" />
-                      <span class="checkmark"></span> 60% & up
+                      <span class="checkmark"></span> 60% & plus
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="category" />
-                      <span class="checkmark"></span> 50% & up
+                      <span class="checkmark"></span> 50% & plus
                     </label>
                     <label class="custom_check w-100">
                       <input type="checkbox" name="category" />
-                      <span class="checkmark"></span> 40% & up
+                      <span class="checkmark"></span> 40% & plus
                     </label>
                     <div class="viewall-Two">
                       <label class="custom_check w-100">
                         <input type="checkbox" name="username" />
-                        <span class="checkmark"></span>30% & up
+                        <span class="checkmark"></span>30% & plus
                       </label>
                     </div>
                   </div>
@@ -839,9 +917,9 @@
           type="submit"
           class="d-inline-flex align-items-center justify-content-center btn w-100 btn-primary filter-btn"
         >
-          <span><i class="feather-filter me-2"></i></span>Filter results
+          <span><i class="feather-filter me-2"></i></span>Filtrer les résultats
         </button>
-        <a href="#" class="reset-filter">Reset Filter</a>
+        <a href="#" class="reset-filter">Réinitialiser les filtres</a>
       </form>
     </div>
   </div>

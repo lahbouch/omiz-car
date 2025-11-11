@@ -24,19 +24,19 @@
               class="section-heading heading-four text-start"
               data-aos="fade-down"
             >
-              <h2>Rent Our Cars in 3 Steps</h2>
-              <p>Check how it Works to Rent Cars in DreamsRent</p>
+              <h2>Louez votre voiture en 3 étapes simples</h2>
+              <p>Découvrez comment réserver votre voiture avec Omiz Car</p>
             </div>
             <div class="step-item d-flex align-items-center">
               <span class="step-icon bg-primary me-3">
                 <i class="bx bx-calendar-heart"></i>
               </span>
               <div>
-                <h5>Choose Date & Locations</h5>
+                <h5>1. Choisissez la date et le lieu</h5>
                 <p>
-                  Determine the date & location for your car rental. Consider
-                  factors such as your travel itinerary, pickup/drop-off
-                  locations
+                  Déterminez la date et le lieu de votre location. Considérez
+                  votre itinéraire de voyage et les lieux de prise en
+                  charge/retour
                 </p>
               </div>
             </div>
@@ -45,11 +45,10 @@
                 <i class="bx bxs-edit-location"></i>
               </span>
               <div>
-                <h5>Select Pick-Up & Drop Locations</h5>
+                <h5>2. Sélectionnez votre véhicule</h5>
                 <p>
-                  Check the availability of your desired vehicle type for your
-                  chosen dates and location. Ensure that the rental rates,
-                  taxes, fees, and any additional charges.
+                  Vérifiez la disponibilité du type de véhicule souhaité pour
+                  vos dates et lieux choisis.
                 </p>
               </div>
             </div>
@@ -58,11 +57,10 @@
                 <i class="bx bx-coffee-togo"></i>
               </span>
               <div>
-                <h5>Book your Car</h5>
+                <h5>3. Réservez et recevez votre voiture</h5>
                 <p>
-                  Determine the date & location for your car rental. Consider
-                  factors such as your travel itinerary, pickup/drop-off
-                  locations
+                  Confirmez votre réservation et recevez votre voiture selon vos
+                  préférences.
                 </p>
               </div>
             </div>

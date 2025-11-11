@@ -24,15 +24,19 @@
                 </div>
                 <div class="blog-content">
                   <p class="blog-category">
-                    <a href="javascript:void(0)"><span>Car Showcase</span></a>
+                    <a href="javascript:void(0)"
+                      ><span>Conseils Omiz Car</span></a
+                    >
                   </p>
                   <h3 class="blog-title">
-                    <router-link to="/blog/blog-details">{{ item.Title }}</router-link>
+                    <router-link to="/blog/blog-details">{{
+                      item.Title
+                    }}</router-link>
                   </h3>
                   <p class="blog-description">
-                    Everyone has the right to freedom of thought, conscience and religion;
-                    this right includes freedom to change his religion or belief, and
-                    freedom, either alone...
+                    Découvrez nos conseils et astuces pour profiter au maximum
+                    de votre expérience de location de voiture avec Omiz Car
+                    dans la région de Tanger-Tétouan.
                   </p>
                   <ul class="meta-item">
                     <li>
@@ -53,8 +57,10 @@
                       <span>{{ item.Day }}</span>
                     </li>
                   </ul>
-                  <router-link to="/blog/blog-details" class="viewlink btn btn-primary"
-                    >Read More <i class="feather-arrow-right ms-2"></i
+                  <router-link
+                    to="/blog/blog-details"
+                    class="viewlink btn btn-primary"
+                    >Lire la suite <i class="feather-arrow-right ms-2"></i
                   ></router-link>
                 </div>
               </div>
@@ -67,7 +73,8 @@
               <ul class="pagination">
                 <li class="previtem">
                   <a class="page-link" href="javascript:;"
-                    ><i class="fas fa-regular fa-arrow-left me-2"></i> Prev</a
+                    ><i class="fas fa-regular fa-arrow-left me-2"></i>
+                    Précédent</a
                   >
                 </li>
                 <li class="justify-content-center pagination-center">
@@ -78,7 +85,7 @@
                       </li>
                       <li class="page-item">
                         <a class="active page-link" href="javascript:;"
-                          >2 <span class="visually-hidden">(current)</span></a
+                          >2 <span class="visually-hidden">(actuel)</span></a
                         >
                       </li>
                       <li class="page-item">
@@ -95,7 +102,7 @@
                 </li>
                 <li class="nextlink">
                   <a class="page-link" href="javascript:;"
-                    >Next <i class="fas fa-regular fa-arrow-right ms-2"></i
+                    >Suivant <i class="fas fa-regular fa-arrow-right ms-2"></i
                   ></a>
                 </li>
               </ul>
@@ -116,9 +123,9 @@ import BlogGrid from "@/assets/json/blog-grid.json";
 export default {
   data() {
     return {
-      title: "Blog Grid",
+      title: "Blog",
       text: "Blogs",
-      text1: "Blog Grid",
+      text1: "Blog",
       BlogGrid: BlogGrid,
     };
   },
@@ -127,7 +134,8 @@ export default {
       return new URL(`/src/assets/img/blog/${imageName}`, import.meta.url).href;
     },
     getImageUrlOne(imageName) {
-      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

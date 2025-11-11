@@ -24,10 +24,14 @@
           <!-- Video -->
           <div class="review-sec mb-0">
             <div class="review-header">
-              <h4>Video</h4>
+              <h4>Vidéo</h4>
             </div>
             <div class="short-video">
-              <img class="img-fluid" alt="Image" src="@/assets/img/video-img.jpg" />
+              <img
+                class="img-fluid"
+                alt="Image"
+                src="@/assets/img/video-img.jpg"
+              />
               <a
                 href="https://www.youtube.com/embed/ExJZAegsOis"
                 data-fancybox="video"
@@ -42,7 +46,7 @@
           <!-- FAQ -->
           <div class="review-sec faq-feature">
             <div class="review-header">
-              <h4>FAQ’s</h4>
+              <h4>FAQ</h4>
             </div>
             <div class="faq-info">
               <div class="faq-card">
@@ -52,15 +56,15 @@
                     data-bs-toggle="collapse"
                     href="#faqOne"
                     aria-expanded="false"
-                    >How old do I need to be to rent a car?</a
+                    >Quel âge dois-je avoir pour louer une voiture ?</a
                   >
                 </h4>
                 <div id="faqOne" class="card-collapse collapse">
                   <p>
-                    We offer a diverse fleet of vehicles to suit every need, including
-                    compact cars, sedans, SUVs and luxury vehicles. You can browse our
-                    selection online or contact us for assistance in choosing the right
-                    vehicle for you
+                    Pour louer une voiture chez Omiz Car, vous devez avoir au
+                    moins 18 ans et posséder un permis de conduire valide. Un
+                    dépôt de garantie peut être requis selon le type de
+                    véhicule.
                   </p>
                 </div>
               </div>
@@ -71,15 +75,14 @@
                     data-bs-toggle="collapse"
                     href="#faqTwo"
                     aria-expanded="false"
-                    >What documents do I need to rent a car?</a
+                    >De quels documents ai-je besoin pour louer une voiture ?</a
                   >
                 </h4>
                 <div id="faqTwo" class="card-collapse collapse">
                   <p>
-                    We offer a diverse fleet of vehicles to suit every need, including
-                    compact cars, sedans, SUVs and luxury vehicles. You can browse our
-                    selection online or contact us for assistance in choosing the right
-                    vehicle for you
+                    Vous devez présenter un permis de conduire valide et une
+                    pièce d'identité. Un dépôt de garantie peut être requis
+                    selon le type de véhicule.
                   </p>
                 </div>
               </div>
@@ -90,15 +93,15 @@
                     data-bs-toggle="collapse"
                     href="#faqThree"
                     aria-expanded="false"
-                    >What types of vehicles are available for rent?</a
+                    >Quels types de véhicules sont disponibles à la location
+                    ?</a
                   >
                 </h4>
                 <div id="faqThree" class="card-collapse collapse">
                   <p>
-                    We offer a diverse fleet of vehicles to suit every need, including
-                    compact cars, sedans, SUVs and luxury vehicles. You can browse our
-                    selection online or contact us for assistance in choosing the right
-                    vehicle for you
+                    Nous proposons une flotte de 15 véhicules économiques
+                    récents (2018-2022), parfaitement entretenus pour votre
+                    confort et votre sécurité.
                   </p>
                 </div>
               </div>
@@ -109,15 +112,14 @@
                     data-bs-toggle="collapse"
                     href="#faqFour"
                     aria-expanded="false"
-                    >Can I rent a car with a debit card?</a
+                    >Puis-je louer une voiture avec une carte de débit ?</a
                   >
                 </h4>
                 <div id="faqFour" class="card-collapse collapse">
                   <p>
-                    We offer a diverse fleet of vehicles to suit every need, including
-                    compact cars, sedans, SUVs and luxury vehicles. You can browse our
-                    selection online or contact us for assistance in choosing the right
-                    vehicle for you
+                    Oui, nous acceptons les cartes de débit avec un dépôt de
+                    garantie supplémentaire. La carte doit être au nom du
+                    conducteur principal.
                   </p>
                 </div>
               </div>
@@ -128,25 +130,31 @@
           <!-- Policies -->
           <div class="review-sec">
             <div class="review-header">
-              <h4>Policies</h4>
+              <h4>Politiques</h4>
             </div>
             <div class="policy-list">
               <div class="policy-item">
                 <div class="policy-info">
-                  <h6>Cancellation Charges</h6>
-                  <p>Cancellation charges will be applied as per the policy</p>
+                  <h6>Frais d'annulation</h6>
+                  <p>
+                    Les frais d'annulation seront appliqués selon la politique
+                  </p>
                 </div>
-                <router-link to="/pages/privacy-policy">Know More</router-link>
+                <router-link to="/pages/privacy-policy"
+                  >En savoir plus</router-link
+                >
               </div>
               <div class="policy-item">
                 <div class="policy-info">
-                  <h6>Policy</h6>
+                  <h6>Politique</h6>
                   <p>
-                    I hereby agree to the terms and conditions of the Lease Agreement with
-                    Host
+                    J'accepte par la présente les termes et conditions du
+                    contrat de location avec Omiz Car
                   </p>
                 </div>
-                <router-link to="/pages/privacy-policy">View Details</router-link>
+                <router-link to="/pages/privacy-policy"
+                  >Voir les détails</router-link
+                >
               </div>
             </div>
           </div>
@@ -166,9 +174,9 @@
 export default {
   data() {
     return {
-      title: "Chevrolet Camaro",
+      title: "Détails du véhicule",
       text: "Listings",
-      text1: "Chevrolet Camaro",
+      text1: "Détails du véhicule",
     };
   },
 };

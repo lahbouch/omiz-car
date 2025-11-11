@@ -2,49 +2,49 @@
     {
         "id": 1,
         "Image": "blog-1.jpg",
-        "Title": "Tesla Model S: Top Secret Car Collector’s Garage",
+        "Title": "Découvrir Tanger en voiture : Les meilleurs endroits à visiter",
         "Avatar": "avatar-13.jpg",
-        "Name": "Alphonsa Daniel",
+        "Name": "Sid TribaQ",
         "Day": "Jan 6, 2023"
     },
     {
         "id": 2,
         "Image": "blog-2.jpg",
-        "Title": "The 2023 Ford F-150 Raptor – A First Look",
+        "Title": "Conseils pour votre voyage d'affaires à Tétouan",
         "Avatar": "avatar-04.jpg",
-        "Name": "Hellan",
+        "Name": "Sid TribaQ",
         "Day": "Feb 6, 2023"
     },
     {
         "id": 3,
         "Image": "blog-3.jpg",
-        "Title": "Tesla Model S: Top Secret Car Collector’s Garage",
+        "Title": "Location de voiture sans stress : Nos conseils pratiques",
         "Avatar": "avatar-13.jpg",
-        "Name": "Alphonsa Daniel",
+        "Name": "Sid TribaQ",
         "Day": "March 6, 2023"
     },
     {
         "id": 4,
         "Image": "blog-4.jpg",
-        "Title": "The 2023 Ford F-150 Raptor – A First Look",
+        "Title": "Les routes à éviter dans la région de Tanger",
         "Avatar": "avatar-04.jpg",
-        "Name": "Hellan",
+        "Name": "Sid TribaQ",
         "Day": "March 28, 2022"
     },
     {
         "id": 5,
         "Image": "blog-5.jpg",
-        "Title": "Tesla Model S: Top Secret Car Collector’s Garage",
+        "Title": "Profiter de l'été marocain en toute sécurité",
         "Avatar": "avatar-13.jpg",
-        "Name": "Alphonsa Daniel",
+        "Name": "Sid TribaQ",
         "Day": "March 30, 2023"
     },
     {
         "id": 6,
         "Image": "blog-6.jpg",
-        "Title": "The 2023 Ford F-150 Raptor – A First Look",
+        "Title": "Nos véhicules économiques parfaits pour vos vacances",
         "Avatar": "avatar-04.jpg",
-        "Name": "Hellan",
+        "Name": "Sid TribaQ",
         "Day": "March 31, 2023"
     }
 ]

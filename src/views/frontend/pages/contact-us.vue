@@ -30,39 +30,55 @@
       >
         <div class="row">
           <div class="col-lg-6">
-            <img src="@/assets/img/contact-info.jpg" class="img-fluid" alt="Contact" />
+            <img
+              src="@/assets/img/contact-info.jpg"
+              class="img-fluid"
+              alt="Contact"
+            />
           </div>
           <div class="col-lg-6">
             <form action="javascript:;">
               <div class="row">
-                <h1>Get in touch!</h1>
+                <h1>Contactez Omiz Car</h1>
                 <div class="col-md-12">
                   <div class="input-block">
-                    <label>Name <span class="text-danger">*</span></label>
+                    <label>Nom <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" placeholder="" />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="input-block">
-                    <label>Email Address <span class="text-danger">*</span></label>
+                    <label
+                      >Adresse email <span class="text-danger">*</span></label
+                    >
                     <input type="text" class="form-control" placeholder="" />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="input-block">
-                    <label>Phone number <span class="text-danger">*</span></label>
+                    <label
+                      >Numéro de téléphone
+                      <span class="text-danger">*</span></label
+                    >
                     <input type="text" class="form-control" placeholder="" />
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="input-block">
-                    <label>Comments <span class="text-danger">*</span></label>
-                    <textarea class="form-control" rows="4" cols="50" placeholder="">
+                    <label
+                      >Commentaires <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      rows="4"
+                      cols="50"
+                      placeholder=""
+                    >
                     </textarea>
                   </div>
                 </div>
               </div>
-              <button class="btn contact-btn">Send Enquiry</button>
+              <button class="btn contact-btn">Réservez sur WhatsApp</button>
             </form>
           </div>
         </div>
@@ -80,9 +96,9 @@ export default {
   data() {
     return {
       ContactUS: ContactUS,
-      title: "Contact us",
+      title: "Contact",
       text: "Pages",
-      text1: "Contact us",
+      text1: "Contact",
     };
   },
 };

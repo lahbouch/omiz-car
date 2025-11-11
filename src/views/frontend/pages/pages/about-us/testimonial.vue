@@ -3,15 +3,21 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2 class="title text-white">What People say about us?</h2>
+        <h2 class="title text-white">Ce que disent nos clients</h2>
         <p class="description text-white">
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          Découvrez les témoignages de nos clients satisfaits
         </p>
       </div>
       <!-- /Heading title -->
-      <div class="owl-carousel about-testimonials testimonial-group mb-0 owl-theme">
+      <div
+        class="owl-carousel about-testimonials testimonial-group mb-0 owl-theme"
+      >
         <!-- Carousel Item -->
-        <Carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
+        <Carousel
+          :wrap-around="true"
+          :settings="settings"
+          :breakpoints="breakpoints"
+        >
           <Slide v-for="item in Abouttestimonial" :key="item.id">
             <div class="testimonial-item d-flex me-2">
               <div class="card flex-fill">
@@ -42,10 +48,9 @@
                     </div>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Service impeccable d'Omiz Car ! Location rapide, voiture
+                    propre et bien entretenue. Livraison à l'aéroport parfaite.
+                    Je recommande vivement !
                   </p>
                 </div>
               </div>
@@ -99,7 +104,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

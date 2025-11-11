@@ -9,15 +9,18 @@
         <div class="modal-body">
           <div class="payment-success">
             <span class="check"><i class="fa-solid fa-check-double"></i></span>
-            <h5>Payment Successful</h5>
+            <h5>Paiement réussi</h5>
             <p>
-              You Payment has been successfully done. Trasaction id :<span>
-                #5064164454</span
-              >
+              Votre paiement a été effectué avec succès. Numéro de transaction
+              :<span> #5064164454</span>
             </p>
             <div class="order-confirm">
-              <router-link @click="redirectReload" to="/pages-booking/booking-order"
-                >Go to Order Confirmation<i class="fa-solid fa-arrow-right ms-2"></i
+              <router-link
+                @click="redirectReload"
+                to="/pages-booking/booking-order"
+                >Aller à la confirmation de commande<i
+                  class="fa-solid fa-arrow-right ms-2"
+                ></i
               ></router-link>
             </div>
           </div>

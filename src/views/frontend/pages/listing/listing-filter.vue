@@ -6,12 +6,12 @@
           <ul class="align-items-center">
             <li class="column-group-main">
               <div class="input-block">
-                <label>Pickup Location</label>
+                <label>Lieu de prise en charge</label>
                 <div class="group-img">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Enter City, Airport, or Address"
+                    placeholder="Entrez une ville, un aéroport ou une adresse"
                   />
                   <span><i class="feather-map-pin"></i></span>
                 </div>
@@ -19,7 +19,7 @@
             </li>
             <li class="column-group-main">
               <div class="input-block">
-                <label>Pickup Date</label>
+                <label>Date de prise en charge</label>
               </div>
               <div class="input-block-wrapp">
                 <div class="input-block date-widget">
@@ -38,9 +38,9 @@
                   <div class="group-img">
                     <a-time-picker
                       class="form-control timepicker"
-                      placeholder="  11:00 AM"
+                      placeholder="  11:00"
                       use12-hours
-                      format="h:mm a"
+                      format="H:mm"
                       type="text"
                     />
                     <span><i class="feather-clock"></i></span>
@@ -50,7 +50,7 @@
             </li>
             <li class="column-group-main">
               <div class="input-block">
-                <label>Return Date</label>
+                <label>Date de retour</label>
               </div>
               <div class="input-block-wrapp">
                 <div class="input-block date-widge">
@@ -69,9 +69,9 @@
                   <div class="group-img">
                     <a-time-picker
                       class="form-control timepicker"
-                      placeholder="  11:00 AM"
+                      placeholder="  11:00"
                       use12-hours
-                      format="h:mm a"
+                      format="H:mm"
                       type="text"
                     />
                     <span><i class="feather-clock"></i></span>
@@ -83,7 +83,7 @@
               <div class="input-block">
                 <div class="search-btn">
                   <button class="btn search-button" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>Search
+                    <i class="fa fa-search" aria-hidden="true"></i>Rechercher
                   </button>
                 </div>
               </div>
@@ -100,7 +100,7 @@
           <div class="row d-flex align-items-center">
             <div class="col-xl-4 col-lg-3 col-sm-12 col-12">
               <div class="count-search">
-                <p>Showing 1-9 of 154 Cars</p>
+                <p>Affichage de 1-9 sur 154 véhicules</p>
               </div>
             </div>
             <div class="col-xl-8 col-lg-9 col-sm-12 col-12">
@@ -108,18 +108,22 @@
                 <div class="sortbyset">
                   <ul>
                     <li>
-                      <span class="sortbytitle">Show : </span>
+                      <span class="sortbytitle">Afficher : </span>
                       <div class="sorting-select select-one">
-                        <vue-select :options="NumShow" v-model="selected" placeholder="5" />
+                        <vue-select
+                          :options="NumShow"
+                          v-model="selected"
+                          placeholder="5"
+                        />
                       </div>
                     </li>
                     <li>
-                      <span class="sortbytitle">Sort By </span>
+                      <span class="sortbytitle">Trier par </span>
                       <div class="sorting-select select-two">
                         <vue-select
                           :options="SortNew"
                           v-model="selectedOne"
-                          placeholder="Newest"
+                          placeholder="Plus récent"
                         />
                       </div>
                     </li>
@@ -175,22 +179,22 @@ export default {
       startdateOne: currentDateOne,
       dateFormat: "dd-MM-yyyy",
       selected: "5",
-      selectedOne: "Newest",
+      selectedOne: "Plus récent",
       SortNew: [
-        {label: "Newest", value: "Newest"},
-        {label: "Relevance", value: "Relevance"},
-        {label: "Low to High", value: "Low to High"},
-        {label: "High to Low", value: "High to Low"},
-        {label: "Best Rated", value: "Best Rated"},
-        {label: "Distance", value: "Distance"},
-        {label: "Popularity", value: "Popularity"},
+        { label: "Plus récent", value: "Plus récent" },
+        { label: "Pertinence", value: "Pertinence" },
+        { label: "Prix croissant", value: "Prix croissant" },
+        { label: "Prix décroissant", value: "Prix décroissant" },
+        { label: "Mieux notés", value: "Mieux notés" },
+        { label: "Distance", value: "Distance" },
+        { label: "Popularité", value: "Popularité" },
       ],
       NumShow: [
-        {label: "5", value: "5"}, 
-        {label: "10", value: "10"}, 
-        {label: "15", value: "15"}, 
-        {label: "20", value: "20"}, 
-        {label: "30", value: "30"}
+        { label: "5", value: "5" },
+        { label: "10", value: "10" },
+        { label: "15", value: "15" },
+        { label: "20", value: "20" },
+        { label: "30", value: "30" },
       ],
       isList: false,
       isGrid: false,

@@ -2,8 +2,8 @@
   <section class="brand-section">
     <div class="container">
       <div class="section-heading heading-four" data-aos="fade-down">
-        <h2 class="text-white">Rent by Brands</h2>
-        <p>Here's a list of some of the most popular cars globally</p>
+        <h2 class="text-white">Location par marques</h2>
+        <p>Découvrez les marques disponibles dans notre flotte</p>
       </div>
       <div class="brands-slider owl-carousel">
         <Carousel
@@ -67,8 +67,9 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/brand/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/brand/${imageName}`, import.meta.url)
+        .href;
     },
-  }
+  },
 };
 </script>

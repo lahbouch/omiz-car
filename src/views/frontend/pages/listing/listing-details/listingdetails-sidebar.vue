@@ -3,35 +3,35 @@
     <div class="stickysidebar">
       <div class="review-sec mt-0">
         <div class="review-header">
-          <h4>Pricing</h4>
+          <h4>Tarification</h4>
         </div>
         <div class="mb-3">
           <label class="booking_custom_check bookin-check-2">
             <input type="radio" name="price_rate" checked="" />
             <span class="booking_checkmark">
-              <span class="checked-title">Daily</span>
-              <span class="price-rate">$300</span>
+              <span class="checked-title">Journalier</span>
+              <span class="price-rate">450 MAD</span>
             </span>
           </label>
           <label class="booking_custom_check bookin-check-2">
             <input type="radio" name="price_rate" />
             <span class="booking_checkmark">
-              <span class="checked-title">Weekly</span>
-              <span class="price-rate">$820</span>
+              <span class="checked-title">Hebdomadaire</span>
+              <span class="price-rate">2800 MAD</span>
             </span>
           </label>
           <label class="booking_custom_check bookin-check-2">
             <input type="radio" name="price_rate" />
             <span class="booking_checkmark">
-              <span class="checked-title">Monthly</span>
-              <span class="price-rate">$2400</span>
+              <span class="checked-title">Mensuel</span>
+              <span class="price-rate">12000 MAD</span>
             </span>
           </label>
           <label class="booking_custom_check bookin-check-2">
             <input type="radio" name="price_rate" />
             <span class="booking_checkmark">
-              <span class="checked-title">Yearly</span>
-              <span class="price-rate">$9400</span>
+              <span class="checked-title">Annuel</span>
+              <span class="price-rate">120000 MAD</span>
             </span>
           </label>
         </div>
@@ -42,7 +42,7 @@
                 <label class="booking_custom_check">
                   <input type="radio" name="rent_type" checked="" />
                   <span class="booking_checkmark">
-                    <span class="checked-title">Delivery</span>
+                    <span class="checked-title">Livraison</span>
                   </span>
                 </label>
               </li>
@@ -50,7 +50,7 @@
                 <label class="booking_custom_check">
                   <input type="radio" name="rent_type" />
                   <span class="booking_checkmark">
-                    <span class="checked-title">Self Pickup</span>
+                    <span class="checked-title">Retrait sur place</span>
                   </span>
                 </label>
               </li>
@@ -62,13 +62,13 @@
                 <ul>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label>Delivery Location</label>
+                      <label>Lieu de livraison</label>
                       <div class="group-img">
                         <div class="form-wrap">
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="45, 4th Avanue  Mark Street USA"
+                            placeholder="Aéroport de Tanger ou adresse"
                           />
                           <span class="form-icon">
                             <i class="fa-solid fa-location-crosshairs"></i>
@@ -79,8 +79,9 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label class="custom_check d-inline-flex location-check m-0"
-                        ><span>Return to same location</span>
+                      <label
+                        class="custom_check d-inline-flex location-check m-0"
+                        ><span>Retour au même lieu</span>
                         <input type="checkbox" name="remeber" />
                         <span class="checkmark"></span>
                       </label>
@@ -88,13 +89,13 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label>Return Location</label>
+                      <label>Lieu de retour</label>
                       <div class="group-img">
                         <div class="form-wrap">
                           <input
                             type="text"
                             class="form-control"
-                            placeholder="78, 10th street Laplace USA"
+                            placeholder="Aéroport de Tanger ou adresse"
                           />
                           <span class="form-icon">
                             <i class="fa-solid fa-location-crosshairs"></i>
@@ -105,7 +106,7 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block m-0">
-                      <label>Pickup Date</label>
+                      <label>Date de prise en charge</label>
                     </div>
                     <div class="input-block-wrapp sidebar-form">
                       <div class="input-block me-lg-2">
@@ -129,9 +130,9 @@
                           <div class="form-wrap">
                             <a-time-picker
                               class="form-control timepicker"
-                              placeholder="  11:00 AM"
+                              placeholder="  11:00"
                               use12-hours
-                              format="h:mm a"
+                              format="H:mm"
                               type="text"
                             />
                             <span class="form-icon">
@@ -143,7 +144,9 @@
                     </div>
                   </li>
                   <li class="column-group-main">
-                    <div class="input-block m-0"><label>Return Date</label></div>
+                    <div class="input-block m-0">
+                      <label>Date de retour</label>
+                    </div>
                     <div class="input-block-wrapp sidebar-form">
                       <div class="input-block me-lg-2">
                         <div class="group-img">
@@ -166,9 +169,9 @@
                           <div class="form-wrap">
                             <a-time-picker
                               class="form-control timepicker"
-                              placeholder="  11:00 AM"
+                              placeholder="  11:00"
                               use12-hours
-                              format="h:mm a"
+                              format="H:mm"
                               type="text"
                             />
                             <span class="form-icon">
@@ -185,14 +188,14 @@
                         <a
                           href="booking-checkout.html"
                           class="btn btn-primary check-available w-100"
-                          >Book</a
+                          >Réserver</a
                         >
                         <a
                           href="javascript:void(0);"
                           data-bs-toggle="modal"
                           data-bs-target="#enquiry"
                           class="btn btn-theme"
-                          >Enquire Us</a
+                          >Nous contacter</a
                         >
                       </div>
                     </div>
@@ -205,7 +208,7 @@
                 <ul>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label>Delivery Location</label>
+                      <label>Lieu de livraison</label>
                       <div class="group-img">
                         <vue-select
                           :options="NewDelivery"
@@ -217,8 +220,9 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label class="custom_check d-inline-flex location-check m-0"
-                        ><span>Return to same location</span>
+                      <label
+                        class="custom_check d-inline-flex location-check m-0"
+                        ><span>Retour au même lieu</span>
                         <input type="checkbox" name="remeber" />
                         <span class="checkmark"></span>
                       </label>
@@ -226,7 +230,7 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label>Delivery Location</label>
+                      <label>Lieu de livraison</label>
                       <div class="group-img">
                         <vue-select
                           :options="NewLocation"
@@ -238,7 +242,7 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block">
-                      <label>Return Location</label>
+                      <label>Lieu de retour</label>
                       <div class="group-img">
                         <div class="form-wrap">
                           <input
@@ -255,7 +259,7 @@
                   </li>
                   <li class="column-group-main">
                     <div class="input-block m-0">
-                      <label>Pickup Date</label>
+                      <label>Date de prise en charge</label>
                     </div>
                     <div class="input-block-wrapp sidebar-form">
                       <div class="input-block me-lg-2">
@@ -293,7 +297,9 @@
                     </div>
                   </li>
                   <li class="column-group-main">
-                    <div class="input-block m-0"><label>Return Date</label></div>
+                    <div class="input-block m-0">
+                      <label>Date de retour</label>
+                    </div>
                     <div class="input-block-wrapp sidebar-form">
                       <div class="input-block me-2">
                         <div class="group-img">
@@ -359,7 +365,9 @@
         </div>
         <div class="owner-detail">
           <div class="owner-img">
-            <a href="#"><img src="@/assets/img/profiles/avatar-07.jpg" alt="User" /></a>
+            <a href="#"
+              ><img src="@/assets/img/profiles/avatar-07.jpg" alt="User"
+            /></a>
             <span class="badge-check"
               ><img src="@/assets/img/icons/badge-check.svg" alt="User"
             /></span>
@@ -417,10 +425,14 @@
             ></a>
           </li>
           <li>
-            <a href="javascript:void(0)"><i class="fab fa-instagram fi-icon"></i></a>
+            <a href="javascript:void(0)"
+              ><i class="fab fa-instagram fi-icon"></i
+            ></a>
           </li>
           <li>
-            <a href="javascript:void(0)"><i class="fab fa-behance fi-icon"></i></a>
+            <a href="javascript:void(0)"
+              ><i class="fab fa-behance fi-icon"></i
+            ></a>
           </li>
           <li>
             <a href="javascript:void(0)"
@@ -428,10 +440,14 @@
             ></a>
           </li>
           <li>
-            <a href="javascript:void(0)"><i class="fab fa-twitter fi-icon"></i> </a>
+            <a href="javascript:void(0)"
+              ><i class="fab fa-twitter fi-icon"></i>
+            </a>
           </li>
           <li>
-            <a href="javascript:void(0)"><i class="fab fa-linkedin fi-icon"></i></a>
+            <a href="javascript:void(0)"
+              ><i class="fab fa-linkedin fi-icon"></i
+            ></a>
           </li>
         </ul>
       </div>

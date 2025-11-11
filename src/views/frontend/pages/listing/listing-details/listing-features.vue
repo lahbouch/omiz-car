@@ -1,7 +1,7 @@
 <template>
   <div class="review-sec listing-feature">
     <div class="review-header">
-      <h4>Car Features</h4>
+      <h4>Caractéristiques du véhicule</h4>
     </div>
     <div class="listing-description">
       <div class="row">
@@ -17,42 +17,42 @@
   </div>
   <div class="review-sec listing-feature">
     <div class="review-header">
-      <h4>Tariff</h4>
+      <h4>Tarifs</h4>
     </div>
     <div class="table-responsive">
       <table class="table border mb-3">
         <thead class="thead-dark">
           <tr>
-            <th>Name</th>
-            <th>Daily Price</th>
-            <th>Base Kilometers</th>
-            <th>Kilometers Extra Price</th>
+            <th>Nom</th>
+            <th>Prix journalier</th>
+            <th>Kilomètres de base</th>
+            <th>Prix kilomètres supplémentaires</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>4 to 5 Days</td>
-            <td>$150</td>
+            <td>4 à 5 jours</td>
+            <td>450 MAD</td>
             <td>25</td>
-            <td>$28</td>
+            <td>28 MAD</td>
           </tr>
           <tr>
-            <td>5 to 8 Days</td>
-            <td>$250</td>
+            <td>5 à 8 jours</td>
+            <td>420 MAD</td>
             <td>90</td>
-            <td>$45</td>
+            <td>45 MAD</td>
           </tr>
           <tr>
-            <td>8 to 15 Days</td>
-            <td>$380</td>
+            <td>8 à 15 jours</td>
+            <td>400 MAD</td>
             <td>120</td>
-            <td>$60</td>
+            <td>60 MAD</td>
           </tr>
           <tr>
-            <td>16 to 25 Days</td>
-            <td>$500</td>
+            <td>16 à 25 jours</td>
+            <td>380 MAD</td>
             <td>500</td>
-            <td>$80</td>
+            <td>80 MAD</td>
           </tr>
         </tbody>
       </table>

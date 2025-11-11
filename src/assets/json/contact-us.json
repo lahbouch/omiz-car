@@ -2,25 +2,25 @@
     {
         "id": 1,
         "Icon": "feather-phone-call",
-        "Title": "Phone Number",
-        "Content": "(888) 888-8888"
+        "Title": "Numéro de téléphone",
+        "Content": "0655449468 / 0666609899"
     },
     {
         "id": 2,
         "Icon": "feather-mail",
-        "Title": "Email Address",
-        "Content": "johnsmith@example.com"
+        "Title": "Adresse email",
+        "Content": "omizcar@gmail.com"
     },
     {
         "id": 3,
         "Icon": "feather-map-pin",
-        "Title": "Location",
-        "Content": "367 Hillcrest Lane,USA"
+        "Title": "Emplacement",
+        "Content": "Tanger, Maroc"
     },
     {
         "id": 4,
         "Icon": "feather-clock",
-        "Title": "Opening Hours",
-        "Content": "Mon - Sat (10.00AM - 05.30PM)"
+        "Title": "Heures d'ouverture",
+        "Content": "24/7 (assistance routière)"
     }
 ]

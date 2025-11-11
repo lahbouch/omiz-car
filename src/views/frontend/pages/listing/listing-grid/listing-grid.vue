@@ -33,7 +33,10 @@
                         :settings="settings"
                         :breakpoints="breakpoints"
                       >
-                        <Slide v-for="slideItem in item.Slider" :key="slideItem.id">
+                        <Slide
+                          v-for="slideItem in item.Slider"
+                          :key="slideItem.id"
+                        >
                           <!-- Display only the first image from the Slider array -->
                           <div class="slide-images">
                             <router-link to="/listing/listing-details">
@@ -55,7 +58,9 @@
                       class="fav-item justify-content-end"
                       v-if="item.Slider.length > 1"
                     >
-                      <span class="img-count"><i class="feather-image"></i>04</span>
+                      <span class="img-count"
+                        ><i class="feather-image"></i>04</span
+                      >
                       <a
                         href="javascript:void(0)"
                         class="fav-icon"
@@ -99,9 +104,10 @@
                       </div>
                       <div class="list-km">
                         <span class="km-count"
-                          ><img src="@/assets/img/icons/map-pin.svg" alt="author" />{{
-                            item.MapPin
-                          }}</span
+                          ><img
+                            src="@/assets/img/icons/map-pin.svg"
+                            alt="author"
+                          />{{ item.MapPin }}</span
                         >
                       </div>
                     </div>
@@ -109,21 +115,23 @@
                       <ul>
                         <li>
                           <span
-                            ><img
-                              :src="getImageUrlTwo(item.Gear)"
-                              alt="Auto"
+                            ><img :src="getImageUrlTwo(item.Gear)" alt="Auto"
                           /></span>
                           <p>{{ item.Drive }}</p>
                         </li>
                         <li>
                           <span
-                            ><img src="@/assets/img/icons/car-parts-02.svg" alt="10 KM"
+                            ><img
+                              src="@/assets/img/icons/car-parts-02.svg"
+                              alt="10 KM"
                           /></span>
                           <p>{{ item.KM }}</p>
                         </li>
                         <li>
                           <span
-                            ><img src="@/assets/img/icons/car-parts-03.svg" alt="Petrol"
+                            ><img
+                              src="@/assets/img/icons/car-parts-03.svg"
+                              alt="Petrol"
                           /></span>
                           <p>{{ item.liquid }}</p>
                         </li>
@@ -131,19 +139,25 @@
                       <ul>
                         <li>
                           <span
-                            ><img src="@/assets/img/icons/car-parts-04.svg" alt="Power"
+                            ><img
+                              src="@/assets/img/icons/car-parts-04.svg"
+                              alt="Power"
                           /></span>
                           <p>{{ item.Steering }}</p>
                         </li>
                         <li>
                           <span
-                            ><img src="@/assets/img/icons/car-parts-05.svg" alt="2018"
+                            ><img
+                              src="@/assets/img/icons/car-parts-05.svg"
+                              alt="2018"
                           /></span>
                           <p>{{ item.Engine }}</p>
                         </li>
                         <li>
                           <span
-                            ><img src="@/assets/img/icons/car-parts-06.svg" alt="Persons"
+                            ><img
+                              src="@/assets/img/icons/car-parts-06.svg"
+                              alt="Persons"
                           /></span>
                           <p>{{ item.Seat }}</p>
                         </li>
@@ -151,16 +165,19 @@
                     </div>
                     <div class="listing-location-details">
                       <div class="listing-price">
-                        <span><i class="feather-map-pin"></i></span>{{ item.Location }}
+                        <span><i class="feather-map-pin"></i></span
+                        >{{ item.Location }} (50 km max)
                       </div>
                       <div class="listing-price">
-                        <h6>{{ item.Price }} <span>/ Day</span></h6>
+                        <h6>{{ item.Price }} <span>/ Jour</span></h6>
                       </div>
                     </div>
                     <div class="listing-button">
-                      <router-link to="/listing/listing-details" class="btn btn-order"
-                        ><span><i class="feather-calendar me-2"></i></span>Rent
-                        Now</router-link
+                      <router-link
+                        to="/listing/listing-details"
+                        class="btn btn-order"
+                        ><span><i class="feather-calendar me-2"></i></span
+                        >Réserver maintenant</router-link
                       >
                     </div>
                   </div>
@@ -225,9 +242,9 @@ import "vue3-carousel/dist/carousel.css";
 export default {
   data() {
     return {
-      title: "Car Listings",
+      title: "Notre flotte",
       text: "Listings",
-      text1: "Car Listings",
+      text1: "Notre flotte",
       Mazda: Mazda,
       isSelected: false,
       settings: {
@@ -268,10 +285,12 @@ export default {
       return new URL(`/src/assets/img/cars/${imageName}`, import.meta.url).href;
     },
     getImageUrlOne(imageName) {
-      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url)
+        .href;
     },
     getImageUrlTwo(imageName) {
-      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

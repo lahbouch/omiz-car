@@ -1,17 +1,25 @@
 <template>
   <section class="section facts-number">
     <div class="facts-left">
-      <img src="@/assets/img/bg/facts-left.png" class="img-fluid" alt="facts left" />
+      <img
+        src="@/assets/img/bg/facts-left.png"
+        class="img-fluid"
+        alt="facts left"
+      />
     </div>
     <div class="facts-right">
-      <img src="@/assets/img/bg/facts-right.png" class="img-fluid" alt="facts right" />
+      <img
+        src="@/assets/img/bg/facts-right.png"
+        class="img-fluid"
+        alt="facts right"
+      />
     </div>
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2 class="title text-white">Facts By The Numbers</h2>
+        <h2 class="title text-white">Chiffres clés</h2>
         <p class="description text-white">
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          Découvrez les chiffres qui font notre force
         </p>
       </div>
       <!-- /Heading title -->
@@ -30,13 +38,13 @@
                       ref="counter"
                       :startAmount="0"
                       :delay="3"
-                      :endAmount="16"
+                      :endAmount="500"
                       :duration="2"
                       separator=","
                       :autoinit="true"
                     />K+
                   </h4>
-                  <p>Happy Customers</p>
+                  <p>Clients satisfaits</p>
                 </div>
               </div>
             </div>
@@ -54,13 +62,13 @@
                       ref="counter"
                       :startAmount="0"
                       :delay="3"
-                      :endAmount="2547"
+                      :endAmount="15"
                       :duration="2"
                       separator=","
                       :autoinit="true"
                     />+
                   </h4>
-                  <p>Count of Cars</p>
+                  <p>Véhicules dans notre flotte</p>
                 </div>
               </div>
             </div>
@@ -78,13 +86,13 @@
                       ref="counter"
                       :startAmount="0"
                       :delay="3"
-                      :endAmount="625"
+                      :endAmount="1200"
                       :duration="2"
                       separator=","
                       :autoinit="true"
                     />K+
                   </h4>
-                  <p>Car Center Solutions</p>
+                  <p>Réservations effectuées</p>
                 </div>
               </div>
             </div>
@@ -102,13 +110,13 @@
                       ref="counter"
                       :startAmount="0"
                       :delay="3"
-                      :endAmount="200"
+                      :endAmount="50000"
                       :duration="2"
                       separator=","
                       :autoinit="true"
                     />K+
                   </h4>
-                  <p>Total Kilometer</p>
+                  <p>Kilomètres parcourus</p>
                 </div>
               </div>
             </div>

@@ -3,10 +3,8 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2>Frequently Asked Questions</h2>
-        <p>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        </p>
+        <h2>Questions fréquemment posées</h2>
+        <p>Trouvez les réponses à vos questions sur nos services</p>
       </div>
       <!-- /Heading title -->
       <div class="faq-info">
@@ -17,15 +15,14 @@
               data-bs-toggle="collapse"
               href="#faqOne"
               aria-expanded="false"
-              >What is about rental car deals?</a
+              >Quel âge dois-je avoir pour louer une voiture ?</a
             >
           </h4>
           <div id="faqOne" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Pour louer une voiture chez Omiz Car, vous devez avoir au moins 18
+              ans et posséder un permis de conduire valide. Un dépôt de garantie
+              peut être requis selon le type de véhicule.
             </p>
           </div>
         </div>
@@ -36,15 +33,14 @@
               data-bs-toggle="collapse"
               href="#faqTwo"
               aria-expanded="false"
-              >In which areas do you operate?</a
+              >Dans quelles zones opérez-vous ?</a
             >
           </h4>
           <div id="faqTwo" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Nous opérons principalement dans la région de Tanger-Tétouan et
+              ses environs jusqu'à 50 km. Service de livraison disponible à
+              l'aéroport de Tanger.
             </p>
           </div>
         </div>
@@ -55,16 +51,14 @@
               data-bs-toggle="collapse"
               href="#faqThree"
               aria-expanded="false"
-              >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium?</a
+              >Quels types de véhicules sont disponibles à la location ?</a
             >
           </h4>
           <div id="faqThree" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Nous proposons une flotte de 15 véhicules économiques récents
+              (2018-2022), parfaitement entretenus pour votre confort et votre
+              sécurité.
             </p>
           </div>
         </div>
@@ -75,16 +69,13 @@
               data-bs-toggle="collapse"
               href="#faqFour"
               aria-expanded="false"
-              >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia?</a
+              >Puis-je louer une voiture avec une carte de débit ?</a
             >
           </h4>
           <div id="faqFour" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Oui, nous acceptons les cartes de débit avec un dépôt de garantie
+              supplémentaire. La carte doit être au nom du conducteur principal.
             </p>
           </div>
         </div>
@@ -95,16 +86,13 @@
               data-bs-toggle="collapse"
               href="#faqFive"
               aria-expanded="false"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor?</a
+              >Quelle est votre politique en matière de carburant ?</a
             >
           </h4>
           <div id="faqFive" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              La voiture doit être rendue avec le même niveau de carburant qu'à
+              la prise en charge. Nous fournissons un plein au départ.
             </p>
           </div>
         </div>
@@ -115,16 +103,15 @@
               data-bs-toggle="collapse"
               href="#faqSix"
               aria-expanded="false"
-              >eque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit?</a
+              >Puis-je ajouter des conducteurs supplémentaires à mon contrat de
+              location ?</a
             >
           </h4>
           <div id="faqSix" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Oui, vous pouvez ajouter des conducteurs supplémentaires moyennant
+              un supplément. Chaque conducteur doit présenter un permis de
+              conduire valide.
             </p>
           </div>
         </div>
@@ -135,16 +122,13 @@
               data-bs-toggle="collapse"
               href="#faqSeven"
               aria-expanded="false"
-              >Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod?</a
+              >Proposez-vous des services de chauffeur ?</a
             >
           </h4>
           <div id="faqSeven" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Oui, nous proposons un service de chauffeur privé sur demande.
+              Contactez-nous pour plus d'informations sur les tarifs.
             </p>
           </div>
         </div>

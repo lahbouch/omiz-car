@@ -3,8 +3,8 @@
   <section class="car-section">
     <div class="container">
       <div class="section-heading heading-four" data-aos="fade-down">
-        <h2>Explore Most Popular Cars</h2>
-        <p>Here's a list of some of the most popular cars globally</p>
+        <h2>Découvrez notre flotte de 15 véhicules économiques</h2>
+        <p>Parfaitement entretenus pour votre confort et votre sécurité</p>
       </div>
 
       <div class="row">
@@ -17,7 +17,10 @@
         >
           <div class="listing-item listing-item-two">
             <div class="listing-img">
-              <router-link to="/listing/listing-details" v-if="item.Slider.length === 1">
+              <router-link
+                to="/listing/listing-details"
+                v-if="item.Slider.length === 1"
+              >
                 <img
                   :src="getImageUrl(item.Slider[0].Image)"
                   class="img-fluid"
@@ -48,7 +51,7 @@
               </div>
               <div class="fav-item">
                 <div class="d-flex align-items-center gap-2">
-                  <span class="featured-text">Toyota</span>
+                  <span class="featured-text">Populaire</span>
                   <span class="availability">Available</span>
                 </div>
                 <a href="javascript:void(0)" class="fav-icon selected">
@@ -56,7 +59,8 @@
                 </a>
               </div>
               <span class="location"
-                ><i class="bx bx-map me-1"></i>{{ item.Location }}</span
+                ><i class="bx bx-map me-1"></i>{{ item.Location }} (50 km
+                max)</span
               >
             </div>
             <div class="listing-content">
@@ -89,11 +93,17 @@
                     <p>{{ item.Drive }}</p>
                   </li>
                   <li>
-                    <img src="@/assets/img/icons/car-parts-02.svg" alt="10 KM" />
+                    <img
+                      src="@/assets/img/icons/car-parts-02.svg"
+                      alt="10 KM"
+                    />
                     <p>{{ item.Km }}</p>
                   </li>
                   <li>
-                    <img src="@/assets/img/icons/car-parts-03.svg" alt="Petrol" />
+                    <img
+                      src="@/assets/img/icons/car-parts-03.svg"
+                      alt="Petrol"
+                    />
                     <p>{{ item.Fuel }}</p>
                   </li>
                   <li>
@@ -112,7 +122,7 @@
         <router-link
           to="/listing/listing-grid"
           class="btn btn-secondary d-inline-flex align-items-center"
-          >View More Cars<i class="bx bx-right-arrow-alt ms-1"></i
+          >Voir toutes les voitures<i class="bx bx-right-arrow-alt ms-1"></i
         ></router-link>
       </div>
     </div>
@@ -161,6 +171,6 @@ export default {
     getImageUrl(imageName) {
       return new URL(`/src/assets/img/cars/${imageName}`, import.meta.url).href;
     },
-  }
+  },
 };
 </script>

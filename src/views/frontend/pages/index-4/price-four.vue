@@ -8,19 +8,19 @@
     >
       <div class="slide-list d-flex">
         <div class="support-item">
-          <h2>Best Rate Guarateed</h2>
+          <h2>Meilleur tarif garanti</h2>
         </div>
         <div class="support-item">
-          <h2>Free Cancellation</h2>
+          <h2>Annulation gratuite</h2>
         </div>
         <div class="support-item">
-          <h2>Best Security</h2>
+          <h2>Meilleure sécurité</h2>
         </div>
         <div class="support-item">
-          <h2>Latest Update of Bikes</h2>
+          <h2>Flotte récente</h2>
         </div>
         <div class="support-item">
-          <h2>Trusted Proof</h2>
+          <h2>Fiabilité prouvée</h2>
         </div>
       </div>
     </div>
@@ -28,13 +28,13 @@
   <!-- /Support Section -->
 
   <!-- FAQ Section -->
-  <section class="faq-section-four pt-0">
+  <section class="faq-section-four pt-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="section-heading heading-four" data-aos="fade-down">
-            <h2>Frequently asked questions</h2>
-            <p>Explore to learn more about how can empower your business</p>
+            <h2>Questions fréquemment posées</h2>
+            <p>Trouvez les réponses à vos questions sur nos services</p>
           </div>
           <div class="accordion faq-accordion" id="faqAccordion">
             <div class="accordion-item">
@@ -47,7 +47,7 @@
                   aria-expanded="true"
                   aria-controls="faqOne"
                 >
-                  How old do I need to be to rent a car?
+                  Quel âge dois-je avoir pour louer une voiture ?
                 </button>
               </h2>
               <div
@@ -57,8 +57,10 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    Pour louer une voiture avec Omiz Car, vous devez avoir au
+                    moins 18 ans et posséder un permis de conduire valide. Un
+                    dépôt de garantie peut être requis selon le type de véhicule
+                    choisi.
                   </p>
                 </div>
               </div>
@@ -73,7 +75,7 @@
                   aria-expanded="true"
                   aria-controls="faqTwo"
                 >
-                  What documents do I need to rent a car?
+                  De quels documents ai-je besoin pour louer une voiture ?
                 </button>
               </h2>
               <div
@@ -83,8 +85,9 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    Vous devez présenter un permis de conduire valide et une
+                    pièce d'identité (carte nationale ou passeport). Un dépôt de
+                    garantie peut être requis selon le type de véhicule.
                   </p>
                 </div>
               </div>
@@ -99,7 +102,7 @@
                   aria-expanded="true"
                   aria-controls="faqThree"
                 >
-                  What types of vehicles are available for rent?
+                  Quels types de véhicules sont disponibles à la location ?
                 </button>
               </h2>
               <div
@@ -109,8 +112,9 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    Nous proposons une flotte de 15 véhicules économiques
+                    récents (2018-2022), parfaitement entretenus pour votre
+                    confort et votre sécurité à Tanger, Tétouan et environs.
                   </p>
                 </div>
               </div>
@@ -125,7 +129,7 @@
                   aria-expanded="true"
                   aria-controls="faqFour"
                 >
-                  Can I rent a car with a debit card?
+                  Puis-je louer une voiture avec une carte de débit ?
                 </button>
               </h2>
               <div
@@ -135,8 +139,9 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    Oui, nous acceptons les cartes de débit avec un dépôt de
+                    garantie supplémentaire. La carte doit être au nom du
+                    conducteur principal.
                   </p>
                 </div>
               </div>
@@ -151,7 +156,7 @@
                   aria-expanded="true"
                   aria-controls="faqFive"
                 >
-                  What is your fuel policy?
+                  Quelle est votre politique en matière de carburant ?
                 </button>
               </h2>
               <div
@@ -161,8 +166,9 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    La voiture doit être rendue avec le même niveau de carburant
+                    qu'à la prise en charge. Nous fournissons un plein au
+                    départ.
                   </p>
                 </div>
               </div>
@@ -177,7 +183,8 @@
                   aria-expanded="true"
                   aria-controls="faqSix"
                 >
-                  Can I add additional drivers to my rental agreement?
+                  Puis-je ajouter des conducteurs supplémentaires à mon contrat
+                  de location ?
                 </button>
               </h2>
               <div
@@ -187,8 +194,9 @@
               >
                 <div class="accordion-body">
                   <p>
-                    You can browse our selection online or contact us for
-                    assistance in choosing the right vehicle for you
+                    Oui, vous pouvez ajouter des conducteurs supplémentaires
+                    moyennant un supplément. Chaque conducteur doit présenter un
+                    permis de conduire valide.
                   </p>
                 </div>
               </div>
@@ -216,8 +224,9 @@
               </div>
               <div class="footer-contact-info">
                 <p>
-                  We offer a diverse fleet of vehicles to suit every need,
-                  including compact cars, sedans, SUVs and luxury vehicles.
+                  Omiz Car vous offre une flotte de 15 véhicules économiques
+                  parfaitement entretenus pour répondre à tous vos besoins de
+                  déplacement à Tanger, Tétouan et environs.
                 </p>
               </div>
               <div class="d-flex align-items-center gap-1 app-icon">
@@ -270,22 +279,22 @@
               <div class="col-lg-4 col-md-6">
                 <!-- Footer Widget -->
                 <div class="footer-widget footer-menu">
-                  <h5 class="footer-title">Quick Links</h5>
+                  <h5 class="footer-title">Liens rapides</h5>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">My account</a>
+                      <a href="javascript:void(0)">Mon compte</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Campaigns</a>
+                      <a href="javascript:void(0)">Campagnes</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Dreams rent Dealers</a>
+                      <a href="javascript:void(0)">Devenir partenaire</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Deals and Incentive</a>
+                      <a href="javascript:void(0)">Offres et promotions</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Financial Services</a>
+                      <a href="javascript:void(0)">Services financiers</a>
                     </li>
                   </ul>
                 </div>
@@ -297,19 +306,19 @@
                   <h5 class="footer-title">Pages</h5>
                   <ul>
                     <li>
-                      <a href="about-us.html">About Us</a>
+                      <a href="about-us.html">À propos</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Become a Partner</a>
+                      <a href="javascript:void(0)">Devenir partenaire</a>
                     </li>
                     <li>
-                      <a href="faq.html">Faq’s</a>
+                      <a href="faq.html">FAQ</a>
                     </li>
                     <li>
-                      <a href="testimonial.html">Testimonials</a>
+                      <a href="testimonial.html">Témoignages</a>
                     </li>
                     <li>
-                      <a href="contact-us.html">Contact Us</a>
+                      <a href="contact-us.html">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -318,22 +327,22 @@
               <div class="col-lg-4 col-md-6">
                 <!-- Footer Widget -->
                 <div class="footer-widget footer-menu">
-                  <h5 class="footer-title">Useful Links</h5>
+                  <h5 class="footer-title">Liens utiles</h5>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">My account</a>
+                      <a href="javascript:void(0)">Mon compte</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Campaigns</a>
+                      <a href="javascript:void(0)">Campagnes</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Dreams rent Dealers</a>
+                      <a href="javascript:void(0)">Devenir partenaire</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Deals and Incentive</a>
+                      <a href="javascript:void(0)">Offres et promotions</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Financial Services</a>
+                      <a href="javascript:void(0)">Services financiers</a>
                     </li>
                   </ul>
                 </div>
@@ -354,7 +363,7 @@
           <div class="row align-items-center row-gap-3">
             <div class="col-lg-4">
               <div class="copyright-text">
-                <p>Copyright &copy; 2025 Dreams Rent. All Rights Reserved.</p>
+                <p>Copyright &copy; 2025 Omiz Car. Tous droits réservés.</p>
               </div>
             </div>
             <div class="col-lg-4">
@@ -373,13 +382,13 @@
             <div class="col-lg-4">
               <ul class="privacy-link">
                 <li>
-                  <a href="privacy-policy.html">Privacy</a>
+                  <a href="privacy-policy.html">Confidentialité</a>
                 </li>
                 <li>
-                  <a href="terms-condition.html">Terms & Condition</a>
+                  <a href="terms-condition.html">Conditions générales</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);">Refund Policy</a>
+                  <a href="javascript:void(0);">Politique de remboursement</a>
                 </li>
               </ul>
             </div>

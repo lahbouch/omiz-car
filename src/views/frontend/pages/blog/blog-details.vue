@@ -3,19 +3,19 @@
   <!-- Breadscrumb Section -->
   <div class="blogbanner">
     <div class="blogbanner-content">
-      <span class="blog-hint">Health</span>
-      <h1>The Top 25 Bike Stores in Toronto by Neighbourhood</h1>
+      <span class="blog-hint">Conseils</span>
+      <h1>Découvrir Tanger en voiture : Les meilleurs endroits à visiter</h1>
       <ul class="entry-meta meta-item justify-content-center">
         <li>
           <div class="post-author">
             <div class="post-author-img">
               <img src="@/assets/img/profiles/avatar-01.jpg" alt="author" />
             </div>
-            <a href="javascript:void(0)"><span> John Doe </span></a>
+            <a href="javascript:void(0)"><span> Sid TribaQ </span></a>
           </div>
         </li>
         <li class="date-icon">
-          <i class="fa-solid fa-calendar-days"></i> October 6, 2022
+          <i class="fa-solid fa-calendar-days"></i> 6 Octobre 2022
         </li>
       </ul>
     </div>
@@ -27,48 +27,41 @@
     <div class="container">
       <div class="blog-description">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula
-          sapien nec nisi aliquam, vitae finibus purus sodales. Mauris at turpis nulla.
-          Curabitur nec tellus est. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Vestibulum pharetra arcu ac arcu varius,
-          non congue neque aliquet. Pellentesque at feugiat purus. Aenean faucibus
-          vehicula eros.
+          Découvrir Tanger en voiture offre une liberté incomparable pour
+          explorer cette ville fascinante et ses environs. Avec Omiz Car, vous
+          pouvez profiter d'une location de voiture fiable et économique pour
+          découvrir les meilleurs endroits de la région.
         </p>
         <p>
-          varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Nulla fermentum malesuada pulvinar. Vestibulum laoreet rutrum semper.
-          Vivamus malesuada, nisl in consectetur semper, mauris nulla aliquam risus, nec
-          ultricies sapien elit sed ante. Aenean luctus felis in sem consequat auctor.
-          Nulla turpis enim, scelerisque sit amet consectetur vel, lacinia sed augue.
-          Proin ultricies dui id ex fringilla porta. Morbi nisi justo, venenatis ac nibh
-          at, bibendum mattis risus. Maecenas tincidunt, ligula sed congue tempus, magna
-          augue cursus ipsum, in malesuada justo risus nec lorem. Nam augue augue, mollis
-          nec condimentum euismod, lacinia ultricies leo.
+          La médina de Tanger est un incontournable, mais elle peut être
+          difficile à explorer en voiture. Nous recommandons de vous garer dans
+          un parking sécurisé et de terminer votre visite à pied. Le quartier de
+          Kasbah, avec sa vue imprenable sur le détroit de Gibraltar, est
+          accessible en voiture et vaut vraiment le détour.
         </p>
       </div>
       <blockquote class="blog-quotes">
         <img src="@/assets/img/blogquote.svg" alt="quotes" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula
-          sapien nec nisi aliquam, vitae finibus purus sodales. Mauris at turpis nulla.
-          Curabitur nec tellus est. Class aptent taciti sociosqu ad litora torquent per
-          conubia nostra, per inceptos himenaeos. Vestibulum pharetra arcu ac arcu varius,
-          non congue neque aliquet. Pellentesque at feugiat purus. Aenean faucibus
-          vehicula eros.
+          "Avec Omiz Car, votre voyage à Tanger devient une expérience sans
+          stress. Nos véhicules économiques et bien entretenus vous permettent
+          de profiter pleinement de votre séjour."
         </p>
-        <h6>Luis Pickford</h6>
+        <h6>Sid TribaQ</h6>
       </blockquote>
       <div class="blog-description">
         <p>
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Nulla fermentum malesuada pulvinar. Vestibulum laoreet rutrum
-          semper. Vivamus malesuada, nisl in consectetur semper, mauris nulla aliquam
-          risus, nec ultricies sapien elit sed ante. Aenean luctus felis in sem consequat
-          auctor. Nulla turpis enim, scelerisque sit amet consectetur vel, lacinia sed
-          augue. Proin ultricies dui id ex fringilla porta. Morbi nisi justo, venenatis ac
-          nibh at, bibendum mattis risus. Maecenas tincidunt, ligula sed congue tempus,
-          magna augue cursus ipsum, in malesuada justo risus nec lorem. Nam augue augue,
-          mollis nec condimentum euismod, lacinia ultricies leo.
+          Pour les amateurs de plages, Cap Spartel est accessible en voiture et
+          offre des paysages spectaculaires. La côte atlantique vous réserve de
+          belles surprises, notamment les plages de Corniche et de Sidi Driss.
+          N'oubliez pas de visiter les grottes d'Hercule, un site historique
+          accessible en voiture depuis le centre-ville.
+        </p>
+        <p>
+          Si vous souhaitez explorer au-delà de Tanger, la ville de Tétouan est
+          à seulement 40 minutes en voiture. Cette ville inscrite au patrimoine
+          mondial de l'UNESCO offre une médina authentique et des vues
+          magnifiques sur la mer Méditerranée.
         </p>
       </div>
       <div class="row">
@@ -98,16 +91,16 @@
               <a href="javascript:void(0);" class="share-img"
                 ><i class="feather-share-2"></i
               ></a>
-              <a href="javascript:void(0);" class="share-text">Share</a>
+              <a href="javascript:void(0);" class="share-text">Partager</a>
             </div>
           </div>
           <div class="col-lg-8">
             <div class="tag-list">
               <ul class="tags">
-                <li>Rims</li>
-                <li>Speed</li>
-                <li>Make</li>
-                <li>Transmission</li>
+                <li>Tanger</li>
+                <li>Voyage</li>
+                <li>Location</li>
+                <li>Découverte</li>
               </ul>
             </div>
           </div>
@@ -117,25 +110,26 @@
         <ul>
           <li>
             <router-link to="/blog/blog-details" class="prev-link"
-              ><i class="fas fa-regular fa-arrow-left"></i> Previous Post</router-link
+              ><i class="fas fa-regular fa-arrow-left"></i> Article
+              précédent</router-link
             >
             <router-link to="/blog/blog-details"
-              ><h3>The Best SPA Salons For Your Relaxation</h3>
+              ><h3>Conseils pour préparer votre voyage d'affaires à Tétouan</h3>
             </router-link>
           </li>
           <li>
             <router-link to="/blog/blog-details" class="next-link"
-              >Next Post <i class="fas fa-regular fa-arrow-right"></i>
+              >Article suivant <i class="fas fa-regular fa-arrow-right"></i>
             </router-link>
             <router-link to="/blog/blog-details"
-              ><h3>8 Amazing Tricks About Business</h3>
+              ><h3>Comment profiter de l'été marocain en toute sécurité</h3>
             </router-link>
           </li>
         </ul>
       </div>
       <div class="review-sec mb-0">
         <div class="review-header">
-          <h4>Reviews<span>(2)</span></h4>
+          <h4>Avis<span>(2)</span></h4>
           <div class="reviewbox-list-rating">
             <p>
               <i class="fas fa-star filled me-1"></i>
@@ -143,7 +137,7 @@
               <i class="fas fa-star filled me-1"></i>
               <i class="fas fa-star filled me-1"></i>
               <i class="fas fa-star filled"></i>
-              <span> (5 out of 5)</span>
+              <span> (5 sur 5)</span>
             </p>
           </div>
         </div>
@@ -169,15 +163,14 @@
                 <i class="fas fa-star filled me-1"></i>
                 <i class="fas fa-star filled me-1"></i>
                 <i class="fas fa-star filled"></i>
-                <span> (5 out of 5)</span>
+                <span> (5 sur 5)</span>
               </p>
             </div>
           </div>
           <p>
-            It was popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the
-            1960s
+            Article très utile pour découvrir Tanger en voiture. La location
+            avec Omiz Car a été parfaite, véhicule propre et bien entretenu. Je
+            recommande vivement !
           </p>
         </div>
         <div class="review-card">
@@ -207,10 +200,10 @@
             </div>
           </div>
           <p>
-            It was popularised in the 1960s with the release of Letraset sheets containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the
-            1960s
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.It was popularised in the 1960s
           </p>
         </div>
       </div>
@@ -228,13 +221,18 @@
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="input-block">
-                          <label>Full Name <span class="text-danger">*</span></label>
+                          <label
+                            >Full Name <span class="text-danger">*</span></label
+                          >
                           <input type="text" class="form-control" />
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="input-block">
-                          <label>Email Address <span class="text-danger">*</span></label>
+                          <label
+                            >Email Address
+                            <span class="text-danger">*</span></label
+                          >
                           <input type="email" class="form-control" />
                         </div>
                       </div>
@@ -246,7 +244,10 @@
                       </div>
                     </div>
                     <div class="submit-section">
-                      <button class="btn btn-primary submit-review" type="submit">
+                      <button
+                        class="btn btn-primary submit-review"
+                        type="submit"
+                      >
                         Submit Review
                       </button>
                     </div>

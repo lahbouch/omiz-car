@@ -9,11 +9,10 @@
         <div class="modal-body">
           <div class="payment-success">
             <span class="check"><i class="fa-solid fa-check-double"></i></span>
-            <h5>Order Confirmed</h5>
+            <h5>Commande confirmée</h5>
             <p>
-              You Payment has been successfully done. Trasaction id :<span>
-                #5064164454</span
-              >
+              Votre paiement a été effectué avec succès. Numéro de transaction
+              :<span> #5064164454</span>
             </p>
           </div>
         </div>

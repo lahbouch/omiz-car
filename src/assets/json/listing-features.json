@@ -1,27 +1,27 @@
 [
     {
        "id": 1,
-       "feature": "Multi-zone A/C",
+       "feature": "Climatisation multizone",
        "checked": true
     },
     {
        "id": 2,
-       "feature": "Heated front seats",
+       "feature": "Sièges avant chauffants",
        "checked": true
     },
     {
        "id": 3,
-       "feature": "Andriod Auto",
+       "feature": "Android Auto",
        "checked": true
     },
     {
        "id": 4,
-       "feature": "Navigation system",
+       "feature": "Système de navigation",
        "checked": true
     },
     {
        "id": 5,
-       "feature": "Premium sound system",
+       "feature": "Système audio premium",
        "checked": true
     },
     {
@@ -31,32 +31,32 @@
     },
     {
        "id": 7,
-       "feature": "Keyless Start",
+       "feature": "Démarrage sans clé",
        "checked": true
     },
     {
        "id": 8,
-       "feature": "Memory seat",
+       "feature": "Siège mémoire",
        "checked": true
     },
     {
        "id": 9,
-       "feature": "6 Cylinders",
+       "feature": "4 cylindres",
        "checked": true
     },
     {
        "id": 10,
-       "feature": "Adaptive Cruise Control",
+       "feature": "Régulateur de vitesse adaptatif",
        "checked": true
     },
     {
        "id": 11,
-       "feature": "Intermittent wipers",
+       "feature": "Essuie-glaces intermittents",
        "checked": true
     },
     {
        "id": 12,
-       "feature": "4 power windows",
+       "feature": "4 vitres électriques",
        "checked": true
     }
    ]

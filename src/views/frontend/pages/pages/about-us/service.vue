@@ -10,9 +10,10 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2>How It Works</h2>
+        <h2>Comment ça marche</h2>
         <p>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          Découvrez comment réserver votre voiture avec Omiz Car en 3 étapes
+          simples
         </p>
       </div>
       <!-- /Heading title -->
@@ -28,11 +29,11 @@
                 />
               </div>
               <div class="services-content">
-                <h3>1. Choose Locations</h3>
+                <h3>1. Choisissez la date et le lieu</h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s,
+                  Déterminez la date et le lieu de votre location. Considérez
+                  votre itinéraire de voyage et les lieux de prise en
+                  charge/retour
                 </p>
               </div>
             </div>
@@ -47,11 +48,12 @@
                 />
               </div>
               <div class="services-content">
-                <h3>2. Pick-Up Locations</h3>
+                <h3>
+                  2. Sélectionnez les lieux de prise en charge et de retour
+                </h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s,
+                  Vérifiez la disponibilité du type de véhicule souhaité pour
+                  vos dates et lieux choisis.
                 </p>
               </div>
             </div>
@@ -66,11 +68,10 @@
                 />
               </div>
               <div class="services-content">
-                <h3>3. Book your Car</h3>
+                <h3>3. Réservez votre voiture</h3>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s,
+                  Confirmez votre réservation et recevez votre voiture selon vos
+                  préférences.
                 </p>
               </div>
             </div>

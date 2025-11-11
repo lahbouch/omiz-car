@@ -1,14 +1,19 @@
 <template>
   <section class="section why-choose">
     <div class="choose-left">
-      <img src="@/assets/img/bg/choose-left.png" class="img-fluid" alt="Why Choose Us" />
+      <img
+        src="@/assets/img/bg/choose-left.png"
+        class="img-fluid"
+        alt="Why Choose Us"
+      />
     </div>
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2>Why Choose Us</h2>
+        <h2>Pourquoi nous choisir</h2>
         <p>
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          Découvrez les raisons qui font d'Omiz Car votre partenaire de
+          confiance
         </p>
       </div>
       <!-- /Heading title -->
@@ -21,10 +26,10 @@
                   <img src="@/assets/img/icons/bx-user-check.svg" alt="" />
                 </div>
                 <div class="choose-content">
-                  <h4>Easy & Fast Booking</h4>
+                  <h4>Réservation facile et rapide</h4>
                   <p>
-                    Completely carinate e business testing process whereas fully
-                    researched customer service. Globally extensive content with quality.
+                    Processus de réservation simplifié et rapide via WhatsApp.
+                    Service client disponible 24/7 pour vous accompagner.
                   </p>
                 </div>
               </div>
@@ -37,10 +42,11 @@
                   <img src="@/assets/img/icons/bx-user-check.svg" alt="" />
                 </div>
                 <div class="choose-content">
-                  <h4>Many Pickup Location</h4>
+                  <h4>Livraison à l'aéroport</h4>
                   <p>
-                    Enthusiastically magnetic initiatives with cross-platform sources.
-                    Dynamically target testing procedures through effective.
+                    Service de livraison directement à l'aéroport de Tanger.
+                    Zone de desserte étendue jusqu'à 50 km autour de
+                    Tanger-Tétouan.
                   </p>
                 </div>
               </div>
@@ -53,10 +59,11 @@
                   <img src="@/assets/img/icons/bx-user-check.svg" alt="" />
                 </div>
                 <div class="choose-content">
-                  <h4>Customer Satisfaction</h4>
+                  <h4>Satisfaction client garantie</h4>
                   <p>
-                    Globally user centric method interactive. Seamlessly revolutionize
-                    unique portals corporate collaboration.
+                    Flotte de 15 véhicules économiques régulièrement entretenus.
+                    Assistance routière 24/7 et remplacement rapide en cas de
+                    besoin.
                   </p>
                 </div>
               </div>

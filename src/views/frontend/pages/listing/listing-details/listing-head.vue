@@ -10,7 +10,7 @@
                   <span>
                     <img src="@/assets/img/icons/car-icon.svg" alt="img" />
                   </span>
-                  Sedan
+                  Berline
                 </div>
               </li>
               <li>
@@ -26,19 +26,19 @@
               </li>
             </ul>
             <div class="camaro-info">
-              <h3>Chevrolet Camaro</h3>
+              <h3>Toyota Corolla</h3>
               <div class="camaro-location">
                 <div class="camaro-location-inner">
                   <i class="bx bx-map"></i>
-                  <span>Location : Miami St, Destin, FL 32550, USA </span>
+                  <span>Emplacement : Tanger, Maroc </span>
                 </div>
                 <div class="camaro-location-inner">
                   <i class="bx bx-show"></i>
-                  <span>Views : 250 </span>
+                  <span>Vues : 250 </span>
                 </div>
                 <div class="camaro-location-inner">
                   <i class="bx bx-car"></i>
-                  <span>Views : Listed on: 01 Jan, 2024 </span>
+                  <span>Listé le : 01 Jan, 2024 </span>
                 </div>
               </div>
             </div>
@@ -46,9 +46,9 @@
         </div>
         <div class="details-btn">
           <span class="total-badge"
-            ><i class="bx bx-calendar-edit"></i>Total Booking : 300</span
+            ><i class="bx bx-calendar-edit"></i>Réservations totales : 300</span
           >
-          <a href="javascript:;"> <i class="bx bx-git-compare"></i>Compare</a>
+          <a href="javascript:;"> <i class="bx bx-git-compare"></i>Comparer</a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="review-sec mb-0 pb-0">
     <div class="review-header">
-      <h4>Gallery</h4>
+      <h4>Galerie</h4>
     </div>
     <div class="gallery-list">
       <ul>
@@ -44,9 +44,9 @@ export default {
   },
   data() {
     return {
-      title: "Gallery",
+      title: "Galerie",
       text: "Pages",
-      text1: "Gallery",
+      text1: "Galerie",
       visible: false,
       index: 0,
       galleryImages: [
@@ -75,7 +75,8 @@ export default {
       // Optional: implement if needed
     },
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/gallery/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/gallery/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };
