@@ -5,7 +5,6 @@
     <indexfour-banner></indexfour-banner>
     <!-- /Banner -->
 
-    
     <!-- Feature Section -->
     <feature-four></feature-four>
     <!-- /Feature Section -->
@@ -22,10 +21,9 @@
     <rental-four></rental-four>
     <!-- /Rental Section -->
 
-    
-    
+    <index-choose></index-choose>
+
     <price-four></price-four>
     <!-- /Price Section -->
- 
   </div>
 </template>
