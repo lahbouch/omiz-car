@@ -5,10 +5,7 @@
     <indexfour-banner></indexfour-banner>
     <!-- /Banner -->
 
-    <!-- Category  Section -->
-    <category-four></category-four>
-    <!-- /Category  Section -->
-
+    
     <!-- Feature Section -->
     <feature-four></feature-four>
     <!-- /Feature Section -->
@@ -25,14 +22,10 @@
     <rental-four></rental-four>
     <!-- /Rental Section -->
 
-    <!-- Popular Section -->
-    <popular-four></popular-four>
-    <!-- /Popular Section -->
-
-    <!-- Testimonial Section -->
-    <testimonial-four></testimonial-four>
-    <!-- /Testimonial Section -->
-
+    
+    
     <price-four></price-four>
+    <!-- /Price Section -->
+ 
   </div>
 </template>
