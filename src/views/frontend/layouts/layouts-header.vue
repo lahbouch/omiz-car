@@ -151,7 +151,7 @@
           </div>
           <menu-header></menu-header>
         </div>
-        <ul
+        <!-- <ul
           class="nav header-navbar-rht"
           v-if="
             route.path !== '/home/index-2' &&
@@ -177,7 +177,7 @@
               ><span><i class="bx bx-lock"></i></span>Sign Up</router-link
             >
           </li>
-        </ul>
+        </ul> -->
         <ul
           class="nav header-navbar-rht"
           v-if="
