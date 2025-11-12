@@ -67,7 +67,7 @@
                 <div class="amount-icon">
                   <span class="day-amt">
                     <p>À partir de</p>
-                    <h6>350 MAD <span> /jour</span></h6>
+                    <h6>300 MAD</h6>
                   </span>
                 </div>
                 <span class="rent-tag"
