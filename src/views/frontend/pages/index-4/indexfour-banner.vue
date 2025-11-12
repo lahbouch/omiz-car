@@ -71,7 +71,7 @@
                   </span>
                 </div>
                 <span class="rent-tag"
-                  ><i class="bx bxs-circle"></i> Available for Rent</span
+                  ><i class="bx bxs-circle"></i>Disponible à la location</span
                 >
                 <img
                   src="@/assets/img/banner/banner.png"
