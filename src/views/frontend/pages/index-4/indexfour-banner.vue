@@ -83,7 +83,7 @@
           </div>
         </div>
       </div>
-      <div class="banner-search">
+      <!-- <div class="banner-search">
         <form class="form-block d-flex align-items-center">
           <div class="search-input">
             <div class="input-block">
@@ -143,7 +143,7 @@
             </button>
           </div>
         </form>
-      </div>
+      </div> -->
     </div>
     <div class="banner-bgs">
       <img
