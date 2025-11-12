@@ -4,7 +4,7 @@
     <div class="main-header">
       <div class="header-left">
         <router-link to="/admin-template/index" class="logo">
-          <img src="@/assets/admin/img/logo.svg" alt="Logo" />
+          <img src="@/assets/admin/img/logo.png" alt="Logo" />
         </router-link>
         <router-link to="/admin-template/index" class="dark-logo">
           <img src="@/assets/admin/img/logo-white.png" alt="Logo" />

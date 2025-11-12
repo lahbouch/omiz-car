@@ -112,7 +112,7 @@
               alt="Logo"
             />
             <img
-              src="@/assets/img/logo.svg"
+              src="@/assets/img/logo.png"
               class="img-fluid dark-logo"
               alt="Logo"
             />
@@ -125,7 +125,7 @@
             <img src="@/assets/img/logo-2.svg" class="img-fluid" alt="Logo" />
           </router-link>
           <router-link to="/home/index" class="navbar-brand logo" v-else>
-            <img src="@/assets/img/logo.svg" class="img-fluid" alt="Logo" />
+            <img src="@/assets/img/logo.png" class="img-fluid" alt="Logo" />
           </router-link>
           <router-link to="/home/index" class="navbar-brand logo-small">
             <img
@@ -138,7 +138,7 @@
         <div class="main-menu-wrapper">
           <div class="menu-header">
             <router-link to="/home/index" class="menu-logo">
-              <img src="@/assets/img/logo.svg" class="img-fluid" alt="Logo" />
+              <img src="@/assets/img/logo.png" class="img-fluid" alt="Logo" />
             </router-link>
             <a
               id="menu_close"

@@ -3,7 +3,10 @@
     <!-- Header -->
     <header class="log-header">
       <router-link to="/home/"
-        ><img class="img-fluid logo-dark" src="@/assets/img/logo.svg" alt="Logo"
+        ><img
+          class="img-fluid logo-dark"
+          src="@/assets/img/logo.png"
+          alt="Logo"
       /></router-link>
     </header>
     <!-- /Header -->
@@ -21,8 +24,14 @@
               >
             </div>
             <h1>Sign Up</h1>
-            <p class="account-subtitle">We'll send a confirmation code to your email.</p>
-            <Form @submit="onSubmit" :validation-schema="schema" v-slot="{ errors }">
+            <p class="account-subtitle">
+              We'll send a confirmation code to your email.
+            </p>
+            <Form
+              @submit="onSubmit"
+              :validation-schema="schema"
+              v-slot="{ errors }"
+            >
               <div class="input-block">
                 <label class="form-label"
                   >Username <span class="text-danger">*</span></label
@@ -30,7 +39,9 @@
                 <input type="text" class="form-control" placeholder="" />
               </div>
               <div class="input-block mt-3">
-                <label class="form-label">Email <span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Email <span class="text-danger">*</span></label
+                >
                 <Field
                   name="email"
                   type="text"
@@ -65,10 +76,17 @@
                   <div class="emailshow text-danger" id="password"></div>
                 </div>
               </div>
-              <button class="btn btn-outline-light w-100 btn-size mt-1" type="submit">Sign In </button>
+              <button
+                class="btn btn-outline-light w-100 btn-size mt-1"
+                type="submit"
+              >
+                Sign In
+              </button>
               <div class="login-or">
                 <span class="or-line"></span>
-                <span class="span-or">Or, Create an account with your email</span>
+                <span class="span-or"
+                  >Or, Create an account with your email</span
+                >
               </div>
               <!-- Social Login -->
               <div class="social-login">
@@ -97,7 +115,8 @@
               </div>
               <!-- /Social Login -->
               <div class="text-center dont-have">
-                Already have an Account? <router-link to="/">Sign In</router-link>
+                Already have an Account?
+                <router-link to="/">Sign In</router-link>
               </div>
             </Form>
           </div>
@@ -136,7 +155,9 @@ export default {
     const passwordError = ref("");
 
     const schema = Yup.object().shape({
-      email: Yup.string().required("Email is required").email("Email is invalid"),
+      email: Yup.string()
+        .required("Email is required")
+        .email("Email is invalid"),
       password: Yup.string()
         .min(6, "Password must be at least 6 characters")
         .required("Password is required"),
@@ -149,7 +170,8 @@ export default {
         Pdata = JSON.parse(Rawdata);
         const Eresult = Pdata.find(({ email }) => email == values.email);
         if (Eresult) {
-          document.getElementById("email").innerHTML = "This email are already exist";
+          document.getElementById("email").innerHTML =
+            "This email are already exist";
         } else {
           Pdata.push(values);
           const jsonData = JSON.stringify(Pdata);

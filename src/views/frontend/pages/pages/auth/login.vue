@@ -3,7 +3,10 @@
     <!-- Header -->
     <header class="log-header">
       <router-link to="/home/"
-        ><img class="img-fluid logo-dark" src="@/assets/img/logo.svg" alt="Logo"
+        ><img
+          class="img-fluid logo-dark"
+          src="@/assets/img/logo.png"
+          alt="Logo"
       /></router-link>
     </header>
     <!-- /Header -->
@@ -21,10 +24,18 @@
               >
             </div>
             <h1>Sign In</h1>
-            <p class="account-subtitle">We'll send a confirmation code to your email.</p>
-            <Form @submit="onSubmit" :validation-schema="schema" v-slot="{ errors }">
+            <p class="account-subtitle">
+              We'll send a confirmation code to your email.
+            </p>
+            <Form
+              @submit="onSubmit"
+              :validation-schema="schema"
+              v-slot="{ errors }"
+            >
               <div class="input-block">
-                <label class="form-label">Email <span class="text-danger">*</span></label>
+                <label class="form-label"
+                  >Email <span class="text-danger">*</span></label
+                >
                 <Field
                   name="email"
                   type="text"
@@ -60,7 +71,9 @@
                 </div>
               </div>
               <div class="input-block mt-3">
-                <router-link class="forgot-link" to="/authentication/forgot-password"
+                <router-link
+                  class="forgot-link"
+                  to="/authentication/forgot-password"
                   >Forgot Password ?</router-link
                 >
               </div>
@@ -71,7 +84,9 @@
                   <span class="checkmark"></span>
                 </label>
               </div>
-              <button class="btn btn-outline-light w-100 btn-size mt-1">Sign In</button>
+              <button class="btn btn-outline-light w-100 btn-size mt-1">
+                Sign In
+              </button>
               <div class="login-or">
                 <span class="or-line"></span>
                 <span class="span-or-log">Or, log in with your email</span>
@@ -104,7 +119,9 @@
               <!-- /Social Login -->
               <div class="text-center dont-have">
                 Don't have an account yet?
-                <router-link to="/authentication/register">Register</router-link>
+                <router-link to="/authentication/register"
+                  >Register</router-link
+                >
               </div>
             </Form>
           </div>
@@ -158,7 +175,9 @@ export default {
       localStorage.setItem("storedData", jsonData);
     }
     const schema = Yup.object().shape({
-      email: Yup.string().required("Email is required").email("Email is invalid"),
+      email: Yup.string()
+        .required("Email is required")
+        .email("Email is invalid"),
       password: Yup.string()
         .min(6, "Password must be at least 6 characters")
         .required("Password is required"),

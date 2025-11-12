@@ -3,7 +3,10 @@
     <!-- Header -->
     <header class="log-header">
       <router-link to="/home/"
-        ><img class="img-fluid logo-dark" src="@/assets/img/logo.svg" alt="Logo"
+        ><img
+          class="img-fluid logo-dark"
+          src="@/assets/img/logo.png"
+          alt="Logo"
       /></router-link>
     </header>
     <!-- /Header -->
@@ -30,7 +33,11 @@
                   >New Password <span class="text-danger">*</span></label
                 >
                 <div class="pass-group">
-                  <input type="password" class="form-control pass-input" placeholder="" />
+                  <input
+                    type="password"
+                    class="form-control pass-input"
+                    placeholder=""
+                  />
                   <span class="fas fa-eye toggle-password"></span>
                 </div>
               </div>
@@ -39,7 +46,11 @@
                   >Confirm Password <span class="text-danger">*</span></label
                 >
                 <div class="pass-group">
-                  <input type="password" class="form-control pass-input" placeholder="" />
+                  <input
+                    type="password"
+                    class="form-control pass-input"
+                    placeholder=""
+                  />
                   <span class="fas fa-eye toggle-password"></span>
                 </div>
               </div>

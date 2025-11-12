@@ -4,7 +4,7 @@
     <!-- Logo -->
     <div class="sidebar-logo">
       <router-link to="/admin-template/index" class="logo logo-normal">
-        <img src="@/assets/admin/img/logo.svg" alt="Logo" />
+        <img src="@/assets/admin/img/logo.png" alt="Logo" />
       </router-link>
       <router-link to="/admin-template/index" class="logo-small">
         <img src="@/assets/admin/img/logo-small.svg" alt="Logo" />

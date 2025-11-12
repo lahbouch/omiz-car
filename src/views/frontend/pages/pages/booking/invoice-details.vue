@@ -11,7 +11,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="invoice-logo">
-                    <img src="@/assets/img/logo.svg" alt="logo" />
+                    <img src="@/assets/img/logo.png" alt="logo" />
                   </div>
                 </div>
                 <div class="col-md-6">

@@ -1,13 +1,19 @@
 <template>
   <div class="container-fuild">
-    <div class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100">
+    <div
+      class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100"
+    >
       <div
         class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
       >
         <div class="col-lg-5 mx-auto">
           <form action="#" class="p-4">
             <div class="mx-auto mb-5 text-center">
-              <img src="@/assets/admin/img/logo.svg" class="img-fluid" alt="Logo" />
+              <img
+                src="@/assets/admin/img/logo.png"
+                class="img-fluid"
+                alt="Logo"
+              />
             </div>
             <div class="card authentication-card mb-0">
               <div class="card-body">
@@ -39,7 +45,9 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-dark w-100">Reset Password</button>
+                  <button type="submit" class="btn btn-dark w-100">
+                    Reset Password
+                  </button>
                 </div>
                 <p class="text-center mt-4">
                   Return to
@@ -57,7 +65,15 @@
     </div>
   </div>
   <div class="login-bg">
-    <img src="@/assets/admin/img/bg/login-bg-01.png" alt="img" class="login-bg-01" />
-    <img src="@/assets/admin/img/bg/login-bg-02.png" alt="img" class="login-bg-02" />
+    <img
+      src="@/assets/admin/img/bg/login-bg-01.png"
+      alt="img"
+      class="login-bg-01"
+    />
+    <img
+      src="@/assets/admin/img/bg/login-bg-02.png"
+      alt="img"
+      class="login-bg-02"
+    />
   </div>
 </template>

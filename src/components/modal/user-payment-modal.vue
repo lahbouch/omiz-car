@@ -24,7 +24,7 @@
               <div class="row align-items-center">
                 <div class="col-md-6">
                   <div class="invoice-logo">
-                    <img src="@/assets/img/logo.svg" alt="logo" />
+                    <img src="@/assets/img/logo.png" alt="logo" />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -116,7 +116,8 @@
                   <div class="invoice-total-box">
                     <div class="invoice-total-inner">
                       <p>
-                        <b>Trip Amount (This does not include fuel)</b> <span>$2592</span>
+                        <b>Trip Amount (This does not include fuel)</b>
+                        <span>$2592</span>
                       </p>
                       <p>Trip Protection Fees <span>+ $25</span></p>
                       <p>Convenience Fees <span>+ $2</span></p>

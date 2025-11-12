@@ -9,7 +9,7 @@
             <div class="footer-contact footer-widget">
               <div class="footer-logo">
                 <img
-                  src="@/assets/img/logo.svg"
+                  src="@/assets/img/logo.png"
                   class="img-fluid aos"
                   alt="logo"
                 />
@@ -187,8 +187,8 @@
             <div class="col-lg-6">
               <div class="copyright-text">
                 <p>
-                  Copyright © {{ new Date().getFullYear() }} <span>Dreams Rent</span>. All Rights
-                  Reserved.
+                  Copyright © {{ new Date().getFullYear() }}
+                  <span>Dreams Rent</span>. All Rights Reserved.
                 </p>
               </div>
             </div>
@@ -206,13 +206,22 @@
                       </a>
                       <div class="dropdown-menu dropdown-menu-end">
                         <a href="javascript:void(0);" class="dropdown-item">
-                          <img src="@/assets/img/flags/fr.png" alt="Img" />French
+                          <img
+                            src="@/assets/img/flags/fr.png"
+                            alt="Img"
+                          />French
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
-                          <img src="@/assets/img/flags/es.png" alt="Img" />Spanish
+                          <img
+                            src="@/assets/img/flags/es.png"
+                            alt="Img"
+                          />Spanish
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
-                          <img src="@/assets/img/flags/de.png" alt="Img" />German
+                          <img
+                            src="@/assets/img/flags/de.png"
+                            alt="Img"
+                          />German
                         </a>
                       </div>
                     </div>

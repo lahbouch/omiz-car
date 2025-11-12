@@ -28,7 +28,9 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="standard-modalLabel">Modal Heading</h4>
+                      <h4 class="modal-title" id="standard-modalLabel">
+                        Modal Heading
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -39,24 +41,27 @@
                     <div class="modal-body">
                       <h6>Text in a modal</h6>
                       <p>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        Duis mollis, est non commodo luctus, nisi erat porttitor
+                        ligula.
                       </p>
                       <hr />
                       <h6>Overflowing text to show scroll behavior</h6>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -67,7 +72,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -118,7 +125,9 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                      <h5 class="modal-title" id="staticBackdropLabel">
+                        Modal title
+                      </h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -127,11 +136,12 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                      terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                      skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                      Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                      single-origin coffee nulla assumenda shoreditch et.
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et.
                     </div>
                     <div class="modal-footer">
                       <button
@@ -141,7 +151,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Understood</button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -176,10 +188,15 @@
                 aria-labelledby="scrollableModalTitle"
                 aria-hidden="true"
               >
-                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div
+                  class="modal-dialog modal-dialog-scrollable"
+                  role="document"
+                >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
+                      <h5 class="modal-title" id="scrollableModalTitle">
+                        Modal title
+                      </h5>
                       <button
                         type="button"
                         class="btn-close"
@@ -189,94 +206,106 @@
                     </div>
                     <div class="modal-body">
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                       <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                        cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-                        dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        Aenean lacinia bibendum nulla sed consectetur. Praesent
+                        commodo cursus magna, vel scelerisque nisl consectetur
+                        et. Donec sed odio dui. Donec ullamcorper nulla non
+                        metus auctor fringilla.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -287,7 +316,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -325,10 +356,14 @@
                 data-bs-keyboard="false"
                 aria-hidden="true"
               >
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="staticBackdropLabel5">Modal title</h4>
+                      <h4 class="modal-title" id="staticBackdropLabel5">
+                        Modal title
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -380,7 +415,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save Changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save Changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -408,7 +445,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalToggleLabel">Modal 1</h4>
+                      <h4 class="modal-title" id="exampleModalToggleLabel">
+                        Modal 1
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -417,7 +456,8 @@
                       ></button>
                     </div>
                     <div class="modal-body">
-                      Show a second modal and hide this one with the button below.
+                      Show a second modal and hide this one with the button
+                      below.
                     </div>
                     <div class="modal-footer">
                       <button
@@ -445,7 +485,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h4>
+                      <h4 class="modal-title" id="exampleModalToggleLabel2">
+                        Modal 2
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -502,7 +544,9 @@
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                      <h4 class="modal-title" id="myLargeModalLabel">
+                        Large modal
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -527,7 +571,9 @@
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+                      <h4 class="modal-title" id="mySmallModalLabel">
+                        Small modal
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -623,7 +669,11 @@
                         <div class="auth-logo">
                           <router-link to="/dashboard" class="logo logo-dark">
                             <span class="logo-lg">
-                              <img src="@/assets/img/logo.svg" alt="Logo" height="42" />
+                              <img
+                                src="@/assets/img/logo.png"
+                                alt="Logo"
+                                height="42"
+                              />
                             </span>
                           </router-link>
                         </div>
@@ -655,7 +705,9 @@
                         </div>
 
                         <div class="mb-3">
-                          <label for="password" class="form-label">Password</label>
+                          <label for="password" class="form-label"
+                            >Password</label
+                          >
                           <input
                             class="form-control"
                             type="password"
@@ -673,7 +725,10 @@
                               id="customCheck1"
                             />
                             <label class="form-check-label" for="customCheck1"
-                              >I accept <a href="javascript:void(0);">Terms and Conditions</a></label
+                              >I accept
+                              <a href="javascript:void(0);"
+                                >Terms and Conditions</a
+                              ></label
                             >
                           </div>
                         </div>
@@ -705,7 +760,11 @@
                         <div class="auth-logo">
                           <router-link to="/dashboard" class="logo logo-dark">
                             <span class="logo-lg">
-                              <img src="@/assets/img/logo.svg" alt="Logo" height="42" />
+                              <img
+                                src="@/assets/img/logo.png"
+                                alt="Logo"
+                                height="42"
+                              />
                             </span>
                           </router-link>
                         </div>
@@ -726,7 +785,9 @@
                         </div>
 
                         <div class="mb-3">
-                          <label for="password1" class="form-label">Password</label>
+                          <label for="password1" class="form-label"
+                            >Password</label
+                          >
                           <input
                             class="form-control"
                             type="password"
@@ -750,7 +811,10 @@
                         </div>
 
                         <div class="mb-2 text-center">
-                          <button class="btn rounded-pill btn-primary" type="submit">
+                          <button
+                            class="btn rounded-pill btn-primary"
+                            type="submit"
+                          >
                             Sign In
                           </button>
                         </div>
@@ -828,7 +892,9 @@
                         </div>
                         <div class="col-md-6">
                           <div class="mb-3">
-                            <label for="field-2" class="form-label">Surname</label>
+                            <label for="field-2" class="form-label"
+                              >Surname</label
+                            >
                             <input
                               type="text"
                               class="form-control"
@@ -841,7 +907,9 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="mb-3">
-                            <label for="field-3" class="form-label">Address</label>
+                            <label for="field-3" class="form-label"
+                              >Address</label
+                            >
                             <input
                               type="text"
                               class="form-control"
@@ -865,7 +933,9 @@
                         </div>
                         <div class="col-md-4">
                           <div class="mb-3">
-                            <label for="field-5" class="form-label">Country</label>
+                            <label for="field-5" class="form-label"
+                              >Country</label
+                            >
                             <input
                               type="text"
                               class="form-control"
@@ -889,7 +959,9 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="">
-                            <label for="field-7" class="form-label">Personal Info</label>
+                            <label for="field-7" class="form-label"
+                              >Personal Info</label
+                            >
                             <textarea
                               class="form-control"
                               id="field-7"
@@ -952,17 +1024,19 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                            aliqua put a bird on it squid single-origin coffee nulla
-                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable
-                            VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod
+                            high life accusamus terry richardson ad squid. 3
+                            wolf moon officia aute, non cupidatat skateboard
+                            dolor brunch. Food truck quinoa nesciunt laborum
+                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
+                            a bird on it squid single-origin coffee nulla
+                            assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred
+                            nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore
+                            sustainable VHS.
                           </div>
                         </div>
                       </div>
@@ -987,17 +1061,19 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                            aliqua put a bird on it squid single-origin coffee nulla
-                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable
-                            VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod
+                            high life accusamus terry richardson ad squid. 3
+                            wolf moon officia aute, non cupidatat skateboard
+                            dolor brunch. Food truck quinoa nesciunt laborum
+                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
+                            a bird on it squid single-origin coffee nulla
+                            assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred
+                            nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore
+                            sustainable VHS.
                           </div>
                         </div>
                       </div>
@@ -1022,17 +1098,19 @@
                           data-bs-parent="#accordion"
                         >
                           <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life
-                            accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                            non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                            aliqua put a bird on it squid single-origin coffee nulla
-                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident.
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable
-                            VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod
+                            high life accusamus terry richardson ad squid. 3
+                            wolf moon officia aute, non cupidatat skateboard
+                            dolor brunch. Food truck quinoa nesciunt laborum
+                            eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put
+                            a bird on it squid single-origin coffee nulla
+                            assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred
+                            nesciunt sapiente ea proident. Ad vegan excepteur
+                            butcher vice lomo. Leggings occaecat craft beer
+                            farm-to-table, raw denim aesthetic synth nesciunt
+                            you probably haven't heard of them accusamus labore
+                            sustainable VHS.
                           </div>
                         </div>
                       </div>
@@ -1098,7 +1176,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="staticBackdropLabel2">Modal title</h4>
+                      <h4 class="modal-title" id="staticBackdropLabel2">
+                        Modal title
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1108,9 +1188,10 @@
                     </div>
                     <div class="modal-body">
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-                        ipsum quasi, error quibusdam debitis maiores hic eum? Vitae nisi
-                        ipsa maiores fugiat deleniti quis reiciendis veritatis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Libero ipsum quasi, error quibusdam debitis
+                        maiores hic eum? Vitae nisi ipsa maiores fugiat deleniti
+                        quis reiciendis veritatis.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -1121,7 +1202,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save Changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save Changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1157,10 +1240,14 @@
                 aria-hidden="true"
               >
                 <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="staticBackdropLabel3">Modal title</h4>
+                      <h4 class="modal-title" id="staticBackdropLabel3">
+                        Modal title
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1170,22 +1257,25 @@
                     </div>
                     <div class="modal-body">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
-                        voluptatibus, ipsam quo est rerum modi quos expedita facere, ex
-                        tempore fuga similique ipsa blanditiis et accusamus temporibus
-                        commodi voluptas! Nobis veniam illo architecto expedita quam
-                        ratione quaerat omnis. In, recusandae eos! Pariatur, deleniti quis
-                        ad nemo ipsam officia temporibus, doloribus fuga asperiores
-                        ratione distinctio velit alias hic modi praesentium aperiam
-                        officiis eaque, accusamus aut. Accusantium assumenda, commodi
-                        nulla provident asperiores fugit inventore iste amet aut placeat
-                        consequatur reprehenderit. Ratione tenetur eligendi, quis aperiam
-                        dolores magni iusto distinctio voluptatibus minus a unde at!
-                        Consequatur voluptatum in eaque obcaecati, impedit accusantium ea
-                        soluta, excepturi, quasi quia commodi blanditiis? Qui blanditiis
-                        iusto corrupti necessitatibus dolorem fugiat consequuntur quod quo
-                        veniam? Labore dignissimos reiciendis accusamus recusandae est
-                        consequuntur iure.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ea voluptatibus, ipsam quo est rerum modi quos
+                        expedita facere, ex tempore fuga similique ipsa
+                        blanditiis et accusamus temporibus commodi voluptas!
+                        Nobis veniam illo architecto expedita quam ratione
+                        quaerat omnis. In, recusandae eos! Pariatur, deleniti
+                        quis ad nemo ipsam officia temporibus, doloribus fuga
+                        asperiores ratione distinctio velit alias hic modi
+                        praesentium aperiam officiis eaque, accusamus aut.
+                        Accusantium assumenda, commodi nulla provident
+                        asperiores fugit inventore iste amet aut placeat
+                        consequatur reprehenderit. Ratione tenetur eligendi,
+                        quis aperiam dolores magni iusto distinctio voluptatibus
+                        minus a unde at! Consequatur voluptatum in eaque
+                        obcaecati, impedit accusantium ea soluta, excepturi,
+                        quasi quia commodi blanditiis? Qui blanditiis iusto
+                        corrupti necessitatibus dolorem fugiat consequuntur quod
+                        quo veniam? Labore dignissimos reiciendis accusamus
+                        recusandae est consequuntur iure.
                       </p>
                       <p>Lorem ipsum dolor sit amet.</p>
                       <p>Lorem ipsum dolor sit amet.</p>
@@ -1203,7 +1293,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save Changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save Changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1239,10 +1331,14 @@
                 aria-hidden="true"
               >
                 <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="staticBackdropLabel4">Modal title</h4>
+                      <h4 class="modal-title" id="staticBackdropLabel4">
+                        Modal title
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1294,7 +1390,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save Changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save Changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1410,7 +1508,10 @@
                 <div class="modal-dialog modal-fullscreen-sm-down">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalFullscreenSmLabel">
+                      <h4
+                        class="modal-title"
+                        id="exampleModalFullscreenSmLabel"
+                      >
                         Full screen below sm
                       </h4>
                       <button
@@ -1444,7 +1545,10 @@
                 <div class="modal-dialog modal-fullscreen-md-down">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalFullscreenMdLabel">
+                      <h4
+                        class="modal-title"
+                        id="exampleModalFullscreenMdLabel"
+                      >
                         Full screen below md
                       </h4>
                       <button
@@ -1478,7 +1582,10 @@
                 <div class="modal-dialog modal-fullscreen-lg-down">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalFullscreenLgLabel">
+                      <h4
+                        class="modal-title"
+                        id="exampleModalFullscreenLgLabel"
+                      >
                         Full screen below lg
                       </h4>
                       <button
@@ -1512,7 +1619,10 @@
                 <div class="modal-dialog modal-fullscreen-xl-down">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalFullscreenXlLabel">
+                      <h4
+                        class="modal-title"
+                        id="exampleModalFullscreenXlLabel"
+                      >
                         Full screen below xl
                       </h4>
                       <button
@@ -1546,7 +1656,10 @@
                 <div class="modal-dialog modal-fullscreen-xxl-down">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalFullscreenXxlLabel">
+                      <h4
+                        class="modal-title"
+                        id="exampleModalFullscreenXxlLabel"
+                      >
                         Full screen below xxl
                       </h4>
                       <button
@@ -1622,7 +1735,9 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        New message
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1636,13 +1751,20 @@
                           <label for="recipient-name" class="col-form-label"
                             >Recipient:</label
                           >
-                          <input type="text" class="form-control" id="recipient-name" />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="recipient-name"
+                          />
                         </div>
                         <div class="mb-3">
                           <label for="message-text" class="col-form-label"
                             >Message:</label
                           >
-                          <textarea class="form-control" id="message-text"></textarea>
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                          ></textarea>
                         </div>
                       </form>
                     </div>
@@ -1654,7 +1776,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Send message</button>
+                      <button type="button" class="btn btn-primary">
+                        Send message
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1793,11 +1917,12 @@
                     <div class="modal-body text-start">
                       <h6>Why We Use Electoral College, Not Popular Vote</h6>
                       <p class="text-muted mb-0">
-                        It is a long established fact that a reader will be distracted by
-                        the readable content of a page when looking at its layout. The
-                        point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here,
-                        content here', making it look like readable English.
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of
+                        letters, as opposed to using 'Content here, content
+                        here', making it look like readable English.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -1826,7 +1951,11 @@
               </div>
             </div>
             <div class="card-body">
-              <button type="button" class="btn-close" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close"
+                aria-label="Close"
+              ></button>
             </div>
           </div>
         </div>
@@ -1891,7 +2020,9 @@
                 <div class="modal-dialog modal-top">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="topModalLabel">Modal Heading</h4>
+                      <h4 class="modal-title" id="topModalLabel">
+                        Modal Heading
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1902,7 +2033,8 @@
                     <div class="modal-body">
                       <h5>Text in a modal</h5>
                       <p>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        Duis mollis, est non commodo luctus, nisi erat porttitor
+                        ligula.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -1913,7 +2045,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1942,7 +2076,8 @@
                       <div class="text-center">
                         <h4 class="mt-0">Text in a modal</h4>
                         <p>
-                          Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                          Duis mollis, est non commodo luctus, nisi erat
+                          porttitor ligula.
                         </p>
                         <button
                           type="button"
@@ -1969,7 +2104,9 @@
                 <div class="modal-dialog modal-sm modal-bottom">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="bottomModalLabel">Modal Heading</h4>
+                      <h4 class="modal-title" id="bottomModalLabel">
+                        Modal Heading
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -1980,7 +2117,8 @@
                     <div class="modal-body">
                       <h5>Text in a modal</h5>
                       <p>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        Duis mollis, est non commodo luctus, nisi erat porttitor
+                        ligula.
                       </p>
                     </div>
                     <div class="modal-footer">
@@ -1991,7 +2129,9 @@
                       >
                         Close
                       </button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -2009,7 +2149,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class="modal-title" id="myCenterModalLabel">Center Modal</h4>
+                      <h4 class="modal-title" id="myCenterModalLabel">
+                        Center Modal
+                      </h4>
                       <button
                         type="button"
                         class="btn-close"
@@ -2020,14 +2162,15 @@
                     <div class="modal-body">
                       <h5>Overflowing text to show scroll behavior</h5>
                       <p>
-                        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-                        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-                        ac consectetur ac, vestibulum at eros.
+                        Cras mattis consectetur purus sit amet fermentum. Cras
+                        justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Morbi leo risus, porta ac consectetur ac, vestibulum at
+                        eros.
                       </p>
                       <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                        et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                        auctor.
+                        Praesent commodo cursus magna, vel scelerisque nisl
+                        consectetur et. Vivamus sagittis lacus vel augue laoreet
+                        rutrum faucibus dolor auctor.
                       </p>
                     </div>
                   </div>
@@ -2048,7 +2191,7 @@
                 <!-- Bottom modal -->
                 <button
                   type="button"
-                  class="btn btn-primary mt-1 me-2"  
+                  class="btn btn-primary mt-1 me-2"
                   data-bs-toggle="modal"
                   data-bs-target="#bottom-modal"
                 >
@@ -2098,8 +2241,9 @@
                         <i class="dripicons-checkmark h1 text-white"></i>
                         <h4 class="mt-2 text-white">Well Done!</h4>
                         <p class="mt-3 text-white">
-                          Cras mattis consectetur purus sit amet fermentum. Cras justo
-                          odio, dapibus ac facilisis in, egestas eget quam.
+                          Cras mattis consectetur purus sit amet fermentum. Cras
+                          justo odio, dapibus ac facilisis in, egestas eget
+                          quam.
                         </p>
                         <button
                           type="button"
@@ -2130,8 +2274,9 @@
                         <i class="dripicons-information h1 text-info"></i>
                         <h4 class="mt-2">Heads up!</h4>
                         <p class="mt-3">
-                          Cras mattis consectetur purus sit amet fermentum. Cras justo
-                          odio, dapibus ac facilisis in, egestas eget quam.
+                          Cras mattis consectetur purus sit amet fermentum. Cras
+                          justo odio, dapibus ac facilisis in, egestas eget
+                          quam.
                         </p>
                         <button
                           type="button"
@@ -2162,8 +2307,9 @@
                         <i class="dripicons-warning h1 text-warning"></i>
                         <h4 class="mt-2">Incorrect Information</h4>
                         <p class="mt-3">
-                          Cras mattis consectetur purus sit amet fermentum. Cras justo
-                          odio, dapibus ac facilisis in, egestas eget quam.
+                          Cras mattis consectetur purus sit amet fermentum. Cras
+                          justo odio, dapibus ac facilisis in, egestas eget
+                          quam.
                         </p>
                         <button
                           type="button"
@@ -2194,8 +2340,9 @@
                         <i class="dripicons-wrong h1 text-white"></i>
                         <h4 class="mt-2 text-white">Oh snap!</h4>
                         <p class="mt-3 text-white">
-                          Cras mattis consectetur purus sit amet fermentum. Cras justo
-                          odio, dapibus ac facilisis in, egestas eget quam.
+                          Cras mattis consectetur purus sit amet fermentum. Cras
+                          justo odio, dapibus ac facilisis in, egestas eget
+                          quam.
                         </p>
                         <button
                           type="button"

@@ -3,7 +3,10 @@
     <!-- Header -->
     <header class="log-header">
       <router-link to="/home/"
-        ><img class="img-fluid logo-dark" src="@/assets/img/logo.svg" alt="Logo"
+        ><img
+          class="img-fluid logo-dark"
+          src="@/assets/img/logo.png"
+          alt="Logo"
       /></router-link>
     </header>
     <!-- /Header -->
@@ -22,10 +25,11 @@
             </div>
             <h1>Forgot Password</h1>
             <p class="account-subtitle">
-              Enter your email and we will send you a link to reset your password.
+              Enter your email and we will send you a link to reset your
+              password.
             </p>
             <form @submit.prevent="submitForm">
-              <div class="input-block ">
+              <div class="input-block">
                 <label class="form-label"
                   >Email Address <span class="text-danger">*</span></label
                 >

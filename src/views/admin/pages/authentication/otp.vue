@@ -1,13 +1,19 @@
 <template>
   <div class="container-fuild">
-    <div class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100">
+    <div
+      class="w-100 overflow-hidden position-relative flex-wrap d-block vh-100"
+    >
       <div
         class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
       >
         <div class="col-lg-5 mx-auto">
           <form action="#" class="digit-group p-4">
             <div class="mx-auto mb-5 text-center">
-              <img src="@/assets/admin/img/logo.svg" class="img-fluid" alt="Logo" />
+              <img
+                src="@/assets/admin/img/logo.png"
+                class="img-fluid"
+                alt="Logo"
+              />
             </div>
             <div class="card authentication-card mb-0">
               <div class="card-body">
@@ -19,12 +25,14 @@
                 <div class="text-center mb-3">
                   <h4 class="mb-1">Verify Your Email</h4>
                   <p class="mb-0">
-                    We have Sent OTP to info@example.com to verify your email address and
-                    activate your account entering the OTP
+                    We have Sent OTP to info@example.com to verify your email
+                    address and activate your account entering the OTP
                   </p>
                 </div>
                 <div class="text-center otp-input">
-                  <div class="d-flex align-items-center justify-content-center mb-3">
+                  <div
+                    class="d-flex align-items-center justify-content-center mb-3"
+                  >
                     <input
                       type="text"
                       class="form-control"
@@ -77,7 +85,9 @@
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-dark w-100">Reset Password</button>
+                  <button type="submit" class="btn btn-dark w-100">
+                    Reset Password
+                  </button>
                 </div>
               </div>
             </div>
@@ -87,7 +97,15 @@
     </div>
   </div>
   <div class="login-bg">
-    <img src="@/assets/admin/img/bg/login-bg-01.png" alt="img" class="login-bg-01" />
-    <img src="@/assets/admin/img/bg/login-bg-02.png" alt="img" class="login-bg-02" />
+    <img
+      src="@/assets/admin/img/bg/login-bg-01.png"
+      alt="img"
+      class="login-bg-01"
+    />
+    <img
+      src="@/assets/admin/img/bg/login-bg-02.png"
+      alt="img"
+      class="login-bg-02"
+    />
   </div>
 </template>
