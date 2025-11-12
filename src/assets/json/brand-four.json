@@ -1,20 +1,26 @@
 [
-    {
-        "Image" : "brand-09.svg"
-    },
-    {
-        "Image" : "brand-10.svg"
-    },
-    {
-        "Image" : "brand-11.svg"
-    },
-    {
-        "Image" : "brand-12.svg"
-    },
-    {
-        "Image" : "brand-13.svg"
-    },
-    {
-        "Image" : "brand-14.svg"
-    }
+  {
+    "Image": "brand-03.png",
+    "name": "Opel"
+  },
+  {
+    "Image": "brand-04.png",
+    "name": "Peugeot"
+  },
+  {
+    "Image": "brand-05.png",
+    "name": "Renault"
+  },
+  {
+    "Image": "brand-06.png",
+    "name": "Siat"
+  },
+  {
+    "Image": "brand-07.png",
+    "name": "KIA"
+  },
+  {
+    "Image": "brand-08.png",
+    "name": "Hyundai"
+  }
 ]
