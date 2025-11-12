@@ -14,7 +14,11 @@
         >
           <Slide v-for="item in brandFour" :key="item.id">
             <div class="brand-wrap">
-              <img :src="getImageUrl(item.Image)" alt="img" width="50" />
+              <img
+                :src="getImageUrl(item.Image)"
+                alt="img"
+                style="width: 120px !important"
+              />
               <p>{{ item.name }}</p>
             </div>
           </Slide>
