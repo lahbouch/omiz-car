@@ -217,7 +217,7 @@
             <div class="footer-contact footer-widget">
               <div class="footer-logo">
                 <img
-                  src="@/assets/img/logo-white.svg"
+                  src="@/assets/img/logo-white.png"
                   class="img-fluid aos"
                   alt="logo"
                 />
