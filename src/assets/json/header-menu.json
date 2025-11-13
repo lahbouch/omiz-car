@@ -3,7 +3,7 @@
         "tittle": "Accueil",
         "showAsTab": false,
         "separateRoute": true,
-        "active_link": "/home/"
+        "route": "/home/index"
       
     },
    
@@ -11,6 +11,7 @@
         "tittle": "Témoignages",
         "showAsTab": false,
         "separateRoute": false,
+        "route": "/pages/testimonial",
         "active_link": "listing"
        
     },
@@ -18,13 +19,15 @@
         "tittle": "Faq",
         "showAsTab": false,
         "separateRoute": false,
+        "route": "/pages/faq",
         "active_link": "listing"
        
     }, 
     {
-        "tittle": "Vehicles",
+        "tittle": "Véhicules",
         "showAsTab": false,
         "separateRoute": false,
+        "route": "/listing/listing-map",
         "active_link": "listing"
        
     },
@@ -32,6 +35,7 @@
         "tittle": "Contact",
         "showAsTab": false,
         "separateRoute": false,
+        "route": "/contact-us",
         "active_link": "pages",
         "active_link1": "pages-booking"
     }

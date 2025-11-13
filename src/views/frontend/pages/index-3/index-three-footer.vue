@@ -15,18 +15,18 @@
                 />
               </div>
               <div class="footer-contact-info">
-                <h6>Want to book a bike instantly Contact Us !!!</h6>
+                <h6>Vous souhaitez réserver un véhicule ? Contactez-nous !</h6>
                 <div class="footer-address">
                   <div class="addr-info">
-                    <a href="tel:+1(888)7601940"
-                      ><i class="bx bxs-phone"></i>+ 1 (888) 760 1940</a
+                    <a href="tel:+212655449468"
+                      ><i class="bx bxs-phone"></i>+212 655 449 468</a
                     >
                   </div>
                 </div>
                 <div class="footer-address">
                   <div class="addr-info">
-                    <a href="mailto:support@example.com"
-                      ><i class="bx bxs-envelope"></i>support@example.com</a
+                    <a href="mailto:omizcar@gmail.com"
+                      ><i class="bx bxs-envelope"></i>omizcar@gmail.com</a
                     >
                   </div>
                 </div>
@@ -56,22 +56,26 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Company</h5>
+              <h5 class="footer-title">Entreprise</h5>
               <ul>
                 <li>
-                  <router-link to="/pages/about-us">Our Company</router-link>
+                  <router-link to="/pages/about-us"
+                    >Notre entreprise</router-link
+                  >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Bike Rent</a>
+                  <router-link to="/listing/listing-map"
+                    >Nos véhicules</router-link
+                  >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Dreams rent USA</a>
+                  <a href="javascript:void(0)">Devenir partenaire</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Dreams rent Worldwide</a>
+                  <router-link to="/pages/faq">FAQ</router-link>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Dreams rent Category</a>
+                  <router-link to="/contact-us">Contact</router-link>
                 </li>
               </ul>
             </div>
@@ -80,22 +84,24 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Vehicles Type</h5>
+              <h5 class="footer-title">Types de véhicules</h5>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">Electric</a>
+                  <router-link to="/listing/listing-map"
+                    >Tous les véhicules</router-link
+                  >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Scooters</a>
+                  <a href="javascript:void(0)">Berlines</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Sports</a>
+                  <a href="javascript:void(0)">Citadines</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Racing Bikes</a>
+                  <a href="javascript:void(0)">SUVs</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Off-road</a>
+                  <a href="javascript:void(0)">Électriques</a>
                 </li>
               </ul>
             </div>
@@ -104,22 +110,24 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Quick Links</h5>
+              <h5 class="footer-title">Liens rapides</h5>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">My account</a>
+                  <router-link to="/contact-us"
+                    >Réserver maintenant</router-link
+                  >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Campaigns</a>
+                  <a href="javascript:void(0)">Campagnes</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Dreams rent Dealers</a>
+                  <a href="javascript:void(0)">Devenir partenaire</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Deals and Incentive</a>
+                  <a href="javascript:void(0)">Offres et promotions</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Financial Services</a>
+                  <a href="javascript:void(0)">Services financiers</a>
                 </li>
               </ul>
             </div>
@@ -128,22 +136,22 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Resources</h5>
+              <h5 class="footer-title">Ressources</h5>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">Support</a>
+                  <router-link to="/pages/faq">Support</router-link>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Security</a>
+                  <a href="javascript:void(0)">Sécurité</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Help Centers</a>
+                  <a href="javascript:void(0)">Centre d'aide</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Preferences</a>
+                  <a href="javascript:void(0)">Préférences</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Preferences</a>
+                  <a href="javascript:void(0)">Clients</a>
                 </li>
               </ul>
             </div>
@@ -152,22 +160,22 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Getting Started</h5>
+              <h5 class="footer-title">Commencer</h5>
               <ul>
                 <li>
-                  <a href="javascript:void(0)">Introduction</a>
+                  <router-link to="/pages/about-us">Introduction</router-link>
                 </li>
                 <li>
                   <a href="javascript:void(0)">Documentation</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Usage</a>
+                  <a href="javascript:void(0)">Utilisation</a>
                 </li>
                 <li>
                   <a href="javascript:void(0)">API</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Elements</a>
+                  <a href="javascript:void(0)">Éléments</a>
                 </li>
               </ul>
             </div>
@@ -188,7 +196,7 @@
               <div class="copyright-text">
                 <p>
                   Copyright © {{ new Date().getFullYear() }}
-                  <span>Dreams Rent</span>. All Rights Reserved.
+                  <span>Omiz Car</span>. Tous droits réservés.
                 </p>
               </div>
             </div>

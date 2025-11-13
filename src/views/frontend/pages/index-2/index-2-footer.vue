@@ -10,33 +10,33 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Company</h4>
+                <h4>Entreprise</h4>
                 <ul class="footer-links">
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Our Company</a
+                    <router-link to="/pages/about-us"
+                      ><i class="fas fa-chevron-right"></i>Notre
+                      entreprise</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link to="/listing/listing-map"
+                      ><i class="fas fa-chevron-right"></i>Nos
+                      véhicules</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Yacht Rent</a
+                      ><i class="fas fa-chevron-right"></i>Devenir partenaire</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Dreams rent USA</a
+                    <router-link to="/pages/faq"
+                      ><i class="fas fa-chevron-right"></i>FAQ</router-link
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Dreams rent
-                      Worldwide</a
-                    >
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Dreams rent
-                      Category</a
+                    <router-link to="/contact-us"
+                      ><i class="fas fa-chevron-right"></i>Contact</router-link
                     >
                   </li>
                 </ul>
@@ -46,31 +46,32 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Vehicles Type</h4>
+                <h4>Types de véhicules</h4>
                 <ul class="footer-links">
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Electric</a
+                    <router-link to="/listing/listing-map"
+                      ><i class="fas fa-chevron-right"></i>Tous les
+                      véhicules</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Scooters</a
+                      ><i class="fas fa-chevron-right"></i>Berlines</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Sports</a
+                      ><i class="fas fa-chevron-right"></i>Citadines</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Racing Bikes</a
+                      ><i class="fas fa-chevron-right"></i>SUVs</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Off-road</a
+                      ><i class="fas fa-chevron-right"></i>Électriques</a
                     >
                   </li>
                 </ul>
@@ -80,33 +81,34 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Quick links</h4>
+                <h4>Liens rapides</h4>
                 <ul class="footer-links">
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>My account</a
+                    <router-link to="/contact-us"
+                      ><i class="fas fa-chevron-right"></i>Réserver
+                      maintenant</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Campaigns</a
+                      ><i class="fas fa-chevron-right"></i>Campagnes</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Dreams rent
-                      Dealers</a
+                      ><i class="fas fa-chevron-right"></i>Devenir partenaire</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Deals and
-                      Incentive</a
+                      ><i class="fas fa-chevron-right"></i>Offres et
+                      promotions</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Financial Services</a
+                      ><i class="fas fa-chevron-right"></i>Services
+                      financiers</a
                     >
                   </li>
                 </ul>
@@ -116,31 +118,31 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Resources</h4>
+                <h4>Ressources</h4>
                 <ul class="footer-links">
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Support</a
+                    <router-link to="/pages/faq"
+                      ><i class="fas fa-chevron-right"></i>Support</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Security</a
+                      ><i class="fas fa-chevron-right"></i>Sécurité</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Help Centers</a
+                      ><i class="fas fa-chevron-right"></i>Centre d'aide</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Preferences</a
+                      ><i class="fas fa-chevron-right"></i>Préférences</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Customers</a
+                      ><i class="fas fa-chevron-right"></i>Clients</a
                     >
                   </li>
                 </ul>
@@ -150,11 +152,12 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Getting Started</h4>
+                <h4>Commencer</h4>
                 <ul class="footer-links">
                   <li>
-                    <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Introduction</a
+                    <router-link to="/pages/about-us"
+                      ><i class="fas fa-chevron-right"></i
+                      >Introduction</router-link
                     >
                   </li>
                   <li>
@@ -164,7 +167,7 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Usage</a
+                      ><i class="fas fa-chevron-right"></i>Utilisation</a
                     >
                   </li>
                   <li>
@@ -174,7 +177,7 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Elements</a
+                      ><i class="fas fa-chevron-right"></i>Éléments</a
                     >
                   </li>
                 </ul>
@@ -184,12 +187,14 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>24/7 Live Support</h4>
+                <h4>Support 24/7</h4>
                 <ul class="footer-address">
-                  <li>Want to book a Yacht instantly Contact Us !!!</li>
-                  <li>Contact : + 1 (888) 760 1940</li>
-                  <li>Emergency : +1 68564 55664</li>
-                  <li>Email : support@example.com</li>
+                  <li>
+                    Vous souhaitez réserver un véhicule ? Contactez-nous !
+                  </li>
+                  <li>Contact : +212 655 449 468</li>
+                  <li>Urgence : +212 666 609 899</li>
+                  <li>Email : omizcar@gmail.com</li>
                   <li class="social-link">
                     <ul>
                       <li>
@@ -233,8 +238,8 @@
       <div class="footer-bottom">
         <div class="copy-right">
           <p>
-            Copyright &copy; {{ new Date().getFullYear() }} <span> Dreams Rent</span> . All Rights
-            Reserved.
+            Copyright &copy; {{ new Date().getFullYear() }}
+            <span> Omiz Car</span> . Tous droits réservés.
           </p>
         </div>
         <div class="app-store-links d-flex align-items-center">

@@ -3,15 +3,19 @@
     <div class="pro-info">
       <div class="pro-badge">
         <span class="badge-km"
-          ><i class="fa-solid fa-person-walking"></i>4.2 Km Away</span
+          ><i class="fa-solid fa-person-walking"></i>4.2 Km de distance</span
         >
         <a href="javascript:void(0);" class="fav-icon"
           ><i class="fa-regular fa-heart"></i
         ></a>
       </div>
       <ul>
-        <li class="del-airport"><i class="fa-solid fa-check"></i>Airport delivery</li>
-        <li class="del-home"><i class="fa-solid fa-check"></i>Home delivery</li>
+        <li class="del-airport">
+          <i class="fa-solid fa-check"></i>Livraison à l'aéroport
+        </li>
+        <li class="del-home">
+          <i class="fa-solid fa-check"></i>Livraison à domicile
+        </li>
       </ul>
     </div>
     <Carousel
@@ -39,7 +43,10 @@
       ref="carousel"
     >
       <Slide v-for="(image, index) in imagesOne" :key="index">
-        <div class="carousel__item slider slider-nav-thumbnails" @click="slideTo(index)">
+        <div
+          class="carousel__item slider slider-nav-thumbnails"
+          @click="slideTo(index)"
+        >
           <img :src="getImageUrl(image.src)" :alt="image.alt" />
         </div>
       </Slide>
@@ -47,72 +54,88 @@
   </div>
   <div class="review-sec pb-0">
     <div class="review-header">
-      <h4>Extra Service</h4>
+      <h4>Services supplémentaires</h4>
     </div>
     <div class="lisiting-service">
       <div class="row">
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-01.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>GPS Navigation Systems</p>
+            <p>Système de navigation GPS</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-02.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Wi-Fi Hotspot</p>
+            <p>Point d'accès Wi-Fi</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-03.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Child Safety Seats</p>
+            <p>Sièges de sécurité pour enfants</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-04.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Fuel Options</p>
+            <p>Options de carburant</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-05.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Roadside Assistance</p>
+            <p>Assistance routière</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-06.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Satellite Radio</p>
+            <p>Radio satellite</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-07.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Additional Accessories</p>
+            <p>Accessoires supplémentaires</p>
           </div>
         </div>
-        <div class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6">
+        <div
+          class="servicelist d-flex align-items-center col-xxl-3 col-xl-4 col-sm-6"
+        >
           <div class="service-img">
             <img src="@/assets/img/icons/service-08.svg" alt="Icon" />
           </div>
           <div class="service-info">
-            <p>Express Check-in/out</p>
+            <p>Enregistrement express</p>
           </div>
         </div>
       </div>

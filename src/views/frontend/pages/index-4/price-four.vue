@@ -306,19 +306,21 @@
                   <h5 class="footer-title">Pages</h5>
                   <ul>
                     <li>
-                      <a href="about-us.html">À propos</a>
+                      <router-link to="/pages/about-us">À propos</router-link>
                     </li>
                     <li>
                       <a href="javascript:void(0)">Devenir partenaire</a>
                     </li>
                     <li>
-                      <a href="faq.html">FAQ</a>
+                      <router-link to="/pages/faq">FAQ</router-link>
                     </li>
                     <li>
-                      <a href="testimonial.html">Témoignages</a>
+                      <router-link to="/pages/testimonial"
+                        >Témoignages</router-link
+                      >
                     </li>
                     <li>
-                      <a href="contact-us.html">Contact</a>
+                      <router-link to="/contact-us">Contact</router-link>
                     </li>
                   </ul>
                 </div>
@@ -382,13 +384,19 @@
             <div class="col-lg-4">
               <ul class="privacy-link">
                 <li>
-                  <a href="privacy-policy.html">Confidentialité</a>
+                  <router-link to="/pages/privacy-policy"
+                    >Confidentialité</router-link
+                  >
                 </li>
                 <li>
-                  <a href="terms-condition.html">Conditions générales</a>
+                  <router-link to="/pages/terms-condition"
+                    >Conditions générales</router-link
+                  >
                 </li>
                 <li>
-                  <a href="javascript:void(0);">Politique de remboursement</a>
+                  <router-link to="/pages/refund-policy"
+                    >Politique de remboursement</router-link
+                  >
                 </li>
               </ul>
             </div>

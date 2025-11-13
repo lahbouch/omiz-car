@@ -8,9 +8,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <div class="form-header text-start mb-0">
-            <h4 class="mb-0 text-dark fw-bold">Availability Details</h4>
+            <h4 class="mb-0 text-dark fw-bold">Détails de disponibilité</h4>
           </div>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <button
+            type="button"
+            class="close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
             <span class="align-center" aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -19,47 +24,51 @@
             <div class="col-lg-12 col-md-12">
               <div class="available-for-ride">
                 <p>
-                  <i class="fa-regular fa-circle-check"></i>Chevrolet Camaro is available
-                  for a ride
+                  <i class="fa-regular fa-circle-check"></i>Toyota Corolla est
+                  disponible pour la location
                 </p>
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <div class="row booking-info">
                 <div class="col-md-4 pickup-address">
-                  <h5>Pickup</h5>
-                  <p>45, 4th Avanue Mark Street USA</p>
-                  <span>Date & time : 11 Jan 2023</span>
+                  <h5>Récupération</h5>
+                  <p>Aéroport de Tanger, Maroc</p>
+                  <span>Date & heure : 11 Jan 2023</span>
                 </div>
                 <div class="col-md-4 drop-address">
-                  <h5>Drop Off</h5>
-                  <p>78, 10th street Laplace USA</p>
-                  <span>Date & time : 11 Jan 2023</span>
+                  <h5>Retour</h5>
+                  <p>Aéroport de Tanger, Maroc</p>
+                  <span>Date & heure : 11 Jan 2023</span>
                 </div>
                 <div class="col-md-4 booking-amount">
-                  <h5>Booking Amount</h5>
-                  <h6><span>$300 </span> /day</h6>
+                  <h5>Montant de la réservation</h5>
+                  <h6><span>450 MAD </span> /jour</h6>
                 </div>
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
               <div class="booking-info seat-select">
-                <h6>Extra Service</h6>
+                <h6>Services supplémentaires</h6>
                 <label class="custom_check">
                   <input type="checkbox" name="rememberme" class="rememberme" />
                   <span class="checkmark"></span>
-                  Baby Seat - <span class="ms-2">$10</span>
+                  Siège bébé - <span class="ms-2">50 MAD</span>
                 </label>
               </div>
             </div>
             <div class="col-md-12">
               <div class="booking-info pay-amount">
-                <h6>Deposit Option</h6>
+                <h6>Option de paiement</h6>
                 <div class="radio radio-btn">
-                  <label> <input type="radio" name="radio" /> Pay Deposit </label>
+                  <label>
+                    <input type="radio" name="radio" /> Payer un acompte
+                  </label>
                 </div>
                 <div class="radio">
-                  <label> <input type="radio" name="radio" /> Full Amount </label>
+                  <label>
+                    <input type="radio" name="radio" /> Montant total
+                  </label>
                 </div>
               </div>
             </div>
@@ -67,14 +76,14 @@
             <div class="col-md-6">
               <div class="booking-info service-tax">
                 <ul>
-                  <li>Booking Price <span>$300</span></li>
-                  <li>Extra Service <span>$10</span></li>
-                  <li>Tax <span>$5</span></li>
+                  <li>Prix de la location <span>450 MAD</span></li>
+                  <li>Services supplémentaires <span>50 MAD</span></li>
+                  <li>Taxes <span>25 MAD</span></li>
                 </ul>
               </div>
               <div class="grand-total">
-                <h5>Grand Total</h5>
-                <span>$315</span>
+                <h5>Total</h5>
+                <span>525 MAD</span>
               </div>
             </div>
           </div>
@@ -84,7 +93,7 @@
             @click="redirectReload"
             to="/pages-booking/booking-order"
             class="btn btn-back"
-            >Go to Details<i class="fa-solid fa-arrow-right"></i
+            >Voir les détails<i class="fa-solid fa-arrow-right"></i
           ></router-link>
         </div>
       </div>

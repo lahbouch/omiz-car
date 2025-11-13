@@ -185,10 +185,10 @@
                   <li class="column-group-last">
                     <div class="input-block mb-0">
                       <div class="search-btn">
-                        <a
-                          href="booking-checkout.html"
+                        <router-link
+                          to="/pages/booking/booking-checkout"
                           class="btn btn-primary check-available w-100"
-                          >Réserver</a
+                          >Réserver</router-link
                         >
                         <a
                           href="javascript:void(0);"
@@ -338,17 +338,17 @@
                   <li class="column-group-last">
                     <div class="input-block mb-0">
                       <div class="search-btn">
-                        <a
-                          href="booking-checkout.html"
+                        <router-link
+                          to="/pages/booking/booking-checkout"
                           class="btn btn-primary check-available w-100"
-                          >Book</a
+                          >Réserver</router-link
                         >
                         <a
                           href="javascript:void(0);"
                           data-bs-toggle="modal"
                           data-bs-target="#enquiry"
                           class="btn btn-theme"
-                          >Enquire Us</a
+                          >Nous contacter</a
                         >
                       </div>
                     </div>

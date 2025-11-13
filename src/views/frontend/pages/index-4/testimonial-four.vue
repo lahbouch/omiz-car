@@ -3,7 +3,10 @@
     <div class="container">
       <div class="section-heading heading-four" data-aos="fade-down">
         <h2>Our Clients Feedback</h2>
-        <p>Provided by customers about their experience with a product or service.</p>
+        <p>
+          Provided by customers about their experience with a product or
+          service.
+        </p>
       </div>
 
       <div class="row row-gap-4 justify-content-center">
@@ -18,8 +21,8 @@
               />
             </div>
             <p>
-              Renting a car from Dreams rent made my vacation so much smoother! The
-              process was quick
+              Renting a car from Dreams rent made my vacation so much smoother!
+              The process was quick
             </p>
             <div class="rating">
               <i class="fas fa-star filled"></i>
@@ -47,8 +50,8 @@
               />
             </div>
             <p>
-              Their wide selection of vehicles, convenient locations, and competitive
-              prices
+              Their wide selection of vehicles, convenient locations, and
+              competitive prices
             </p>
             <div class="rating">
               <i class="fas fa-star filled"></i>
@@ -76,7 +79,8 @@
               />
             </div>
             <p>
-              The spacious SUV we rented comfortably fit our family and all our luggage
+              The spacious SUV we rented comfortably fit our family and all our
+              luggage
             </p>
             <div class="rating">
               <i class="fas fa-star filled"></i>
@@ -95,9 +99,9 @@
       </div>
 
       <div class="view-all-btn text-center aos" data-aos="fade-down">
-        <a href="listing-grid.html" class="btn btn-secondary"
-          >View All<i class="bx bx-right-arrow-alt ms-1"></i
-        ></a>
+        <router-link to="/listing/listing-map" class="btn btn-secondary"
+          >Voir tous<i class="bx bx-right-arrow-alt ms-1"></i
+        ></router-link>
       </div>
 
       <div class="client-slider owl-carousel">
@@ -157,8 +161,9 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/clients/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/clients/${imageName}`, import.meta.url)
+        .href;
     },
-  }
+  },
 };
 </script>
