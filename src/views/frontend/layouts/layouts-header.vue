@@ -151,86 +151,19 @@
           </div>
           <menu-header></menu-header>
         </div>
-        <!-- <ul
-          class="nav header-navbar-rht"
-          v-if="
-            route.path !== '/home/index-2' &&
-            route.path !== '/home/index-3' &&
-            route.path !== '/home/index-4' &&
-            !route.path.startsWith('/listing/') &&
-            !route.path.startsWith('/pages/') &&
-            !route.path.startsWith('/blog/') &&
-            !route.path.startsWith('/user/')
-          "
-        >
-          <li class="nav-item user-link">
-            <router-link
-              class="nav-link btn-secondary btn d-inline-flex align-items-center"
-              to="/"
-              ><i class="bx bx-user me-1"></i>Sign In</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              class="nav-link header-reg d-inline-flex align-items-center"
-              to="/authentication/register"
-              ><span><i class="bx bx-lock"></i></span>Sign Up</router-link
-            >
-          </li>
-        </ul> -->
-        <ul
-          class="nav header-navbar-rht"
-          v-if="
-            route.path === '/home/index-2' ||
-            route.path.startsWith('/listing/') ||
-            route.path.startsWith('/pages/') ||
-            route.path.startsWith('/blog/')
-          "
-        >
-          <li class="nav-item">
-            <router-link class="nav-link header-login" to="/"
-              ><span><i class="fa-regular fa-user"></i></span>Sign
-              In</router-link
-            >
-          </li>
-          <li class="nav-item">
-            <router-link
-              class="nav-link header-reg"
-              to="/authentication/register"
-              ><span><i class="fa-solid fa-lock"></i></span>Sign Up</router-link
-            >
-          </li>
-        </ul>
         <ul class="nav header-navbar-rht" v-if="route.path === '/home/index-3'">
-          <li class="nav-item user-link">
-            <router-link
-              class="nav-link header-user"
-              to="/authentication/register"
-              ><i class="bx bx-user"></i
-            ></router-link>
-          </li>
           <li class="nav-item">
             <router-link class="nav-link header-reg" to="/listing/listing-list"
-              ><span><i class="bx bx-plus-circle"></i></span>Add
-              Listing</router-link
+              ><span><i class="bx bx-plus-circle"></i></span>Ajouter un
+              véhicule</router-link
             >
           </li>
         </ul>
         <ul class="nav header-navbar-rht" v-if="route.path === '/home/index-4'">
           <li class="nav-item">
-            <router-link class="nav-link login-link" to="/"
-              ><span><i class="bx bx-user me-2"></i></span>Sign In /
-            </router-link>
-            <router-link
-              class="nav-link login-link ms-1"
-              to="/authentication/register"
-              >Register
-            </router-link>
-          </li>
-          <li class="nav-item">
             <router-link class="nav-link header-reg" to="/listing/listing-list"
-              ><span><i class="bx bx-plus-circle"></i></span>Add
-              Listing</router-link
+              ><span><i class="bx bx-plus-circle"></i></span>Ajouter un
+              véhicule</router-link
             >
           </li>
         </ul>
