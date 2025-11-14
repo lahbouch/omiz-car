@@ -1,14 +1,38 @@
 <script>
+import adminApi from "@/services/adminApi";
+
 export default {
   data() {
     return {
       showPassword: false,
-      password: null,
+      email: "",
+      password: "",
+      loading: false,
+      error: null,
     };
   },
   methods: {
-    submitForm() {
-      this.$router.push("/admin-template/index");
+    async submitForm() {
+      this.loading = true;
+      this.error = null;
+
+      try {
+        const response = await adminApi.login({
+          email: this.email,
+          password: this.password,
+        });
+
+        // Store the token in localStorage or Vuex store
+        localStorage.setItem("adminToken", response.data.token);
+
+        // Redirect to admin dashboard
+        this.$router.push("/admin-template/index");
+      } catch (error) {
+        this.error =
+          error.response?.data?.error || "Login failed. Please try again.";
+      } finally {
+        this.loading = false;
+      }
     },
     toggleShow() {
       this.showPassword = !this.showPassword;
@@ -26,7 +50,7 @@ export default {
         class="row justify-content-center align-items-center vh-100 overflow-auto flex-wrap"
       >
         <div class="col-lg-5 mx-auto">
-          <form action="/admin-template/index" class="p-4">
+          <form @submit.prevent="submitForm" class="p-4">
             <div class="mx-auto mb-5 text-center">
               <img
                 src="@/assets/admin/img/logo.png"
@@ -45,6 +69,11 @@ export default {
                   <h4 class="mb-1">Welcome Back</h4>
                   <p class="mb-0">Please enter your details to sign in</p>
                 </div>
+
+                <div v-if="error" class="alert alert-danger">
+                  {{ error }}
+                </div>
+
                 <div class="mb-3">
                   <label class="form-label"
                     >Email / Username <span class="text-danger">*</span></label
@@ -52,8 +81,9 @@ export default {
                   <div class="input-group">
                     <input
                       type="text"
-                      value=""
+                      v-model="email"
                       class="form-control border-end-0"
+                      required
                     />
                     <span class="input-group-text border-start-0">
                       <i class="ti ti-user-circle"></i>
@@ -67,8 +97,9 @@ export default {
                   <div class="pass-group">
                     <input
                       :type="showPassword ? 'text' : 'password'"
-                      value="123456"
+                      v-model="password"
                       class="pass-input form-control"
+                      required
                     />
                     <span
                       @click="toggleShow"
@@ -101,8 +132,13 @@ export default {
                   </div>
                 </div>
                 <div class="mt-3">
-                  <button type="submit" class="btn btn-dark w-100">
-                    Login
+                  <button
+                    type="submit"
+                    class="btn btn-dark w-100"
+                    :disabled="loading"
+                  >
+                    <span v-if="loading">Logging in...</span>
+                    <span v-else>Login</span>
                   </button>
                 </div>
               </div>

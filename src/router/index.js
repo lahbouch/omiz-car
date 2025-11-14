@@ -752,6 +752,7 @@ const routes = [
     { path: "extra-services", component: () => import('@/views/admin/pages/rental/extra-services.vue'), },
     { path: "cars", component: () => import('@/views/admin/pages/rental/cars/cars-list.vue'), },
     { path: "add-car", component: () => import('@/views/admin/pages/rental/cars/add-car.vue'), },
+    { path: "add-car-simple", component: () => import('@/views/admin/pages/rental/cars/add-car-simple.vue'), },
     { path: "edit-car", component: () => import('@/views/admin/pages/rental/cars/edit-car.vue'), },
     { path: "car-details", component: () => import('@/views/admin/pages/rental/car-details.vue'), },
   ]

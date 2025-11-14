@@ -18,6 +18,7 @@
     "@j-t-mcc/vue3-chartjs": "^2.1.0",
     "@vueform/slider": "^2.1.10",
     "ant-design-vue": "^4.2.6",
+    "axios": "^1.13.2",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "boxicons": "^2.1.4",

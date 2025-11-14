@@ -1,16 +1,17 @@
-# template-new
+# Omiz Car - Car Rental Service
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the complete web application for Omiz Car, a car rental service based in Tanger, Morocco. The project consists of a Vue.js frontend and a Laravel backend with MySQL database.
+
+## Project Structure
+
+- `/` - Vue.js frontend
+- `/laravel` - Laravel backend API
 
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Frontend Setup
 
 ```sh
 npm install
@@ -27,3 +28,42 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Backend Setup
+
+The backend is built with Laravel and uses MySQL for the database.
+
+1. Navigate to the Laravel directory:
+
+   ```sh
+   cd laravel
+   ```
+
+2. Install PHP dependencies:
+
+   ```sh
+   composer install
+   ```
+
+3. Configure your MySQL database in the `.env` file
+
+4. Run migrations:
+
+   ```sh
+   php artisan migrate
+   ```
+
+5. Seed the database (optional):
+
+   ```sh
+   php artisan db:seed
+   ```
+
+6. Start the development server:
+   ```sh
+   php artisan serve
+   ```
+
+## API Documentation
+
+See [laravel/README.md](laravel/README.md) for detailed API documentation.
