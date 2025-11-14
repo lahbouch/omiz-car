@@ -1,41 +1,42 @@
 [
   {
-    "name": "Rabien Ustoc",
+    "id": 1,
+    "name": "Ahmed Benali",
     "image": "avatar-02.jpg"
   },
   {
-    "name": "Valerie L. Ellis",
+    "id": 2,
+    "name": "Marie Dubois",
     "image": "avatar-03.jpg"
-    
   },
   {
-    "name": "Laverne Marier",
+    "id": 3,
+    "name": "Youssef Amrani",
     "image": "avatar-04.jpg"
-    
   },
   {
-    "name": "Courtland Artois",
+    "id": 4,
+    "name": "Sophie Martin",
     "image": "avatar-05.jpg"
-    
   },
   {
-    "name": "Sydney Salmons",
+    "id": 5,
+    "name": "Omar Cherkaoui",
     "image": "avatar-06.jpg"
-    
   },
   {
-    "name": "Lucas Moquin",
+    "id": 6,
+    "name": "Camille Bernard",
     "image": "avatar-07.jpg"
-    
   },
   {
-    "name": "Philippe Tachel",
+    "id": 7,
+    "name": "Hassan El Fassi",
     "image": "avatar-08.jpg"
-    
   },
   {
-    "name": "Dixie Bazin",
+    "id": 8,
+    "name": "Élodie Petit",
     "image": "avatar-09.jpg"
-    
   }
 ]

@@ -42,10 +42,10 @@
                   </div>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  Service exceptionnel d'Omix Car à Tanger ! La voiture était
+                  parfaite pour explorer la région. Livraison rapide à
+                  l'aéroport et personnel très accueillant. Je recommande
+                  vivement pour vos déplacements au Maroc !
                 </p>
               </div>
             </div>
@@ -60,12 +60,15 @@
           data-aos-duration="1200"
           data-aos-delay="900"
         >
-          <div class="pagination d-flex align-items-center justify-content-center">
+          <div
+            class="pagination d-flex align-items-center justify-content-center"
+          >
             <nav>
               <ul class="pagination">
                 <li class="previtem">
                   <a class="page-link" href="javascript:;"
-                    ><i class="fas fa-regular fa-arrow-left me-2"></i> Prev</a
+                    ><i class="fas fa-regular fa-arrow-left me-2"></i>
+                    Précédent</a
                   >
                 </li>
                 <li class="justify-content-center pagination-center">
@@ -76,7 +79,7 @@
                       </li>
                       <li class="page-item">
                         <a class="active page-link" href="javascript:;"
-                          >2 <span class="visually-hidden">(current)</span></a
+                          >2 <span class="visually-hidden">(actuel)</span></a
                         >
                       </li>
                       <li class="page-item">
@@ -93,7 +96,7 @@
                 </li>
                 <li class="nextlink">
                   <a class="page-link" href="javascript:;"
-                    >Next <i class="fas fa-regular fa-arrow-right ms-2"></i
+                    >Suivant <i class="fas fa-regular fa-arrow-right ms-2"></i
                   ></a>
                 </li>
               </ul>
@@ -112,14 +115,15 @@ export default {
   data() {
     return {
       testimonial: testimonial,
-      title: "Testimonials",
+      title: "Témoignages",
       text: "Pages",
-      text1: "Testimonials",
+      text1: "Avis Clients",
     };
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

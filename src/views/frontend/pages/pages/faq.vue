@@ -11,17 +11,12 @@
               data-bs-toggle="collapse"
               href="#faqOne"
               aria-expanded="false"
-              >What is about rental car deals?</a
+              >Qu'est-ce que la location de voiture avec Omiz Car ?</a
             >
           </h4>
           <div id="faqOne" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Omiz Car est un service de location de voitures à Tanger, au Maroc, spécialisé dans la fourniture de véhicules économiques et fiables pour les touristes et voyageurs d'affaires. Nous offrons des tarifs compétitifs et un service de livraison à l'aéroport pour votre confort.
             </p>
           </div>
         </div>
@@ -32,17 +27,12 @@
               data-bs-toggle="collapse"
               href="#faqTwo"
               aria-expanded="false"
-              >In which areas do you operate?</a
+              >Dans quelles zones opérez-vous ?</a
             >
           </h4>
           <div id="faqTwo" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Nous sommes basés à Tanger et desservons principalement la région de Tanger-Tétouan. Notre service de livraison comprend l'aéroport de Tanger-Ibn Battouta ainsi que les principales zones touristiques et commerciales de la ville.
             </p>
           </div>
         </div>
@@ -53,18 +43,18 @@
               data-bs-toggle="collapse"
               href="#faqThree"
               aria-expanded="false"
-              >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium?</a
+              >Quels documents dois-je fournir pour louer une voiture ?</a
             >
           </h4>
           <div id="faqThree" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Pour louer un véhicule chez Omiz Car, vous devez présenter :
+              <ul>
+                <li>Votre permis de conduire valide</li>
+                <li>Votre passeport ou carte d'identité</li>
+                <li>Une carte de crédit pour la caution</li>
+              </ul>
+              Pour les conducteurs internationaux, un permis international est recommandé.
             </p>
           </div>
         </div>
@@ -75,18 +65,12 @@
               data-bs-toggle="collapse"
               href="#faqFour"
               aria-expanded="false"
-              >Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia?</a
+              >Proposez-vous une assurance ?</a
             >
           </h4>
           <div id="faqFour" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Oui, toutes nos locations comprennent une assurance de base. Nous proposons également des options d'assurance étendue pour votre tranquillité d'esprit pendant votre voyage au Maroc.
             </p>
           </div>
         </div>
@@ -97,18 +81,12 @@
               data-bs-toggle="collapse"
               href="#faqFive"
               aria-expanded="false"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor?</a
+              >Puis-je modifier ou annuler ma réservation ?</a
             >
           </h4>
           <div id="faqFive" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Vous pouvez modifier ou annuler votre réservation gratuitement jusqu'à 24 heures avant la date de début de location. Après ce délai, des frais peuvent s'appliquer selon les conditions générales.
             </p>
           </div>
         </div>
@@ -119,18 +97,12 @@
               data-bs-toggle="collapse"
               href="#faqSix"
               aria-expanded="false"
-              >eque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit?</a
+              >Les véhicules sont-ils équipés d'un GPS ?</a
             >
           </h4>
           <div id="faqSix" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Nos véhicules ne sont pas équipés de GPS intégré, mais nous pouvons vous recommander des applications de navigation gratuites très efficaces au Maroc. Nous pouvons également vous fournir un GPS portable moyennant un supplément.
             </p>
           </div>
         </div>
@@ -141,18 +113,12 @@
               data-bs-toggle="collapse"
               href="#faqSeven"
               aria-expanded="false"
-              >Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod?</a
+              >À quelle heure puis-je récupérer ma voiture ?</a
             >
           </h4>
           <div id="faqSeven" class="card-collapse collapse">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt.
+              Notre service est disponible 24h/24 et 7j/7. Vous pouvez récupérer votre véhicule dès votre arrivée à l'aéroport ou à l'heure convenue lors de votre réservation. La restitution se fait selon l'horaire convenu lors de la réservation.
             </p>
           </div>
         </div>
@@ -168,7 +134,7 @@ export default {
     return {
       title: "FAQ",
       text: "Pages",
-      text1: "FAQ",
+      text1: "Questions Fréquentes",
     };
   },
 };
