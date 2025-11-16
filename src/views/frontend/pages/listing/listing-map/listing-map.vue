@@ -78,15 +78,8 @@
                               </h6>
                             </div>
                             <div class="blog-list-rate">
-                              <div class="list-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star"></i>
-                                <span>{{ item.Reviews }}</span>
-                              </div>
-                              <h6>{{ item.price }}<span>/ Jour</span></h6>
+                              
+                             
                             </div>
                           </div>
 
@@ -410,8 +403,7 @@ export default {
           MakeClass: "", // We'll set this based on some criteria
           profile_image: "avatar-03.jpg", // Default profile image
           image: car.image_path || "car-list-1.jpg", // Use car image or default
-          Reviews: "4.0 (77 Avis)", // Default reviews
-          Meter: car.mileage || "10 KM",
+          
           transmission: car.transmission || "Auto",
           mileage: car.mileage || "10 KM",
           fuel_type: car.fuel_type || "Essence",
@@ -419,7 +411,7 @@ export default {
           year: car.year || "2022",
           persons: "5 Personnes", // Default value
           location: "Tanger, Maroc", // Default location
-          price: `${car.daily_rate || "250"} MAD`,
+          
           isSelected: false,
         }));
 
@@ -436,7 +428,7 @@ export default {
           partKM: carPart02,
           partFuel: carPart03,
           partPower: carPart04,
-          reviews: "4.0 (77 Avis)",
+          reviews: car.Reviews, // Use the reviews from the car data
           address: car.location,
           amount: car.price,
           profile_link: `/listing/listing-details/${car.id}`,
