@@ -11,20 +11,20 @@
         <!-- Car List -->
         <div
           class="col-lg-4 col-md-6"
-          v-for="item in carFour"
+          v-for="item in cars"
           :key="item.id"
           data-aos="fade-down"
         >
           <div class="listing-item listing-item-two">
             <div class="listing-img">
               <router-link
-                to="/listing/listing-details"
-                v-if="item.Slider.length === 1"
+                :to="`/listing/listing-details/${item.id}`"
+                v-if="getCarImages(item).length === 1"
               >
                 <img
-                  :src="getImageUrl(item.Slider[0].Image)"
+                  :src="getImageUrl(getCarImages(item)[0])"
                   class="img-fluid"
-                  alt="Toyota"
+                  alt="Car"
                 />
               </router-link>
               <div class="img-slider owl-carousel" v-else>
@@ -33,13 +33,16 @@
                   :settings="settings"
                   :breakpoints="breakpoints"
                 >
-                  <Slide v-for="slideItem in item.Slider" :key="slideItem.id">
+                  <Slide
+                    v-for="(image, index) in getCarImages(item)"
+                    :key="index"
+                  >
                     <div class="slide-images">
-                      <router-link to="/listing/listing-details">
+                      <router-link :to="`/listing/listing-details/${item.id}`">
                         <img
-                          :src="getImageUrl(slideItem.Image)"
+                          :src="getImageUrl(image)"
                           class="img-fluid"
-                          alt="Toyota"
+                          alt="Car"
                         />
                       </router-link>
                     </div>
@@ -52,15 +55,19 @@
               <div class="fav-item">
                 <div class="d-flex align-items-center gap-2">
                   <span class="featured-text">Populaire</span>
-                  <span class="availability">Available</span>
+                  <span
+                    class="availability"
+                    :class="item.available ? 'available' : 'not-available'"
+                  >
+                    {{ item.available ? "Available" : "Not Available" }}
+                  </span>
                 </div>
                 <a href="javascript:void(0)" class="fav-icon selected">
                   <i class="feather-heart"></i>
                 </a>
               </div>
               <span class="location"
-                ><i class="bx bx-map me-1"></i>{{ item.Location }} (50 km
-                max)</span
+                ><i class="bx bx-map me-1"></i>Tanger, Morocco (50 km max)</span
               >
             </div>
             <div class="listing-content">
@@ -69,9 +76,9 @@
               >
                 <div class="list-rating">
                   <h3 class="listing-title">
-                    <router-link to="/listing/listing-details">{{
-                      item.Name
-                    }}</router-link>
+                    <router-link :to="`/listing/listing-details/${item.id}`">
+                      {{ item.make }} {{ item.model }}
+                    </router-link>
                   </h3>
                   <div class="list-rating">
                     <i class="fas fa-star filled"></i>
@@ -79,36 +86,41 @@
                     <i class="fas fa-star filled"></i>
                     <i class="fas fa-star filled"></i>
                     <i class="fas fa-star"></i>
-                    <span>{{ item.Reviews }}</span>
+                    <span
+                      >(4.0)
+                      {{ Math.floor(Math.random() * 100) + 50 }} Reviews</span
+                    >
                   </div>
                 </div>
                 <div>
-                  <h4 class="price">{{ item.Day }} <span>/ Day</span></h4>
+                  <h4 class="price">
+                    {{ item.daily_rate }} MAD <span>/ Day</span>
+                  </h4>
                 </div>
               </div>
               <div class="listing-details-group">
                 <ul>
                   <li>
                     <img src="@/assets/img/icons/car-parts-01.svg" alt="Auto" />
-                    <p>{{ item.Drive }}</p>
+                    <p>{{ item.transmission || "Auto" }}</p>
                   </li>
                   <li>
                     <img
                       src="@/assets/img/icons/car-parts-02.svg"
                       alt="10 KM"
                     />
-                    <p>{{ item.Km }}</p>
+                    <p>{{ item.mileage || "10 KM" }}</p>
                   </li>
                   <li>
                     <img
                       src="@/assets/img/icons/car-parts-03.svg"
                       alt="Petrol"
                     />
-                    <p>{{ item.Fuel }}</p>
+                    <p>{{ item.fuel_type || "Petrol" }}</p>
                   </li>
                   <li>
                     <img src="@/assets/img/icons/car-parts-05.svg" alt="2018" />
-                    <p>{{ item.Year }}</p>
+                    <p>{{ item.year }}</p>
                   </li>
                 </ul>
               </div>
@@ -131,12 +143,13 @@
 </template>
 <script>
 import { Carousel, Pagination, Slide } from "vue3-carousel";
-import carFour from "@/assets/json/car-four.json";
 import "vue3-carousel/dist/carousel.css";
+import api from "@/services/api";
+
 export default {
   data() {
     return {
-      carFour: carFour,
+      cars: [],
       isSelected: false,
       settings: {
         itemsToShow: 1,
@@ -168,9 +181,67 @@ export default {
     Pagination,
   },
   methods: {
-    getImageUrl(imageName) {
-      return new URL(`/src/assets/img/cars/${imageName}`, import.meta.url).href;
+    getImageUrl(imagePath) {
+      // If it's already a full URL, return as is
+      if (imagePath && imagePath.startsWith("http")) {
+        return imagePath;
+      }
+
+      // If it's a storage path (uploaded images), use the Laravel storage URL
+      if (imagePath && imagePath.startsWith("storage/")) {
+        return `http://localhost:8001/${imagePath}`;
+      }
+
+      // If it's a car-images path (uploaded images), use the Laravel storage URL
+      if (imagePath && imagePath.startsWith("car-images/")) {
+        return `http://localhost:8001/storage/${imagePath}`;
+      }
+
+      // If it's just a filename, construct the path to default images
+      if (imagePath) {
+        return new URL(
+          `/src/assets/admin/img/car/${imagePath}`,
+          import.meta.url
+        ).href;
+      }
+
+      // Default image
+      return new URL("@/assets/img/car-default.jpg", import.meta.url).href;
     },
+    getCarImages(car) {
+      // Return an array of image paths for the car
+      if (car.image_path) {
+        return [car.image_path];
+      }
+      return ["car-default.jpg"];
+    },
+    async fetchCars() {
+      try {
+        const response = await api.getCars();
+        // Limit to 6 cars for the homepage display
+        this.cars = response.data.slice(0, 6);
+      } catch (error) {
+        console.error("Error fetching cars:", error);
+        // Fallback to static data if API fails
+        this.cars = [
+          {
+            id: 1,
+            make: "Toyota",
+            model: "Camry SE 350",
+            year: "2018",
+            daily_rate: "160",
+            available: true,
+            transmission: "Auto",
+            mileage: "10 KM",
+            fuel_type: "Diesel",
+            image_path: "car-11.jpg",
+          },
+        ];
+      }
+    },
+  },
+  async mounted() {
+    await this.fetchCars();
   },
 };
 </script>

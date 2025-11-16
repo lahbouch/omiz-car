@@ -5,12 +5,16 @@
   <div class="page-wrapper">
     <div class="content me-0">
       <div class="mb-3">
-        <router-link to="/admin-template/rentals/cars" class="d-inline-flex align-items-center fw-medium"
+        <router-link
+          to="/admin-template/rentals/cars"
+          class="d-inline-flex align-items-center fw-medium"
           ><i class="ti ti-arrow-left me-1"></i>Cars</router-link
         >
       </div>
       <div class="mb-4 pb-4 border-bottom">
-        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+        <div
+          class="d-flex align-items-center justify-content-between flex-wrap gap-3"
+        >
           <div>
             <div class="d-flex align-items-center flex-wrap gap-2 mb-2">
               <h4 class="me-2">Car ID : #RT5658</h4>
@@ -26,7 +30,9 @@
             <p>Created / Updated at : 25 Jan 2025, 06:45 AM</p>
           </div>
           <div class="d-flex align-items-center gap-3">
-            <router-link to="/admin-template/rentals/edit-car" class="btn btn-dark btn-md d-flex align-items-center"
+            <router-link
+              to="/admin-template/rentals/edit-car"
+              class="btn btn-dark btn-md d-flex align-items-center"
               ><i class="ti ti-edit me-1"></i>Edit Car</router-link
             >
           </div>
@@ -46,21 +52,25 @@
               >
                 <div class="d-flex align-items-center">
                   <span class="avatar avatar-lg me-3">
-                    <img src="@/assets/admin/img/car/car-01.jpg" alt="img" />
+                    <img :src="getImageUrl()" alt="img" />
                   </span>
                   <div>
                     <h6>Acura Sport</h6>
                     <div class="d-flex align-items-center">
                       <p class="mb-0 me-2">Sedan</p>
                       <p class="mb-0 d-flex align-items-center">
-                        <i class="ti ti-circle-filled text-secondary fs-5 me-2"></i
+                        <i
+                          class="ti ti-circle-filled text-secondary fs-5 me-2"
+                        ></i
                         >$60/day
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="d-flex align-items-center flex-wrap gap-3">
-                  <span class="badge badge-md bg-info-transparent">VIN : ABC123456</span>
+                  <span class="badge badge-md bg-info-transparent"
+                    >VIN : ABC123456</span
+                  >
                   <span class="badge badge-md bg-orange-transparent"
                     >Plate Number : ABC 1234</span
                   >
@@ -72,7 +82,10 @@
             <div class="card-header py-0">
               <ul class="nav nav-tabs nav-tabs-bottom tab-dark">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#car-info" data-bs-toggle="tab"
+                  <a
+                    class="nav-link active"
+                    href="#car-info"
+                    data-bs-toggle="tab"
                     >Car Info</a
                   >
                 </li>
@@ -87,10 +100,14 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#car-gallery" data-bs-toggle="tab">Gallery</a>
+                  <a class="nav-link" href="#car-gallery" data-bs-toggle="tab"
+                    >Gallery</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#car-damages" data-bs-toggle="tab">Damages</a>
+                  <a class="nav-link" href="#car-damages" data-bs-toggle="tab"
+                    >Damages</a
+                  >
                 </li>
               </ul>
             </div>
@@ -104,7 +121,8 @@
                         <div class="mb-3">
                           <h6 class="fs-14 fw-semibold mb-1">Color</h6>
                           <p class="d-inline-flex align-items-center fs-13">
-                            <i class="ti ti-square-filled text-warning me-1"></i>Yellow
+                            <i class="ti ti-square-filled text-warning me-1"></i
+                            >Yellow
                           </p>
                         </div>
                       </div>
@@ -188,14 +206,19 @@
                       class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
                     >
                       <h6>Documents</h6>
-                      <router-link to="/admin-template/rentals/edit-car" class="link-default"
+                      <router-link
+                        to="/admin-template/rentals/edit-car"
+                        class="link-default"
                         ><i class="ti ti-edit"></i
                       ></router-link>
                     </div>
                     <div class="d-flex align-items-center flex-wrap gap-4">
                       <div class="d-flex align-items-center">
                         <span class="me-2">
-                          <img src="@/assets/admin/img/icons/pdf-icon.svg" alt="img" />
+                          <img
+                            src="@/assets/admin/img/icons/pdf-icon.svg"
+                            alt="img"
+                          />
                         </span>
                         <div>
                           <h6 class="fs-14 fw-medium">Insurance_car3546</h6>
@@ -204,7 +227,10 @@
                       </div>
                       <div class="d-flex align-items-center">
                         <span class="me-2">
-                          <img src="@/assets/admin/img/icons/pdf-icon.svg" alt="img" />
+                          <img
+                            src="@/assets/admin/img/icons/pdf-icon.svg"
+                            alt="img"
+                          />
                         </span>
                         <div>
                           <h6 class="fs-14 fw-medium">Reg_car3546</h6>
@@ -219,15 +245,21 @@
                       <div class="col-lg-4 col-sm-6">
                         <div class="d-flex flex-column gap-2">
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Push-button Start
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Panoramic Sunroof
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Parking Sensors
                           </p>
                         </div>
@@ -235,15 +267,21 @@
                       <div class="col-lg-4 col-sm-6">
                         <div class="d-flex flex-column gap-2">
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Bluetooth
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Forward Collision Warning
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Adaptive Cruise Control
                           </p>
                         </div>
@@ -251,14 +289,21 @@
                       <div class="col-lg-4 col-sm-6">
                         <div class="d-flex flex-column gap-2">
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Rearview Camera
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i>USB
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
+                            >USB
                           </p>
                           <p class="d-flex align-items-center mb-0">
-                            <i class="ti ti-square-check-filled text-success me-2"></i
+                            <i
+                              class="ti ti-square-check-filled text-success me-2"
+                            ></i
                             >Push Back Seat
                           </p>
                         </div>
@@ -306,13 +351,17 @@
                       </div>
                       <div class="col-xxl-3 col-md-4 col-sm-6">
                         <div class="mb-3">
-                          <h6 class="fs-14 fw-semibold mb-1">Base Kilometers</h6>
+                          <h6 class="fs-14 fw-semibold mb-1">
+                            Base Kilometers
+                          </h6>
                           <p class="fs-13">45</p>
                         </div>
                       </div>
                       <div class="col-xxl-3 col-md-4 col-sm-6">
                         <div class="mb-3">
-                          <h6 class="fs-14 fw-semibold mb-1">Extra Price Per KM</h6>
+                          <h6 class="fs-14 fw-semibold mb-1">
+                            Extra Price Per KM
+                          </h6>
                           <p class="fs-13">$21</p>
                         </div>
                       </div>
@@ -323,7 +372,9 @@
                       class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
                     >
                       <h6>Tarrif</h6>
-                      <router-link to="/admin-template/rentals/edit-car" class="link-default"
+                      <router-link
+                        to="/admin-template/rentals/edit-car"
+                        class="link-default"
                         ><i class="ti ti-edit"></i
                       ></router-link>
                     </div>
@@ -333,12 +384,15 @@
                       >
                         <div>
                           <h6 class="fs-14 fw-semibold mb-1">4 to 5 Days</h6>
-                          <div class="d-flex align-items-center gap-2 flex-wrap">
+                          <div
+                            class="d-flex align-items-center gap-2 flex-wrap"
+                          >
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
                               Daily Price : <span class="text-gray-9">$50</span>
                             </p>
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                              Base Kilometers : <span class="text-gray-9">25</span>
+                              Base Kilometers :
+                              <span class="text-gray-9">25</span>
                             </p>
                             <p class="fs-13 fw-medium mb-0">
                               Kilometers Extra Price :
@@ -352,12 +406,15 @@
                       >
                         <div>
                           <h6 class="fs-14 fw-semibold mb-1">5 to 8 Days</h6>
-                          <div class="d-flex align-items-center gap-2 flex-wrap">
+                          <div
+                            class="d-flex align-items-center gap-2 flex-wrap"
+                          >
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
                               Daily Price : <span class="text-gray-9">$80</span>
                             </p>
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                              Base Kilometers : <span class="text-gray-9">15</span>
+                              Base Kilometers :
+                              <span class="text-gray-9">15</span>
                             </p>
                             <p class="fs-13 fw-medium mb-0">
                               Kilometers Extra Price :
@@ -371,12 +428,15 @@
                       >
                         <div>
                           <h6 class="fs-14 fw-semibold mb-1">3 to 8 Days</h6>
-                          <div class="d-flex align-items-center gap-2 flex-wrap">
+                          <div
+                            class="d-flex align-items-center gap-2 flex-wrap"
+                          >
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
                               Daily Price : <span class="text-gray-9">$56</span>
                             </p>
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                              Base Kilometers : <span class="text-gray-9">54</span>
+                              Base Kilometers :
+                              <span class="text-gray-9">54</span>
                             </p>
                             <p class="fs-13 fw-medium mb-0">
                               Kilometers Extra Price :
@@ -390,12 +450,15 @@
                       >
                         <div>
                           <h6 class="fs-14 fw-semibold mb-1">4 to 8 Days</h6>
-                          <div class="d-flex align-items-center gap-2 flex-wrap">
+                          <div
+                            class="d-flex align-items-center gap-2 flex-wrap"
+                          >
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
                               Daily Price : <span class="text-gray-9">$50</span>
                             </p>
                             <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                              Base Kilometers : <span class="text-gray-9">25</span>
+                              Base Kilometers :
+                              <span class="text-gray-9">25</span>
                             </p>
                             <p class="fs-13 fw-medium mb-0">
                               Kilometers Extra Price :
@@ -415,7 +478,9 @@
                     class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
                   >
                     <h6>Extra Services</h6>
-                    <router-link to="/admin-template/rentals/edit-car" class="link-default"
+                    <router-link
+                      to="/admin-template/rentals/edit-car"
+                      class="link-default"
                       ><i class="ti ti-edit"></i
                     ></router-link>
                   </div>
@@ -423,31 +488,43 @@
                     <div class="col-lg-4 col-sm-6">
                       <div class="d-flex flex-column gap-2">
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
                           >Navigation
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i>Fuel
-                          Pre-Purchase
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
+                          >Fuel Pre-Purchase
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i>USB
-                          Charger
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
+                          >USB Charger
                         </p>
                       </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                       <div class="d-flex flex-column gap-2">
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i>Wi-Fi
-                          Hotspot
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
+                          >Wi-Fi Hotspot
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
                           >Roadside Assistance
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
                           >Express Check-in/out
                         </p>
                       </div>
@@ -455,16 +532,22 @@
                     <div class="col-lg-4 col-sm-6">
                       <div class="d-flex flex-column gap-2">
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i>Child
-                          Safety Seats
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
+                          >Child Safety Seats
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
                           >Satellite Radio
                         </p>
                         <p class="d-flex align-items-center mb-0">
-                          <i class="ti ti-square-check-filled text-success me-2"></i>Toll
-                          Pass
+                          <i
+                            class="ti ti-square-check-filled text-success me-2"
+                          ></i
+                          >Toll Pass
                         </p>
                       </div>
                     </div>
@@ -482,7 +565,9 @@
                     class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
                   >
                     <h6>Damages</h6>
-                    <router-link to="/admin-template/rentals/edit-car" class="link-default"
+                    <router-link
+                      to="/admin-template/rentals/edit-car"
+                      class="link-default"
                       ><i class="ti ti-edit"></i
                     ></router-link>
                   </div>
@@ -497,8 +582,8 @@
                             >
                           </div>
                           <p class="fs-13">
-                            Minor surface marks, often from keys, branches, or road
-                            debris.
+                            Minor surface marks, often from keys, branches, or
+                            road debris.
                           </p>
                         </div>
                         <div class="col-xxl-4 col-md-5">
@@ -515,12 +600,14 @@
                         <div class="col-xxl-8 col-md-7">
                           <div class="d-flex align-items-center gap-2 mb-1">
                             <h6 class="fs-14 fw-medium">Dashboard Damage</h6>
-                            <span class="badge bg-secondary-transparent badge-sm"
+                            <span
+                              class="badge bg-secondary-transparent badge-sm"
                               >Exterior</span
                             >
                           </div>
                           <p class="fs-13">
-                            Cracks, scratches, or faded surfaces due to heat exposure.
+                            Cracks, scratches, or faded surfaces due to heat
+                            exposure.
                           </p>
                         </div>
                         <div class="col-xxl-4 col-md-5">
@@ -536,13 +623,16 @@
                       <div class="row align-items-center row-gap-3">
                         <div class="col-xxl-8 col-md-7">
                           <div class="d-flex align-items-center gap-2 mb-1">
-                            <h6 class="fs-14 fw-medium">Torn/Dirty Upholstery</h6>
+                            <h6 class="fs-14 fw-medium">
+                              Torn/Dirty Upholstery
+                            </h6>
                             <span class="badge bg-pink-transparent badge-sm"
                               >Interior</span
                             >
                           </div>
                           <p class="fs-13">
-                            Seats, door panels, or carpets with stains, rips, or burns.
+                            Seats, door panels, or carpets with stains, rips, or
+                            burns.
                           </p>
                         </div>
                         <div class="col-xxl-4 col-md-5">
@@ -564,7 +654,8 @@
                             >
                           </div>
                           <p class="fs-13">
-                            Non-functional windows, AC, or infotainment system damage.
+                            Non-functional windows, AC, or infotainment system
+                            damage.
                           </p>
                         </div>
                         <div class="col-xxl-4 col-md-5">
@@ -605,7 +696,9 @@
                     <h6 class="fs-14 fw-semibold mb-1">Active</h6>
                     <p class="fs-13">
                       Car status Changes as
-                      <span class="text-gray-9 fw-medium">Active for Booking</span>
+                      <span class="text-gray-9 fw-medium"
+                        >Active for Booking</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -652,7 +745,8 @@
                   <div>
                     <h6 class="fs-14 fw-semibold mb-1">Car Return</h6>
                     <p class="fs-13">
-                      Car has been <span class="text-gray-9 fw-medium">Returned</span> by
+                      Car has been
+                      <span class="text-gray-9 fw-medium">Returned</span> by
                       Customer
                     </p>
                   </div>
@@ -713,7 +807,9 @@
       </div>
     </div>
     <!-- Footer-->
-    <div class="footer d-sm-flex align-items-center justify-content-between bg-white p-3">
+    <div
+      class="footer d-sm-flex align-items-center justify-content-between bg-white p-3"
+    >
       <p class="mb-0">
         <a href="javascript:void(0);">Privacy Policy</a>
         <a href="javascript:void(0);" class="ms-4">Terms of Use</a>
@@ -727,3 +823,29 @@
   </div>
   <!-- /Page Wrapper -->
 </template>
+
+<script>
+export default {
+  methods: {
+    getImageUrl() {
+      // For now, we're using a static image
+      // In a real implementation, this would fetch car data from an API
+      // and use the car's image_path property
+      // Check if there's an uploaded image path, otherwise use default
+      const imagePath = null; // This would come from car data in a real implementation
+
+      if (imagePath) {
+        // Handle uploaded images
+        if (imagePath.startsWith("storage/")) {
+          return `http://localhost:8001/${imagePath}`;
+        } else {
+          return `http://localhost:8001/storage/${imagePath}`;
+        }
+      }
+
+      // Fallback to default image
+      return new URL("@/assets/admin/img/car/car-01.jpg", import.meta.url).href;
+    },
+  },
+};
+</script>

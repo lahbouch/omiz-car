@@ -203,7 +203,7 @@
                         class="avatar me-2 flex-shrink-0"
                       >
                         <img
-                          :src="getImageURL(message.image)"
+                          :src="getImageURL('avatar-20.jpg')"
                           class="rounded-circle"
                           alt=""
                         />
@@ -212,7 +212,7 @@
                         <a
                           href="javascript:void(0);"
                           class="fs-14 fw-semibold"
-                          >{{ message.from }}</a
+                          >{{ message.name }}</a
                         >
                       </h6>
                     </div>
@@ -224,7 +224,9 @@
                     <p class="text-gray-9">{{ message.email }}</p>
                   </td>
                   <td>
-                    <p class="text-gray-9">{{ message.createdDate }}</p>
+                    <p class="text-gray-9">
+                      {{ formatDate(message.created_at) }}
+                    </p>
                   </td>
                   <td>
                     <span
@@ -266,17 +268,6 @@
         </div>
       </div>
       <!-- /Contact Messages Table -->
-
-      <!-- Info Message -->
-      <div class="alert alert-info mt-3">
-        <p class="mb-0">
-          <i class="ti ti-info-circle me-2"></i>
-          This page would connect to a contact messages API endpoint in a real
-          implementation. Currently showing sample data for demonstration
-          purposes.
-        </p>
-      </div>
-      <!-- /Info Message -->
 
       <!-- Pagination -->
       <div class="d-sm-flex align-items-center justify-content-between p-3">
@@ -346,59 +337,15 @@
   </div>
 </template>
 <script>
+import adminApi from "@/services/adminApi";
+
 export default {
   data() {
     return {
-      messages: [
-        {
-          id: 1,
-          from: "Andrew Simons",
-          image: "avatar-20.jpg",
-          phone: "+1 555 123 4567",
-          email: "andrew@example.com",
-          createdDate: "24 Jan 2025",
-          message:
-            "Hi, I booked a car but haven't received a confirmation email. Can you check?",
-        },
-        {
-          id: 2,
-          from: "David Steiger",
-          image: "avatar-21.jpg",
-          phone: "+44 7911 123456",
-          email: "david@example.com",
-          createdDate: "19 Dec 2024",
-          message: "I need to change my pickup location. Is that possible?",
-        },
-        {
-          id: 3,
-          from: "Virginia Phu",
-          image: "avatar-12.jpg",
-          phone: "+33 612 345678",
-          email: "phu@example.com",
-          createdDate: "11 Dec 2024",
-          message: "What is your cancellation policy?",
-        },
-        {
-          id: 4,
-          from: "Walter Hartmann",
-          image: "avatar-22.jpg",
-          phone: "+61 412 345 678",
-          email: "walter@example.com",
-          createdDate: "29 Nov 2024",
-          message: "Do you offer child seats for rental cars?",
-        },
-        {
-          id: 5,
-          from: "Andrea Jermaine",
-          image: "avatar-27.jpg",
-          phone: "+91 98765 43210",
-          email: "jermaine@example.com",
-          createdDate: "03 Nov 2024",
-          message: "Can I extend my rental period?",
-        },
-      ],
+      messages: [],
       searchQuery: "",
       messageToDelete: null,
+      loading: true,
     };
   },
   methods: {
@@ -408,6 +355,25 @@ export default {
         import.meta.url
       ).href;
     },
+    formatDate(dateString) {
+      if (!dateString) return "N/A";
+      const date = new Date(dateString);
+      return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      });
+    },
+    async fetchMessages() {
+      try {
+        const response = await adminApi.getContactMessages();
+        this.messages = response.data;
+      } catch (error) {
+        console.error("Error fetching contact messages:", error);
+      } finally {
+        this.loading = false;
+      }
+    },
     deleteMessage(messageId) {
       this.messageToDelete = messageId;
       // Show the modal
@@ -416,12 +382,18 @@ export default {
       );
       modal.show();
     },
-    confirmDelete() {
+    async confirmDelete() {
       if (this.messageToDelete) {
-        this.messages = this.messages.filter(
-          (message) => message.id !== this.messageToDelete
-        );
-        this.messageToDelete = null;
+        try {
+          await adminApi.deleteContactMessage(this.messageToDelete);
+          // Remove the message from the list
+          this.messages = this.messages.filter(
+            (message) => message.id !== this.messageToDelete
+          );
+          this.messageToDelete = null;
+        } catch (error) {
+          console.error("Error deleting contact message:", error);
+        }
       }
     },
     searchMessages() {
@@ -430,6 +402,7 @@ export default {
     },
   },
   mounted() {
+    this.fetchMessages();
     // Initialize tooltips
     const tooltipTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="tooltip"]')

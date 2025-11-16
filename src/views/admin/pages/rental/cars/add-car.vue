@@ -18,84 +18,149 @@
             <ul class="nav d-flex align-items-center flex-wrap gap-3">
               <li
                 class="nav-item"
-                :class="currentStep === 1 ? 'active' : currentStep > 1 ? 'activated' : ''"
+                :class="
+                  currentStep === 1
+                    ? 'active'
+                    : currentStep > 1
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-info-circle me-1"></i>Basic</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 2 ? 'active' : currentStep > 2 ? 'activated' : ''"
+                :class="
+                  currentStep === 2
+                    ? 'active'
+                    : currentStep > 2
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-flame me-1"></i>Features</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 3 ? 'active' : currentStep > 3 ? 'activated' : ''"
+                :class="
+                  currentStep === 3
+                    ? 'active'
+                    : currentStep > 3
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-files me-1"></i>Pricing</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 4 ? 'active' : currentStep > 4 ? 'activated' : ''"
+                :class="
+                  currentStep === 4
+                    ? 'active'
+                    : currentStep > 4
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-float-center me-1"></i>Extra Services</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 5 ? 'active' : currentStep > 5 ? 'activated' : ''"
+                :class="
+                  currentStep === 5
+                    ? 'active'
+                    : currentStep > 5
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-file-invoice me-1"></i>Uploads</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 6 ? 'active' : currentStep > 6 ? 'activated' : ''"
+                :class="
+                  currentStep === 6
+                    ? 'active'
+                    : currentStep > 6
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-id me-1"></i>Damages</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 7 ? 'active' : currentStep > 7 ? 'activated' : ''"
+                :class="
+                  currentStep === 7
+                    ? 'active'
+                    : currentStep > 7
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-question-mark me-1"></i>FAQ</a
                 >
               </li>
               <li
                 class="nav-item"
-                :class="currentStep === 8 ? 'active' : currentStep > 8 ? 'activated' : ''"
+                :class="
+                  currentStep === 8
+                    ? 'active'
+                    : currentStep > 8
+                    ? 'activated'
+                    : ''
+                "
                 ref="progressSteps"
               >
-                <a href="javascript:void(0);" class="nav-link d-flex align-items-center"
+                <a
+                  href="javascript:void(0);"
+                  class="nav-link d-flex align-items-center"
                   ><i class="ti ti-seo me-1"></i>SEO</a
                 >
               </li>
             </ul>
             <fieldset id="first-field" v-if="currentStep === 1">
-              <form action="#">
+              <form @submit.prevent="submitForm">
                 <div
                   class="filterbox p-20 mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3"
                 >
                   <h4 class="d-flex align-items-center">
-                    <i class="ti ti-info-circle text-secondary me-2"></i>Basic Info
+                    <i class="ti ti-info-circle text-secondary me-2"></i>Basic
+                    Info
                   </h4>
                   <div class="dropdown flag-dropdown">
                     <a
@@ -153,13 +218,19 @@
                           class="d-flex align-items-center justify-content-center avatar avatar-xxl me-3 flex-shrink-0 border rounded-circle frames"
                         >
                           <img
-                            src="@/assets/admin/img/car/car-02.jpg"
+                            :src="
+                              previewImage ||
+                              '@/assets/admin/img/car/car-02.jpg'
+                            "
                             class="img-fluid rounded-circle"
-                            alt="brands"
+                            alt="Car"
+                            style="width: 100%; height: 100%; object-fit: cover"
                           />
                           <a
                             href="javascript:void(0);"
                             class="upload-img-trash trash-end btn btn-sm rounded-circle"
+                            @click="removeImage"
+                            v-if="previewImage"
                           >
                             <i class="ti ti-trash fs-12"></i>
                           </a>
@@ -172,7 +243,8 @@
                             <input
                               type="file"
                               class="form-control image-sign"
-                              multiple=""
+                              @change="handleImageUpload"
+                              accept="image/*"
                             />
                           </div>
                           <p>Recommended size is 500px x 500px</p>
@@ -192,7 +264,11 @@
                         <label class="form-label"
                           >Name <span class="text-danger">*</span></label
                         >
-                        <input type="text" class="form-control" />
+                        <input
+                          type="text"
+                          class="form-control"
+                          v-model="carData.make"
+                        />
                       </div>
                       <div class="mb-3">
                         <label class="form-label">Permalink</label>
@@ -215,7 +291,8 @@
                               class="d-flex align-items-center justify-content-between"
                             >
                               <label class="form-label"
-                                >Car Type <span class="text-danger">*</span></label
+                                >Car Type
+                                <span class="text-danger">*</span></label
                               >
                               <a
                                 href="javascript:void(0);"
@@ -281,7 +358,8 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Category <span class="text-danger">*</span></label
+                              >Category
+                              <span class="text-danger">*</span></label
                             >
                             <vue-select
                               :options="Category"
@@ -293,7 +371,11 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label">Plate Number</label>
-                            <input type="text" class="form-control" />
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="carData.registration_number"
+                            />
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -305,7 +387,8 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Main Location <span class="text-danger">*</span></label
+                              >Main Location
+                              <span class="text-danger">*</span></label
                             >
                             <vue-select
                               :options="Mainlocation"
@@ -316,7 +399,9 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
-                            <label class="form-label">Link Other Location</label>
+                            <label class="form-label"
+                              >Link Other Location</label
+                            >
                             <vue-select
                               :options="Otherlocation"
                               v-model="selectedFive"
@@ -337,7 +422,11 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label">Odometer</label>
-                            <input type="text" class="form-control" />
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="carData.mileage"
+                            />
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -355,7 +444,8 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Year of Car <span class="text-danger">*</span></label
+                              >Year of Car
+                              <span class="text-danger">*</span></label
                             >
                             <div class="input-icon-end position-relative">
                               <a-date-picker
@@ -363,6 +453,7 @@
                                 class="form-control yearpicker"
                                 placeholder="Select Year"
                                 picker="year"
+                                v-model="carData.year"
                               />
                               <span class="input-icon-addon">
                                 <i class="ti ti-calendar"></i>
@@ -383,7 +474,11 @@
                         <div class="col-lg-4 col-md-6">
                           <div class="mb-3">
                             <label class="form-label">Mileage</label>
-                            <input type="text" class="form-control" />
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="carData.mileage"
+                            />
                           </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -446,7 +541,8 @@
                   class="filterbox p-20 mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3"
                 >
                   <h4 class="d-flex align-items-center">
-                    <i class="ti ti-flame text-secondary me-2"></i>Features & Amenities
+                    <i class="ti ti-flame text-secondary me-2"></i>Features &
+                    Amenities
                   </h4>
                   <div class="dropdown flag-dropdown">
                     <a
@@ -505,6 +601,7 @@
                                 class="form-check-input select-all"
                                 type="checkbox"
                                 id="select-all1"
+                                @change="toggleAllFeatures"
                               />
                               <label class="form-check-label" for="amenity">
                                 Check All
@@ -799,6 +896,215 @@
                               <input
                                 class="form-check-input"
                                 type="checkbox"
+                                id="amenity21"
+                                v-model="features.forwardCollisionWarning"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Forward Collision Warning
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity20"
+                                v-model="features.androidAuto"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Android Auto
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity19"
+                                v-model="features.appleCarplay"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Built-in Sat Nav
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity16"
+                                v-model="features.audioIpod"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Built-in Sat Nav
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity15"
+                                v-model="features.qiWirelessCharging"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Qi Wireless Charging
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity11"
+                                v-model="features.builtInSatNav"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity32"
+                                v-model="features.fabricInterior"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Leather Interior
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity31"
+                                v-model="features.leatherInterior"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity30"
+                                v-model="features.towingHook"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity29"
+                                v-model="features.rearviewCamera"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity24"
+                                v-model="features.activeParkingAssist"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Rear Parking Sensors
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity26"
+                                v-model="features.adaptiveHeadlights"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Adaptive Headlights
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity8"
+                                v-model="features.keylessAccess"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity7"
+                                v-model="features.pushButtonStart"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Push Button Start
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity5"
+                                v-model="features.panoramicSunroof"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Panoramic Sunroof
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity4"
+                                v-model="features.sunroof"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Sunroof
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity18"
+                                v-model="features.adaptiveCruiseControl"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Cruise Control
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity3"
+                                v-model="features.luxuryClimateControl"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Luxury Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                id="amenity2"
+                                v-model="features.climateControlTwoZones"
+                              />
+                              <label class="form-check-label" for="amenity">
+                                Air Condition
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
                                 id="amenity20"
                               />
                               <label class="form-check-label" for="amenity20">
@@ -827,7 +1133,19 @@
                               <input
                                 class="form-check-input"
                                 type="checkbox"
+                                id="amenity23"
+                                v-model="features.automaticEmergencyBraking"
+                              />
+                              <label class="form-check-label" for="amenity23">
+                                Automatic Emergency Braking
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
                                 id="amenity22"
+                                v-model="features.laneDepartureWarning"
                               />
                               <label class="form-check-label" for="amenity22">
                                 Lane Departure Warning
@@ -870,6 +1188,7 @@
                                 class="form-check-input"
                                 type="checkbox"
                                 id="amenity25"
+                                v-model="features.automaticHighBeams"
                               />
                               <label class="form-check-label" for="amenity25">
                                 Automatic High Beams
@@ -990,7 +1309,8 @@
                   class="filterbox p-20 mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3"
                 >
                   <h4 class="d-flex align-items-center">
-                    <i class="ti ti-files text-secondary me-2"></i>Pricing & Tariff
+                    <i class="ti ti-files text-secondary me-2"></i>Pricing &
+                    Tariff
                   </h4>
                   <div class="dropdown flag-dropdown">
                     <a
@@ -1045,9 +1365,12 @@
                         <div class="col-lg-12">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Pricing Type <span class="text-danger">*</span></label
+                              >Pricing Type
+                              <span class="text-danger">*</span></label
                             >
-                            <div class="d-flex align-items-center flex-wrap gap-3">
+                            <div
+                              class="d-flex align-items-center flex-wrap gap-3"
+                            >
                               <div class="form-check mb-0">
                                 <input
                                   class="form-check-input"
@@ -1098,7 +1421,8 @@
                         <div class="col-lg-3 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Daily Price <span class="text-danger">*</span></label
+                              >Daily Price
+                              <span class="text-danger">*</span></label
                             >
                             <input type="text" class="form-control" />
                           </div>
@@ -1106,7 +1430,8 @@
                         <div class="col-lg-3 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Weekly Price <span class="text-danger">*</span></label
+                              >Weekly Price
+                              <span class="text-danger">*</span></label
                             >
                             <input type="text" class="form-control" />
                           </div>
@@ -1114,7 +1439,8 @@
                         <div class="col-lg-3 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Monthly Price <span class="text-danger">*</span></label
+                              >Monthly Price
+                              <span class="text-danger">*</span></label
                             >
                             <input type="text" class="form-control" />
                           </div>
@@ -1122,7 +1448,8 @@
                         <div class="col-lg-3 col-md-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Yearly Price <span class="text-danger">*</span></label
+                              >Yearly Price
+                              <span class="text-danger">*</span></label
                             >
                             <input type="text" class="form-control" />
                           </div>
@@ -1191,13 +1518,19 @@
                             class="d-flex align-items-center justify-content-between flex-wrap bg-white gap-3 border br-5 p-20 mb-1"
                           >
                             <div>
-                              <h6 class="fs-14 fw-semibold mb-1">4 to 5 Days</h6>
-                              <div class="d-flex align-items-center gap-2 flex-wrap">
+                              <h6 class="fs-14 fw-semibold mb-1">
+                                4 to 5 Days
+                              </h6>
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap"
+                              >
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Daily Price : <span class="text-gray-9">$50</span>
+                                  Daily Price :
+                                  <span class="text-gray-9">$50</span>
                                 </p>
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Base Kilometers : <span class="text-gray-9">25</span>
+                                  Base Kilometers :
+                                  <span class="text-gray-9">25</span>
                                 </p>
                                 <p class="fs-13 fw-medium mb-0">
                                   Kilometers Extra Price :
@@ -1226,13 +1559,19 @@
                             class="d-flex align-items-center justify-content-between flex-wrap bg-white gap-3 border p-20 br-5 mb-1"
                           >
                             <div>
-                              <h6 class="fs-14 fw-semibold mb-1">5 to 8 Days</h6>
-                              <div class="d-flex align-items-center gap-2 flex-wrap">
+                              <h6 class="fs-14 fw-semibold mb-1">
+                                5 to 8 Days
+                              </h6>
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap"
+                              >
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Daily Price : <span class="text-gray-9">$80</span>
+                                  Daily Price :
+                                  <span class="text-gray-9">$80</span>
                                 </p>
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Base Kilometers : <span class="text-gray-9">15</span>
+                                  Base Kilometers :
+                                  <span class="text-gray-9">15</span>
                                 </p>
                                 <p class="fs-13 fw-medium mb-0">
                                   Kilometers Extra Price :
@@ -1277,7 +1616,8 @@
                           class="btn btn-dark btn-md d-flex align-items-center"
                           data-bs-toggle="modal"
                           data-bs-target="#select_price"
-                          ><i class="ti ti-plus me-1"></i>Select Seasonal Pricing</a
+                          ><i class="ti ti-plus me-1"></i>Select Seasonal
+                          Pricing</a
                         >
                         <a
                           href="javascript:void(0);"
@@ -1299,22 +1639,29 @@
                               <h6
                                 class="fs-14 fw-semibold d-inline-flex align-items-center mb-1"
                               >
-                                Halloween<span class="badge bg-secondary-transparent ms-2"
+                                Halloween<span
+                                  class="badge bg-secondary-transparent ms-2"
                                   >01 Oct 2025 - 31 Oct 2025
                                 </span>
                               </h6>
-                              <div class="d-flex align-items-center gap-2 flex-wrap">
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap"
+                              >
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Daily Rate : <span class="text-gray-9">$200</span>
+                                  Daily Rate :
+                                  <span class="text-gray-9">$200</span>
                                 </p>
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Weekly Rate : <span class="text-gray-9">$1400</span>
+                                  Weekly Rate :
+                                  <span class="text-gray-9">$1400</span>
                                 </p>
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
-                                  Monthly Rate : <span class="text-gray-9">$4800</span>
+                                  Monthly Rate :
+                                  <span class="text-gray-9">$4800</span>
                                 </p>
                                 <p class="fs-13 fw-medium mb-0 pe-2 mb-0">
-                                  Late Fee : <span class="text-gray-9">$200</span>
+                                  Late Fee :
+                                  <span class="text-gray-9">$200</span>
                                 </p>
                               </div>
                             </div>
@@ -1355,7 +1702,8 @@
                           class="btn btn-dark btn-md d-flex align-items-center"
                           data-bs-toggle="modal"
                           data-bs-target="#select_insurance"
-                          ><i class="ti ti-plus me-1"></i>Select New Insurance</a
+                          ><i class="ti ti-plus me-1"></i>Select New
+                          Insurance</a
                         >
                       </div>
                       <div class="empty-data bg-light text-center mb-3">
@@ -1372,7 +1720,9 @@
                               >
                                 Full Premium Insurance
                               </h6>
-                              <div class="d-flex align-items-center gap-2 flex-wrap">
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap"
+                              >
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
                                   Price : <span class="text-gray-9">$200</span>
                                 </p>
@@ -1407,7 +1757,9 @@
                               >
                                 Roadside Assistance
                               </h6>
-                              <div class="d-flex align-items-center gap-2 flex-wrap">
+                              <div
+                                class="d-flex align-items-center gap-2 flex-wrap"
+                              >
                                 <p class="fs-13 fw-medium border-end pe-2 mb-0">
                                   Price : <span class="text-gray-9">$250</span>
                                 </p>
@@ -1463,7 +1815,8 @@
                   class="filterbox p-20 mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3"
                 >
                   <h4 class="d-flex align-items-center">
-                    <i class="ti ti-float-center text-secondary me-2"></i>Extra Services
+                    <i class="ti ti-float-center text-secondary me-2"></i>Extra
+                    Services
                   </h4>
                   <div class="dropdown flag-dropdown">
                     <a
@@ -1552,7 +1905,9 @@
                             <i class="ti ti-wifi-2"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Wi-Fi Hotspot</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Wi-Fi Hotspot
+                            </h6>
                             <p class="fs-13">Constant portable internet</p>
                           </div>
                         </div>
@@ -1567,14 +1922,20 @@
                         class="form-check form-checkbox d-flex align-items-center justify-content-between flex-wrap gap-3 flex-fill active"
                       >
                         <div class="d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" checked />
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
                           <span
                             class="service-icon bg-dark d-flex align-items-center justify-content-center me-2 ms-2"
                           >
                             <i class="ti ti-baby-carriage"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Child Safety Seats</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Child Safety Seats
+                            </h6>
                             <p class="fs-13">Secure infant/toddler car seat</p>
                           </div>
                         </div>
@@ -1589,14 +1950,20 @@
                         class="form-check form-checkbox d-flex align-items-center justify-content-between flex-fill flex-wrap gap-3 active"
                       >
                         <div class="d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" checked />
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
                           <span
                             class="service-icon bg-dark d-flex align-items-center justify-content-center me-2 ms-2"
                           >
                             <i class="ti ti-baby-carriage"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Fuel Pre-Purchase</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Fuel Pre-Purchase
+                            </h6>
                             <p class="fs-13">Full tank, return hassle-free</p>
                           </div>
                         </div>
@@ -1618,7 +1985,9 @@
                             <i class="ti ti-user-star"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Roadside Assistance</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Roadside Assistance
+                            </h6>
                             <p class="fs-13">24/7 emergency car support</p>
                           </div>
                         </div>
@@ -1640,7 +2009,9 @@
                             <i class="ti ti-satellite"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Satellite Radio</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Satellite Radio
+                            </h6>
                             <p class="fs-13">Unlimited premium music</p>
                           </div>
                         </div>
@@ -1677,14 +2048,20 @@
                         class="form-check form-checkbox d-flex align-items-center justify-content-between flex-wrap gap-3 flex-fill active"
                       >
                         <div class="d-flex align-items-center">
-                          <input class="form-check-input" type="checkbox" checked />
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked
+                          />
                           <span
                             class="service-icon bg-dark d-flex align-items-center justify-content-center me-2 ms-2"
                           >
                             <i class="ti ti-checkup-list"></i>
                           </span>
                           <div>
-                            <h6 class="fs-14 fw-semibold mb-1">Express Check-in/out</h6>
+                            <h6 class="fs-14 fw-semibold mb-1">
+                              Express Check-in/out
+                            </h6>
                             <p class="fs-13">Fast pickup & return process</p>
                           </div>
                         </div>
@@ -1787,7 +2164,8 @@
                   class="filterbox p-20 mb-4 d-flex align-items-center justify-content-between flex-wrap gap-3"
                 >
                   <h4 class="d-flex align-items-center">
-                    <i class="ti ti-file-invoice text-secondary me-2"></i>Documents
+                    <i class="ti ti-file-invoice text-secondary me-2"></i
+                    >Documents
                   </h4>
                   <div class="dropdown flag-dropdown">
                     <a
@@ -1841,7 +2219,9 @@
                       <div class="row">
                         <div class="col-xxl-8 col-lg-10">
                           <h6 class="mb-3">Upload Document</h6>
-                          <div class="document-upload text-center bg-light br-5 mb-3">
+                          <div
+                            class="document-upload text-center bg-light br-5 mb-3"
+                          >
                             <img
                               src="@/assets/admin/img/icons/upload-icon.svg"
                               alt="img"
@@ -1878,7 +2258,9 @@
                                 />
                               </span>
                               <div class="ms-2">
-                                <h6 class="fs-14 fw-medium">Insurance_car3546</h6>
+                                <h6 class="fs-14 fw-medium">
+                                  Insurance_car3546
+                                </h6>
                                 <p class="fs-13">24.45 KB</p>
                               </div>
                             </div>
@@ -1952,7 +2334,9 @@
                       <div class="row">
                         <div class="col-xxl-8 col-lg-10">
                           <h6 class="mb-3">Upload Document</h6>
-                          <div class="document-upload text-center bg-light br-5 mb-3">
+                          <div
+                            class="document-upload text-center bg-light br-5 mb-3"
+                          >
                             <img
                               src="@/assets/admin/img/icons/upload-icon.svg"
                               alt="img"
@@ -1973,7 +2357,9 @@
                             />
                           </div>
                           <div class="mb-3">
-                            <p class="fs-13 mb-1">Upload Car Policy Documents</p>
+                            <p class="fs-13 mb-1">
+                              Upload Car Policy Documents
+                            </p>
                             <p class="fs-13">Formats PDF, Word</p>
                           </div>
                           <div
@@ -1987,7 +2373,9 @@
                                 />
                               </span>
                               <div class="ms-2">
-                                <h6 class="fs-14 fw-medium">Insurance_car3546</h6>
+                                <h6 class="fs-14 fw-medium">
+                                  Insurance_car3546
+                                </h6>
                                 <p class="fs-13">24.45 KB</p>
                               </div>
                             </div>
@@ -2026,7 +2414,9 @@
                       <div class="row">
                         <div class="col-xxl-8 col-lg-10">
                           <h6 class="mb-3">Upload Document</h6>
-                          <div class="document-upload text-center bg-light br-5 mb-3">
+                          <div
+                            class="document-upload text-center bg-light br-5 mb-3"
+                          >
                             <img
                               src="@/assets/admin/img/icons/upload-icon.svg"
                               alt="img"
@@ -2050,20 +2440,35 @@
                             class="uploaded-images d-flex align-items-center flex-wrap gap-3"
                           >
                             <div class="uploaded-img">
-                              <img src="@/assets/admin/img/car/car-02.jpg" alt="img" />
-                              <a href="javscsript:void(0);" class="trash-icon fs-12"
+                              <img
+                                src="@/assets/admin/img/car/car-02.jpg"
+                                alt="img"
+                              />
+                              <a
+                                href="javscsript:void(0);"
+                                class="trash-icon fs-12"
                                 ><i class="ti ti-trash"></i
                               ></a>
                             </div>
                             <div class="uploaded-img">
-                              <img src="@/assets/admin/img/car/car-07.jpg" alt="img" />
-                              <a href="javscsript:void(0);" class="trash-icon fs-12"
+                              <img
+                                src="@/assets/admin/img/car/car-07.jpg"
+                                alt="img"
+                              />
+                              <a
+                                href="javscsript:void(0);"
+                                class="trash-icon fs-12"
                                 ><i class="ti ti-trash"></i
                               ></a>
                             </div>
                             <div class="uploaded-img">
-                              <img src="@/assets/admin/img/car/car-08.jpg" alt="img" />
-                              <a href="javscsript:void(0);" class="trash-icon fs-12"
+                              <img
+                                src="@/assets/admin/img/car/car-08.jpg"
+                                alt="img"
+                              />
+                              <a
+                                href="javscsript:void(0);"
+                                class="trash-icon fs-12"
                                 ><i class="ti ti-trash"></i
                               ></a>
                             </div>
@@ -2084,7 +2489,8 @@
                         <div class="col-md-4">
                           <div class="mb-4">
                             <label class="form-label"
-                              >Platform <span class="text-danger">*</span></label
+                              >Platform
+                              <span class="text-danger">*</span></label
                             >
                             <vue-select
                               :options="Platform"
@@ -2105,7 +2511,10 @@
                         </div>
                         <div class="col-md-12">
                           <div class="uploaded-video">
-                            <img src="@/assets/admin/img/car/car-lg-01.jpg" alt="img" />
+                            <img
+                              src="@/assets/admin/img/car/car-lg-01.jpg"
+                              alt="img"
+                            />
                             <a
                               href="https://www.youtube.com/embed/1trvO6dqQUI"
                               data-fancybox=""
@@ -2247,15 +2656,18 @@
                           <div class="bg-white p-20 br-5 border mb-2">
                             <div class="row align-items-center row-gap-3">
                               <div class="col-xxl-8 col-md-7">
-                                <div class="d-flex align-items-center gap-2 mb-1">
+                                <div
+                                  class="d-flex align-items-center gap-2 mb-1"
+                                >
                                   <h6 class="fs-14 fw-medium">Scratch</h6>
-                                  <span class="badge bg-pink-transparent badge-sm"
+                                  <span
+                                    class="badge bg-pink-transparent badge-sm"
                                     >Interior</span
                                   >
                                 </div>
                                 <p class="fs-13">
-                                  Minor surface marks, often from keys, branches, or road
-                                  debris.
+                                  Minor surface marks, often from keys,
+                                  branches, or road debris.
                                 </p>
                               </div>
                               <div class="col-xxl-4 col-md-5">
@@ -2286,15 +2698,18 @@
                           <div class="bg-white p-20 br-5 border mb-2">
                             <div class="row align-items-center row-gap-3">
                               <div class="col-xxl-8 col-md-7">
-                                <div class="d-flex align-items-center gap-2 mb-1">
+                                <div
+                                  class="d-flex align-items-center gap-2 mb-1"
+                                >
                                   <h6 class="fs-14 fw-medium">Dent</h6>
-                                  <span class="badge bg-secondary-transparent badge-sm"
+                                  <span
+                                    class="badge bg-secondary-transparent badge-sm"
                                     >Exterior</span
                                   >
                                 </div>
                                 <p class="fs-13">
-                                  Cracks, scratches, or faded surfaces due to heat
-                                  exposure.
+                                  Cracks, scratches, or faded surfaces due to
+                                  heat exposure.
                                 </p>
                               </div>
                               <div class="col-xxl-4 col-md-5">
@@ -2325,15 +2740,18 @@
                           <div class="bg-white p-20 br-5 border mb-2">
                             <div class="row align-items-center row-gap-3">
                               <div class="col-xxl-8 col-md-7">
-                                <div class="d-flex align-items-center gap-2 mb-1">
+                                <div
+                                  class="d-flex align-items-center gap-2 mb-1"
+                                >
                                   <h6 class="fs-14 fw-medium">Crack</h6>
-                                  <span class="badge bg-pink-transparent badge-sm"
+                                  <span
+                                    class="badge bg-pink-transparent badge-sm"
                                     >Interior</span
                                   >
                                 </div>
                                 <p class="fs-13">
-                                  Seats, door panels, or carpets with stains, rips, or
-                                  burns.
+                                  Seats, door panels, or carpets with stains,
+                                  rips, or burns.
                                 </p>
                               </div>
                               <div class="col-xxl-4 col-md-5">
@@ -2364,15 +2782,18 @@
                           <div class="bg-white p-20 br-5 border mb-0">
                             <div class="row align-items-center row-gap-3">
                               <div class="col-xxl-8 col-md-7">
-                                <div class="d-flex align-items-center gap-2 mb-1">
+                                <div
+                                  class="d-flex align-items-center gap-2 mb-1"
+                                >
                                   <h6 class="fs-14 fw-medium">Clip</h6>
-                                  <span class="badge bg-pink-transparent badge-sm"
+                                  <span
+                                    class="badge bg-pink-transparent badge-sm"
                                     >Interior</span
                                   >
                                 </div>
                                 <p class="fs-13">
-                                  Non-functional windows, AC, or infotainment system
-                                  damage.
+                                  Non-functional windows, AC, or infotainment
+                                  system damage.
                                 </p>
                               </div>
                               <div class="col-xxl-4 col-md-5">
@@ -2514,8 +2935,9 @@
                               >
                                 <div class="accordion-body">
                                   <p class="fs-13">
-                                    You must be at least 21 years old, have a valid
-                                    driver’s license, and a credit card for payment.
+                                    You must be at least 21 years old, have a
+                                    valid driver’s license, and a credit card
+                                    for payment.
                                   </p>
                                 </div>
                               </div>
@@ -2542,8 +2964,9 @@
                               >
                                 <div class="accordion-body">
                                   <p class="fs-13">
-                                    You must be at least 21 years old, have a valid
-                                    driver’s license, and a credit card for payment.
+                                    You must be at least 21 years old, have a
+                                    valid driver’s license, and a credit card
+                                    for payment.
                                   </p>
                                 </div>
                               </div>
@@ -2570,8 +2993,9 @@
                               >
                                 <div class="accordion-body">
                                   <p class="fs-13">
-                                    You must be at least 21 years old, have a valid
-                                    driver’s license, and a credit card for payment.
+                                    You must be at least 21 years old, have a
+                                    valid driver’s license, and a credit card
+                                    for payment.
                                   </p>
                                 </div>
                               </div>
@@ -2598,8 +3022,9 @@
                               >
                                 <div class="accordion-body">
                                   <p class="fs-13">
-                                    You must be at least 21 years old, have a valid
-                                    driver’s license, and a credit card for payment.
+                                    You must be at least 21 years old, have a
+                                    valid driver’s license, and a credit card
+                                    for payment.
                                   </p>
                                 </div>
                               </div>
@@ -2716,8 +3141,14 @@
                   >
                     <i class="ti ti-chevron-left me-1"></i>Back
                   </button>
-                  <button class="btn btn-primary d-flex align-items-center">
-                    Save & Exit<i class="ti ti-chevron-right ms-1"></i>
+                  <button
+                    type="submit"
+                    class="btn btn-primary d-flex align-items-center"
+                    :disabled="loading"
+                  >
+                    <span v-if="loading">Saving...</span>
+                    <span v-else>Save & Exit</span>
+                    <i class="ti ti-chevron-right ms-1"></i>
                   </button>
                 </div>
               </form>
@@ -2727,7 +3158,9 @@
       </div>
     </div>
     <!-- Footer-->
-    <div class="footer d-sm-flex align-items-center justify-content-between bg-white p-3">
+    <div
+      class="footer d-sm-flex align-items-center justify-content-between bg-white p-3"
+    >
       <p class="mb-0">
         <a href="javascript:void(0);">Privacy Policy</a>
         <a href="javascript:void(0);" class="ms-4">Terms of Use</a>
@@ -2746,10 +3179,28 @@
 
 <script>
 // import { ref } from "vue";
+import adminApi from "@/services/adminApi";
 
 export default {
   data() {
     return {
+      carData: {
+        make: "",
+        model: "",
+        registration_number: "",
+        year: "",
+        color: "",
+        category_id: 1,
+        transmission: "Auto",
+        mileage: "10 KM",
+        fuel_type: "Petrol",
+        daily_rate: "",
+        available: true,
+        features: "",
+        image_path: "",
+      },
+      loading: false,
+      error: null,
       selected: null,
       selectedOne: null,
       selectedTwo: null,
@@ -2764,6 +3215,43 @@ export default {
       selectedEleven: null,
       currentStep: 1,
       totalSteps: 8,
+      previewImage: null,
+      imageFile: null,
+      // Features data
+      features: {
+        airCondition: false,
+        climateControl: false,
+        climateControlTwoZones: false,
+        luxuryClimateControl: false,
+        sunroof: false,
+        panoramicSunroof: false,
+        moonroof: false,
+        pushButtonStart: false,
+        keylessAccess: false,
+        rearParkingSensors: false,
+        parkingSensors: false,
+        builtInSatNav: false,
+        mobilePhoneTechnology: false,
+        bluetooth: false,
+        usb: false,
+        qiWirelessCharging: false,
+        audioIpod: false,
+        cruiseControl: false,
+        adaptiveCruiseControl: false,
+        appleCarplay: false,
+        androidAuto: false,
+        forwardCollisionWarning: false,
+        laneDepartureWarning: false,
+        automaticEmergencyBraking: false,
+        activeParkingAssist: false,
+        automaticHighBeams: false,
+        adaptiveHeadlights: false,
+        threeSixtyCamera: false,
+        rearviewCamera: false,
+        towingHook: false,
+        leatherInterior: false,
+        fabricInterior: false,
+      },
       Cartype: [
         { label: "Select", value: "Select" },
         { label: "Sedan", value: "Sedan" },
@@ -2799,7 +3287,10 @@ export default {
       ],
       Otherlocation: [
         { label: "Evans Dealer Car Zone", value: "Evans Dealer Car Zone" },
-        { label: "Allen Dealer Parking Lot", value: "Allen Dealer Parking Lot" },
+        {
+          label: "Allen Dealer Parking Lot",
+          value: "Allen Dealer Parking Lot",
+        },
         { label: "Walker Auto Trade Yard", value: "Walker Auto Trade Yard" },
       ],
       Fuel: [
@@ -2838,8 +3329,168 @@ export default {
     };
   },
   methods: {
-    submitForm() {
-      this.$router.push("/admin-template/rentals/cars");
+    handleImageUpload(event) {
+      const file = event.target.files[0];
+      if (file) {
+        this.imageFile = file;
+        // Create a preview of the image
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.previewImage = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    },
+    removeImage() {
+      this.previewImage = null;
+      this.imageFile = null;
+      this.carData.image_path = "";
+    },
+    async uploadImage() {
+      if (!this.imageFile) return null;
+
+      try {
+        // Upload the image to the server
+        const response = await adminApi.uploadCarImage(this.imageFile);
+        if (response.data.success) {
+          return response.data.image_path;
+        } else {
+          throw new Error(response.data.message || "Failed to upload image");
+        }
+      } catch (error) {
+        console.error("Error uploading image:", error);
+        throw error;
+      }
+    },
+    async submitForm() {
+      this.loading = true;
+      this.error = null;
+
+      try {
+        // Upload image first if exists
+        if (this.imageFile) {
+          const imagePath = await this.uploadImage();
+          this.carData.image_path = imagePath;
+        }
+
+        // Collect selected features
+        const selectedFeatures = [];
+        if (this.features.airCondition) selectedFeatures.push("Air Condition");
+        if (this.features.climateControl)
+          selectedFeatures.push("Climate Control");
+        if (this.features.climateControlTwoZones)
+          selectedFeatures.push("Climate Control Two Zones");
+        if (this.features.luxuryClimateControl)
+          selectedFeatures.push("Luxury Climate Control");
+        if (this.features.sunroof) selectedFeatures.push("Sunroof");
+        if (this.features.panoramicSunroof)
+          selectedFeatures.push("Panoramic Sunroof");
+        if (this.features.moonroof) selectedFeatures.push("Moonroof");
+        if (this.features.pushButtonStart)
+          selectedFeatures.push("Push-button Start");
+        if (this.features.keylessAccess)
+          selectedFeatures.push("Keyless Access");
+        if (this.features.rearParkingSensors)
+          selectedFeatures.push("Rear Parking Sensors");
+        if (this.features.parkingSensors)
+          selectedFeatures.push("Parking Sensors");
+        if (this.features.builtInSatNav)
+          selectedFeatures.push("Built-in Sat Nav");
+        if (this.features.mobilePhoneTechnology)
+          selectedFeatures.push("Mobile Phone Technology");
+        if (this.features.bluetooth) selectedFeatures.push("Bluetooth");
+        if (this.features.usb) selectedFeatures.push("USB");
+        if (this.features.qiWirelessCharging)
+          selectedFeatures.push("Qi Wireless Charging");
+        if (this.features.audioIpod) selectedFeatures.push("Audio/iPod");
+        if (this.features.cruiseControl)
+          selectedFeatures.push("Cruise Control");
+        if (this.features.adaptiveCruiseControl)
+          selectedFeatures.push("Adaptive Cruise Control");
+        if (this.features.appleCarplay) selectedFeatures.push("Apple Carplay");
+        if (this.features.androidAuto) selectedFeatures.push("Android Auto");
+        if (this.features.forwardCollisionWarning)
+          selectedFeatures.push("Forward Collision Warning");
+        if (this.features.laneDepartureWarning)
+          selectedFeatures.push("Lane Departure Warning");
+        if (this.features.automaticEmergencyBraking)
+          selectedFeatures.push("Automatic Emergency Braking");
+        if (this.features.activeParkingAssist)
+          selectedFeatures.push("Active Parking Assist");
+        if (this.features.automaticHighBeams)
+          selectedFeatures.push("Automatic High Beams");
+        if (this.features.adaptiveHeadlights)
+          selectedFeatures.push("Adaptive Headlights");
+        if (this.features.threeSixtyCamera)
+          selectedFeatures.push("360-degree Camera");
+        if (this.features.rearviewCamera)
+          selectedFeatures.push("Rearview Camera");
+        if (this.features.towingHook) selectedFeatures.push("Towing Hook");
+        if (this.features.leatherInterior)
+          selectedFeatures.push("Leather Interior");
+        if (this.features.fabricInterior)
+          selectedFeatures.push("Fabric Interior");
+
+        // Set features as comma-separated string
+        this.carData.features = selectedFeatures.join(", ");
+
+        // Map form data to carData object
+        this.carData.make = this.selectedOne ? this.selectedOne.label : "";
+        this.carData.model = this.selectedTwo ? this.selectedTwo.label : "";
+        this.carData.color = this.selectedSeven ? this.selectedSeven.label : "";
+        this.carData.category_id = this.selectedThree
+          ? this.getCategoryId(this.selectedThree.value)
+          : 1;
+        this.carData.transmission = this.selectedEight
+          ? this.selectedEight.label
+          : "Auto";
+        this.carData.fuel_type = this.selectedSix
+          ? this.selectedSix.label
+          : "Petrol";
+        this.carData.daily_rate = this.getDailyRateFromCategory(
+          this.selectedThree
+        );
+
+        const response = await adminApi.createCar(this.carData);
+        console.log("Car created successfully:", response.data);
+        this.$router.push("/admin-template/rentals/cars");
+      } catch (error) {
+        this.error =
+          "Failed to create car: " +
+          (error.response?.data?.message || error.message);
+        console.error("Error creating car:", error);
+      } finally {
+        this.loading = false;
+      }
+    },
+    getCategoryId(categoryValue) {
+      // Map category value to category ID
+      switch (categoryValue) {
+        case "Car":
+          return 1;
+        case "Bike":
+          return 2;
+        case "Truck":
+          return 3;
+        default:
+          return 1;
+      }
+    },
+    getDailyRateFromCategory(category) {
+      // Set daily rate based on category
+      if (category && category.label) {
+        switch (category.label) {
+          case "Car":
+            return "250.00";
+          case "Bike":
+            return "100.00";
+          case "Truck":
+            return "500.00";
+          default:
+            return "250.00";
+        }
+      }
+      return "250.00";
     },
     nextStep() {
       if (this.currentStep < this.totalSteps) {
@@ -2850,6 +3501,13 @@ export default {
       if (this.currentStep > 1) {
         this.currentStep--;
       }
+    },
+    toggleAllFeatures(event) {
+      const isChecked = event.target.checked;
+      // Set all features to the same value as the "Select All" checkbox
+      Object.keys(this.features).forEach((key) => {
+        this.features[key] = isChecked;
+      });
     },
   },
 };

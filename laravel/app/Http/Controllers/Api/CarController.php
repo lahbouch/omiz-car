@@ -33,6 +33,9 @@ class CarController extends Controller
             'features' => 'nullable|string',
             'daily_rate' => 'required|numeric',
             'image_path' => 'nullable|string',
+            'transmission' => 'nullable|string|max:255',
+            'mileage' => 'nullable|string|max:255',
+            'fuel_type' => 'nullable|string|max:255',
         ]);
 
         $car = Car::create($validated);
@@ -66,6 +69,9 @@ class CarController extends Controller
             'features' => 'nullable|string',
             'daily_rate' => 'numeric',
             'image_path' => 'nullable|string',
+            'transmission' => 'nullable|string|max:255',
+            'mileage' => 'nullable|string|max:255',
+            'fuel_type' => 'nullable|string|max:255',
         ]);
 
         $car->update($validated);

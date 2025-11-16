@@ -40,6 +40,29 @@ adminApiClient.interceptors.response.use(
   }
 );
 
+// Create a separate axios instance for file uploads (multipart/form-data)
+const fileUploadClient = axios.create({
+  baseURL: 'http://localhost:8001/api',
+  withCredentials: false,
+  headers: {
+    'Content-Type': 'multipart/form-data'
+  }
+});
+
+// Add auth token to file upload requests
+fileUploadClient.interceptors.request.use(
+  config => {
+    const token = localStorage.getItem('adminToken');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  error => {
+    return Promise.reject(error);
+  }
+);
+
 export default {
   // Authentication endpoints
   login(credentials) {
@@ -71,6 +94,21 @@ export default {
     return adminApiClient.delete(`/cars/${id}`);
   },
   
+  // Car image upload endpoints
+  uploadCarImage(imageFile) {
+    const formData = new FormData();
+    formData.append('image', imageFile);
+    return fileUploadClient.post('/upload/car-image', formData);
+  },
+  
+  uploadCarImages(imageFiles) {
+    const formData = new FormData();
+    imageFiles.forEach(file => {
+      formData.append('images[]', file);
+    });
+    return fileUploadClient.post('/upload/car-images', formData);
+  },
+  
   // Booking endpoints
   getBookings() {
     return adminApiClient.get('/bookings');
@@ -90,5 +128,18 @@ export default {
   
   deleteBooking(id) {
     return adminApiClient.delete(`/bookings/${id}`);
+  },
+  
+  // Contact message endpoints
+  getContactMessages() {
+    return adminApiClient.get('/contact-messages');
+  },
+  
+  getContactMessage(id) {
+    return adminApiClient.get(`/contact-messages/${id}`);
+  },
+  
+  deleteContactMessage(id) {
+    return adminApiClient.delete(`/contact-messages/${id}`);
   }
 };

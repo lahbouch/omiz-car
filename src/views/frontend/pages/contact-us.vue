@@ -37,13 +37,24 @@
             />
           </div>
           <div class="col-lg-6">
-            <form action="javascript:;">
+            <form @submit.prevent="submitContactForm">
               <div class="row">
                 <h1>Contactez Omiz Car</h1>
+                <div v-if="successMessage" class="alert alert-success">
+                  {{ successMessage }}
+                </div>
+                <div v-if="errorMessage" class="alert alert-danger">
+                  {{ errorMessage }}
+                </div>
                 <div class="col-md-12">
                   <div class="input-block">
                     <label>Nom <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" placeholder="" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      v-model="contactForm.name"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -51,7 +62,12 @@
                     <label
                       >Adresse email <span class="text-danger">*</span></label
                     >
-                    <input type="text" class="form-control" placeholder="" />
+                    <input
+                      type="email"
+                      class="form-control"
+                      v-model="contactForm.email"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -60,7 +76,12 @@
                       >Numéro de téléphone
                       <span class="text-danger">*</span></label
                     >
-                    <input type="text" class="form-control" placeholder="" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      v-model="contactForm.phone"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -72,13 +93,17 @@
                       class="form-control"
                       rows="4"
                       cols="50"
-                      placeholder=""
+                      v-model="contactForm.message"
+                      required
                     >
                     </textarea>
                   </div>
                 </div>
               </div>
-              <button class="btn contact-btn">Réservez sur WhatsApp</button>
+              <button class="btn contact-btn" :disabled="loading">
+                <span v-if="loading">Envoi en cours...</span>
+                <span v-else>Réservez sur WhatsApp</span>
+              </button>
             </form>
           </div>
         </div>
@@ -92,6 +117,8 @@
 
 <script>
 import ContactUS from "@/assets/json/contact-us.json";
+import api from "@/services/api";
+
 export default {
   data() {
     return {
@@ -99,7 +126,41 @@ export default {
       title: "Contact",
       text: "Pages",
       text1: "Contact",
+      contactForm: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      loading: false,
+      successMessage: "",
+      errorMessage: "",
     };
+  },
+  methods: {
+    async submitContactForm() {
+      this.loading = true;
+      this.successMessage = "";
+      this.errorMessage = "";
+
+      try {
+        await api.createContactMessage(this.contactForm);
+        this.successMessage = "Votre message a été envoyé avec succès!";
+        // Reset form
+        this.contactForm = {
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        };
+      } catch (error) {
+        this.errorMessage =
+          "Erreur lors de l'envoi du message. Veuillez réessayer.";
+        console.error("Error submitting contact form:", error);
+      } finally {
+        this.loading = false;
+      }
+    },
   },
 };
 </script>

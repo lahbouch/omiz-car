@@ -552,9 +552,22 @@ export default {
     };
   },
   methods: {
-    getImageUrl(imageName) {
-      return new URL(`/src/assets/admin/img/car/${imageName}`, import.meta.url)
-        .href;
+    getImageUrl(imagePath) {
+      // If imagePath is provided and not null/empty, use the uploaded image
+      if (imagePath) {
+        // Handle both relative and absolute paths
+        if (imagePath.startsWith("http")) {
+          return imagePath;
+        } else if (imagePath.startsWith("storage/")) {
+          // For images uploaded to storage
+          return `http://localhost:8001/${imagePath}`;
+        } else {
+          // For relative paths, assume they're in the car images directory
+          return `http://localhost:8001/storage/${imagePath}`;
+        }
+      }
+      // Fallback to default image
+      return new URL("@/assets/admin/img/car/car-01.jpg", import.meta.url).href;
     },
     formatDate(dateString) {
       if (!dateString) return "N/A";

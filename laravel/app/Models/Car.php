@@ -19,7 +19,10 @@ class Car extends Model
         'available',
         'features',
         'daily_rate',
-        'image_path'
+        'image_path',
+        'transmission',
+        'mileage',
+        'fuel_type'
     ];
 
     public function category()
