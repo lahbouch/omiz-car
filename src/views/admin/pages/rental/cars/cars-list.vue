@@ -560,10 +560,10 @@ export default {
           return imagePath;
         } else if (imagePath.startsWith("storage/")) {
           // For images uploaded to storage
-          return `http://localhost:8001/${imagePath}`;
+          return `http://localhost:8000/${imagePath}`;
         } else {
           // For relative paths, assume they're in the car images directory
-          return `http://localhost:8001/storage/${imagePath}`;
+          return `http://localhost:8000/storage/${imagePath}`;
         }
       }
       // Fallback to default image

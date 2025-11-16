@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance for admin API
 const adminApiClient = axios.create({
-  baseURL: 'http://localhost:8001/api', // Using port 8001 for Laravel backend
+  baseURL: 'http://localhost:8000/api', // Using port 8001 for Laravel backend
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -42,7 +42,7 @@ adminApiClient.interceptors.response.use(
 
 // Create a separate axios instance for file uploads (multipart/form-data)
 const fileUploadClient = axios.create({
-  baseURL: 'http://localhost:8001/api',
+  baseURL: 'http://localhost:8000/api',
   withCredentials: false,
   headers: {
     'Content-Type': 'multipart/form-data'

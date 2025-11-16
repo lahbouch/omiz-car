@@ -77,10 +77,7 @@
                                 Catégorie : <span>{{ item.Category }}</span>
                               </h6>
                             </div>
-                            <div class="blog-list-rate">
-                              
-                             
-                            </div>
+                            <div class="blog-list-rate"></div>
                           </div>
 
                           <div class="listing-details-group">
@@ -403,7 +400,7 @@ export default {
           MakeClass: "", // We'll set this based on some criteria
           profile_image: "avatar-03.jpg", // Default profile image
           image: car.image_path || "car-list-1.jpg", // Use car image or default
-          
+
           transmission: car.transmission || "Auto",
           mileage: car.mileage || "10 KM",
           fuel_type: car.fuel_type || "Essence",
@@ -411,7 +408,7 @@ export default {
           year: car.year || "2022",
           persons: "5 Personnes", // Default value
           location: "Tanger, Maroc", // Default location
-          
+
           isSelected: false,
         }));
 
@@ -464,12 +461,12 @@ export default {
 
       // If it's a storage path (uploaded images), use the Laravel storage URL
       if (imagePath && imagePath.startsWith("storage/")) {
-        return `http://localhost:8001/${imagePath}`;
+        return `http://localhost:8000/${imagePath}`;
       }
 
       // If it's a car-images path (uploaded images), use the Laravel storage URL
       if (imagePath && imagePath.startsWith("car-images/")) {
-        return `http://localhost:8001/storage/${imagePath}`;
+        return `http://localhost:8000/storage/${imagePath}`;
       }
 
       // If it's just a filename, construct the path to default images
