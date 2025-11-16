@@ -306,7 +306,7 @@ const routes = [
   path: '/listing',
   component: () => import('@/views/frontend/pages/listing/listing.vue'),
   children: [
-    { path: '', redirect: '/listing/listing-grid' },
+    { path: '', redirect: '/listing/listing-map' },
     { path: "listing-grid", component: () => import('@/views/frontend/pages/listing/listing-grid/listing-grid.vue') },
     { path: "listing-list", component: () => import('@/views/frontend/pages/listing/listing-list/listing-list.vue') },
     { path: "listing-details", component: () => import('@/views/frontend/pages/listing/listing-details/listing-details.vue') },

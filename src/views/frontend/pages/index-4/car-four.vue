@@ -132,7 +132,7 @@
 
       <div class="view-all-btn text-center aos" data-aos="fade-down">
         <router-link
-          to="/listing/listing-grid"
+          to="/listing/listing-map"
           class="btn btn-secondary d-inline-flex align-items-center"
           >Voir toutes les voitures<i class="bx bx-right-arrow-alt ms-1"></i
         ></router-link>
