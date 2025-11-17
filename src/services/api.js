@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance for API calls
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'http://localhost:8001/api',  // Updated to port 8001
   headers: {
     'Content-Type': 'application/json',
   },
@@ -52,4 +52,40 @@ export default {
   getContactMessages() {
     return apiClient.get('/contact-messages');
   },
+  
+  // Reservation endpoints
+  createReservation(reservationData) {
+    // Handle the case where the endpoint might not exist
+    return apiClient.post('/reservations', reservationData)
+      .then(response => {
+        console.log('Reservation created successfully:', response.data);
+        return response;
+      })
+      .catch(error => {
+        console.error('Error creating reservation:', error);
+        // If it's a 404 error, re-throw it so the calling function can handle it
+        if (error.response && error.response.status === 404) {
+          throw error;
+        }
+        // For other errors, re-throw them as well
+        throw error;
+      });
+  },
+  
+  getReservations() {
+    return apiClient.get('/reservations')
+      .then(response => {
+        console.log('Reservations fetched successfully:', response.data);
+        return response;
+      })
+      .catch(error => {
+        console.error('Error fetching reservations:', error);
+        // If it's a 404 error, re-throw it so the calling function can handle it
+        if (error.response && error.response.status === 404) {
+          throw error;
+        }
+        // For other errors, re-throw them as well
+        throw error;
+      });
+  }
 };

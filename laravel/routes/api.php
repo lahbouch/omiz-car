@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\AdminController;
 use App\Http\Controllers\Api\CustomerController;
 use App\Http\Controllers\Api\ContactMessageController;
 use App\Http\Controllers\Api\FileUploadController;
+use App\Http\Controllers\Api\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::middleware('api')->group(function () {
 
     // Booking routes
     Route::apiResource('bookings', BookingController::class);
+
+    // Reservation routes
+    Route::apiResource('reservations', ReservationController::class);
 
     // Contact message routes
     Route::apiResource('contact-messages', ContactMessageController::class);

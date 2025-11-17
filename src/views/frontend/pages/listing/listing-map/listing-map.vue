@@ -49,6 +49,21 @@
             </button>
           </div>
 
+          <!-- Success Message -->
+          <div v-if="successMessage" class="col-12">
+            <div
+              class="alert alert-success alert-dismissible fade show"
+              role="alert"
+            >
+              {{ successMessage }}
+              <button
+                type="button"
+                class="btn-close"
+                @click="successMessage = ''"
+              ></button>
+            </div>
+          </div>
+
           <!-- Success State -->
           <template v-else>
             <!-- Left Listing -->
@@ -416,6 +431,7 @@ export default {
       text1: "Liste des voitures",
       loading: false,
       error: null,
+      successMessage: "",
       Listing_Map: [],
       center: { lat: 35.7592, lng: -5.834 }, // Tanger coordinates
       locations: [],
@@ -452,6 +468,7 @@ export default {
     async fetchCars() {
       this.loading = true;
       this.error = null;
+      this.successMessage = "";
       try {
         console.log("Fetching cars from API...");
         const response = await api.getCars();
@@ -587,7 +604,9 @@ export default {
       console.log("Booking sent:", bookingData);
       // Close the booking form after successful submission
       this.closeBookingForm();
-      // You could also show a success message here
+      // Show success message
+      this.successMessage = "Votre réservation a été enregistrée avec succès !";
+      // You could also refresh the car list or show a notification
     },
     filterCars() {
       if (!this.searchQuery.trim()) {

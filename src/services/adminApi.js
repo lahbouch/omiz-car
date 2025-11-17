@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance for admin API
 const adminApiClient = axios.create({
-  baseURL: 'http://localhost:8000/api', // Using port 8000 for Laravel backend
+  baseURL: 'http://localhost:8001/api', // Updated to port 8001 for Laravel backend
   withCredentials: false,
   headers: {
     Accept: 'application/json',
@@ -42,7 +42,7 @@ adminApiClient.interceptors.response.use(
 
 // Create a separate axios instance for file uploads (multipart/form-data)
 const fileUploadClient = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'http://localhost:8001/api',  // Updated to port 8001
   withCredentials: false,
   headers: {
     'Content-Type': 'multipart/form-data'
@@ -128,6 +128,27 @@ export default {
   
   deleteBooking(id) {
     return adminApiClient.delete(`/bookings/${id}`);
+  },
+  
+  // Reservation endpoints (for frontend bookings)
+  getReservations() {
+    return adminApiClient.get('/reservations');
+  },
+  
+  getReservation(id) {
+    return adminApiClient.get(`/reservations/${id}`);
+  },
+  
+  createReservation(reservation) {
+    return adminApiClient.post('/reservations', reservation);
+  },
+  
+  updateReservation(id, reservation) {
+    return adminApiClient.put(`/reservations/${id}`, reservation);
+  },
+  
+  deleteReservation(id) {
+    return adminApiClient.delete(`/reservations/${id}`);
   },
   
   // Contact message endpoints

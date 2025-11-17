@@ -46,9 +46,29 @@
       </div>
       <!-- /Breadcrumb -->
 
+      <!-- Loading indicator -->
+      <div v-if="loading" class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Chargement des réservations...</p>
+      </div>
+
+      <!-- Error message -->
+      <div v-if="error" class="alert alert-danger" role="alert">
+        {{ error }}
+        <button
+          class="btn btn-sm btn-outline-light ms-3"
+          @click="fetchBookings"
+        >
+          Réessayer
+        </button>
+      </div>
+
       <!-- Table Header -->
       <div
         class="d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3"
+        v-if="!loading && !error"
       >
         <div class="d-flex align-items-center flex-wrap row-gap-3">
           <div class="dropdown me-2">
@@ -435,7 +455,7 @@
       </div>
 
       <!-- Reservation Table -->
-      <div class="card">
+      <div class="card" v-if="!loading && !error">
         <div class="card-body p-0">
           <div class="table-responsive">
             <table class="table table-center table-hover mb-0">
@@ -460,16 +480,25 @@
                         class="avatar avatar-xl flex-shrink-0"
                       >
                         <img
-                          :src="getCarImageUrl(booking.car?.image_path)"
+                          :src="
+                            getCarImageUrl(
+                              booking.car?.image_path || booking.car_name
+                            )
+                          "
                           alt="Car"
                         />
                       </router-link>
                       <div class="ms-2">
                         <p class="fw-semibold mb-1">
-                          {{ booking.car?.make }} {{ booking.car?.model }}
+                          {{ booking.car?.make }}
+                          {{
+                            booking.car?.model ||
+                            booking.car_name ||
+                            "Non spécifié"
+                          }}
                         </p>
                         <p class="text-gray-5 mb-0">
-                          #{{ booking.car?.registration_number }}
+                          <!-- Registration number not available for frontend reservations -->
                         </p>
                       </div>
                     </div>
@@ -484,25 +513,22 @@
                       </router-link>
                       <div class="ms-2">
                         <p class="fw-semibold mb-1">
-                          {{ booking.customer?.first_name }}
-                          {{ booking.customer?.last_name }}
+                          {{ booking.firstname }} {{ booking.lastname }}
                         </p>
-                        <span class="badge badge-soft-primary">{{
-                          booking.customer?.type || "Client"
-                        }}</span>
+                        <span class="badge badge-soft-primary">Client</span>
                       </div>
                     </div>
                   </td>
                   <td>
-                    <p class="mb-1">{{ formatDate(booking.pickup_date) }}</p>
+                    <p class="mb-1">{{ formatDate(booking.start_date) }}</p>
                     <p class="text-gray-5 mb-0">
-                      {{ booking.pickup_location }}
+                      <!-- Location not available for frontend reservations -->
                     </p>
                   </td>
                   <td>
-                    <p class="mb-1">{{ formatDate(booking.return_date) }}</p>
+                    <p class="mb-1">{{ formatDate(booking.end_date) }}</p>
                     <p class="text-gray-5 mb-0">
-                      {{ booking.return_location }}
+                      <!-- Location not available for frontend reservations -->
                     </p>
                   </td>
                   <td>
@@ -544,8 +570,23 @@
       </div>
       <!-- /Reservation Table -->
 
+      <!-- Empty state -->
+      <div
+        v-if="!loading && !error && bookings.length === 0"
+        class="text-center py-5"
+      >
+        <i class="ti ti-file-off fs-1 mb-3"></i>
+        <h5>Aucune réservation trouvée</h5>
+        <p class="text-muted">
+          Il n'y a actuellement aucune réservation à afficher.
+        </p>
+      </div>
+
       <!-- Pagination -->
-      <div class="d-sm-flex align-items-center justify-content-between p-3">
+      <div
+        class="d-sm-flex align-items-center justify-content-between p-3"
+        v-if="!loading && !error && bookings.length > 0"
+      >
         <div class="mb-2 mb-sm-0">
           <p class="mb-0">Showing {{ bookings.length }} entries</p>
         </div>
@@ -632,6 +673,7 @@ export default {
         "in progress": "badge badge-soft-warning",
         completed: "badge badge-soft-primary",
         rejected: "badge badge-soft-danger",
+        pending: "badge badge-soft-info", // For frontend reservations
       };
       return (
         statusClasses[status.toLowerCase()] || "badge badge-soft-secondary"
@@ -639,7 +681,7 @@ export default {
     },
     formatDate(dateString) {
       if (!dateString) return "N/A";
-      return new Date(dateString).toLocaleDateString("en-US", {
+      return new Date(dateString).toLocaleDateString("fr-FR", {
         year: "numeric",
         month: "short",
         day: "numeric",
@@ -648,31 +690,34 @@ export default {
     async fetchBookings() {
       try {
         this.loading = true;
-        const response = await adminApi.getBookings();
+        this.error = null;
+        // Fetch reservations from the new endpoint
+        const response = await adminApi.getReservations();
         this.bookings = response.data;
+        console.log("Fetched reservations:", this.bookings);
       } catch (error) {
         this.error =
-          "Failed to fetch bookings: " +
+          "Failed to fetch reservations: " +
           (error.response?.data?.message || error.message);
-        console.error("Error fetching bookings:", error);
+        console.error("Error fetching reservations:", error);
       } finally {
         this.loading = false;
       }
     },
     async deleteBooking(bookingId) {
-      if (confirm("Are you sure you want to delete this booking?")) {
+      if (confirm("Are you sure you want to delete this reservation?")) {
         try {
-          await adminApi.deleteBooking(bookingId);
+          await adminApi.deleteReservation(bookingId);
           // Remove the booking from the local list
           this.bookings = this.bookings.filter(
             (booking) => booking.id !== bookingId
           );
         } catch (error) {
           alert(
-            "Failed to delete booking: " +
+            "Failed to delete reservation: " +
               (error.response?.data?.message || error.message)
           );
-          console.error("Error deleting booking:", error);
+          console.error("Error deleting reservation:", error);
         }
       }
     },

@@ -97,12 +97,20 @@
       {{ submitError }}
     </div>
 
-    <button type="submit" class="submit-button">Réserver via WhatsApp</button>
+    <div v-if="successMessage" class="success-message">
+      {{ successMessage }}
+    </div>
+
+    <button type="submit" class="submit-button" :disabled="isSubmitting">
+      <span v-if="isSubmitting">Enregistrement en cours...</span>
+      <span v-else>Réserver via WhatsApp</span>
+    </button>
   </form>
 </template>
 
 <script setup>
 import { ref, reactive, computed } from "vue";
+import api from "@/services/api";
 
 // Props
 const props = defineProps({
@@ -128,7 +136,7 @@ const formData = reactive({
   notes: "",
 });
 
-// Errors
+// State
 const errors = reactive({
   lastname: "",
   firstname: "",
@@ -137,6 +145,8 @@ const errors = reactive({
 });
 
 const submitError = ref("");
+const successMessage = ref("");
+const isSubmitting = ref(false);
 
 // Utility function to format date as DD/MM/YYYY
 const formatDate = (dateString) => {
@@ -155,6 +165,7 @@ const validateForm = () => {
     errors[key] = "";
   });
   submitError.value = "";
+  successMessage.value = "";
 
   let isValid = true;
 
@@ -194,9 +205,44 @@ const validateForm = () => {
   return isValid;
 };
 
+// Save reservation to backend
+const saveReservation = async (bookingData) => {
+  try {
+    const reservationData = {
+      lastname: bookingData.lastname,
+      firstname: bookingData.firstname,
+      start_date: bookingData.startDate,
+      end_date: bookingData.endDate,
+      notes: bookingData.notes,
+      car_id: props.carInfo?.id || null,
+      car_name: props.carInfo?.name || "Non spécifié",
+      status: "pending",
+    };
+
+    console.log("Sending reservation data:", reservationData);
+    const response = await api.createReservation(reservationData);
+    console.log("Reservation saved successfully:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Error saving reservation:", error);
+    // If the endpoint doesn't exist, we'll just log it and continue
+    if (error.response && error.response.status === 404) {
+      console.warn(
+        "Reservation endpoint not found, continuing without saving to database"
+      );
+      throw new Error("ENDPOINT_NOT_FOUND");
+    }
+    throw error;
+  }
+};
+
 // Handle form submission
-const handleSubmit = () => {
+const handleSubmit = async () => {
   if (!validateForm()) return;
+
+  isSubmitting.value = true;
+  submitError.value = "";
+  successMessage.value = "";
 
   try {
     // Build the message
@@ -226,32 +272,69 @@ const handleSubmit = () => {
     // Build WhatsApp URL
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${props.whatsappNumber}&text=${encodedMessage}`;
 
-    // Emit event before opening WhatsApp
-    emit("booking-sent", {
+    // Save reservation to backend (required step)
+    const bookingData = {
       lastname: formData.lastname,
       firstname: formData.firstname,
       startDate: formData.startDate,
       endDate: formData.endDate,
       notes: formData.notes,
       carInfo: props.carInfo,
-    });
+    };
 
-    // Open WhatsApp in a new tab/window
-    const newWindow = window.open(whatsappUrl, "_blank");
+    // Attempt to save reservation - this is now required
+    let reservationSaved = false;
+    try {
+      const savedReservation = await saveReservation(bookingData);
+      if (savedReservation) {
+        reservationSaved = true;
+      }
+    } catch (saveError) {
+      if (saveError.message === "ENDPOINT_NOT_FOUND") {
+        submitError.value =
+          "Le service de réservation est temporairement indisponible. Veuillez réessayer plus tard.";
+        return;
+      } else {
+        submitError.value =
+          "Une erreur est survenue lors de l'enregistrement de la réservation.";
+        console.error("Failed to save reservation:", saveError);
+        return;
+      }
+    }
 
-    // If opening failed, show error
-    if (
-      !newWindow ||
-      newWindow.closed ||
-      typeof newWindow.closed === "undefined"
-    ) {
+    // Only proceed to WhatsApp if reservation was saved successfully
+    if (reservationSaved) {
+      // Emit event before opening WhatsApp
+      emit("booking-sent", bookingData);
+
+      // Show success message
+      successMessage.value =
+        "Réservation enregistrée avec succès ! Redirection vers WhatsApp...";
+
+      // Open WhatsApp in a new tab/window after a short delay
+      setTimeout(() => {
+        const newWindow = window.open(whatsappUrl, "_blank");
+
+        // If opening failed, show error
+        if (
+          !newWindow ||
+          newWindow.closed ||
+          typeof newWindow.closed === "undefined"
+        ) {
+          submitError.value =
+            "Impossible d'ouvrir WhatsApp. Veuillez vérifier que WhatsApp est installé sur votre appareil.";
+        }
+      }, 1500);
+    } else {
       submitError.value =
-        "Impossible d'ouvrir WhatsApp. Veuillez vérifier que WhatsApp est installé sur votre appareil.";
+        "Impossible d'enregistrer la réservation. Veuillez réessayer.";
     }
   } catch (error) {
     submitError.value =
       "Une erreur est survenue lors de l'envoi de la réservation.";
     console.error("Booking error:", error);
+  } finally {
+    isSubmitting.value = false;
   }
 };
 </script>
@@ -352,6 +435,15 @@ const handleSubmit = () => {
   margin-top: 5px;
 }
 
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #d4edda;
+  border-radius: 4px;
+}
+
 .submit-button {
   background-color: #28a745;
   color: white;
@@ -364,12 +456,17 @@ const handleSubmit = () => {
   font-weight: bold;
 }
 
-.submit-button:hover {
+.submit-button:hover:not(:disabled) {
   background-color: #218838;
 }
 
-.submit-button:active {
+.submit-button:active:not(:disabled) {
   background-color: #1e7e34;
+}
+
+.submit-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
 }
 
 /* Responsive styles */
