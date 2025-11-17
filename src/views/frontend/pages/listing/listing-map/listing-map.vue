@@ -46,6 +46,7 @@
                           <img
                             :src="getImageUrl(item.image)"
                             class="img-fluid"
+                            :alt="item.Name"
                           />
                         </router-link>
                         <div class="fav-item justify-content-end">
@@ -152,14 +153,14 @@
                               </div>
                             </div>
                             <div class="listing-button">
-                              <router-link
-                                :to="`/listing/listing-details/${item.id}`"
+                              <button
+                                @click="openBookingForm(item)"
                                 class="btn btn-order"
                               >
                                 <span
                                   ><i class="feather-calendar me-2"></i></span
                                 >Réserver
-                              </router-link>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -279,6 +280,7 @@
                             :src="activeMarker.userImageUrl"
                             class="rounded-circle"
                             width="40"
+                            :alt="activeMarker.car_name"
                           />
                         </div>
                         <div class="listing-details-group">
@@ -315,12 +317,12 @@
                           </h6>
                         </div>
                         <div class="listing-button text-center mt-2">
-                          <a
-                            :href="activeMarker.profile_link"
+                          <button
+                            @click="openBookingForm(activeMarker)"
                             class="btn btn-sm btn-primary"
                           >
                             <i class="feather-calendar me-1"></i> Réserver
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -332,8 +334,28 @@
         </div>
       </div>
     </section>
+
+    <!-- Booking Form Modal -->
+    <div v-if="showBookingForm" class="booking-modal">
+      <div class="booking-modal-content">
+        <div class="booking-modal-header">
+          <h4>Réserver {{ selectedCar?.Name || selectedCar?.car_name }}</h4>
+          <button @click="closeBookingForm" class="close-button">
+            &times;
+          </button>
+        </div>
+        <div class="booking-modal-body">
+          <BookingForm
+            :whatsapp-number="whatsappNumber"
+            :car-info="carInfo"
+            @booking-sent="handleBookingSent"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
 <script>
 import api from "@/services/api";
 import layoutsHeader from "@/views/frontend/layouts/layouts-header.vue";
@@ -341,6 +363,7 @@ import breadcrumb from "@/components/breadcrumb.vue";
 import mapFilter from "@/views/frontend/pages/listing/listing-map/map-filter.vue";
 import mapSort from "@/views/frontend/pages/listing/listing-map/map-sort.vue";
 import { GoogleMap, Marker, InfoWindow } from "vue3-google-map";
+import BookingForm from "@/components/BookingForm.vue";
 
 // Import images at the top level
 import carPart01 from "@/assets/img/icons/car-parts-01.svg";
@@ -360,6 +383,7 @@ export default {
     GoogleMap,
     Marker,
     InfoWindow,
+    BookingForm,
   },
   data() {
     return {
@@ -372,7 +396,28 @@ export default {
       center: { lat: 35.7592, lng: -5.834 }, // Tanger coordinates
       locations: [],
       activeMarker: null,
+      showBookingForm: false,
+      selectedCar: null,
+      whatsappNumber: "212618181155",
     };
+  },
+  computed: {
+    carInfo() {
+      if (!this.selectedCar) return null;
+
+      return {
+        id: this.selectedCar.id,
+        name: this.selectedCar.Name || this.selectedCar.car_name,
+        category: this.selectedCar.Category || this.selectedCar.car_brand,
+        image: this.getImageUrl(
+          this.selectedCar.image || this.selectedCar.carImageUrl
+        ),
+        transmission: this.selectedCar.transmission || "Auto",
+        fuelType: this.selectedCar.fuel_type || "Essence",
+        year: this.selectedCar.year || "2022",
+        price: this.selectedCar.amount || "100 DH",
+      };
+    },
   },
   mounted() {
     this.fetchCars();
@@ -408,6 +453,7 @@ export default {
           year: car.year || "2022",
           persons: "5 Personnes", // Default value
           location: "Tanger, Maroc", // Default location
+          Meter: car.mileage || "10 KM", // Default value
 
           isSelected: false,
         }));
@@ -427,7 +473,7 @@ export default {
           partPower: carPart04,
           reviews: car.Reviews, // Use the reviews from the car data
           address: car.location,
-          amount: car.price,
+          amount: car.price || "100 DH", // Default price
           profile_link: `/listing/listing-details/${car.id}`,
         }));
         console.log("Cars loaded successfully:", this.Listing_Map.length);
@@ -496,6 +542,78 @@ export default {
     retryFetch() {
       this.fetchCars();
     },
+    openBookingForm(car) {
+      this.selectedCar = car;
+      this.showBookingForm = true;
+      // Prevent background scrolling when modal is open
+      document.body.style.overflow = "hidden";
+    },
+    closeBookingForm() {
+      this.showBookingForm = false;
+      this.selectedCar = null;
+      // Restore background scrolling
+      document.body.style.overflow = "auto";
+    },
+    handleBookingSent(bookingData) {
+      console.log("Booking sent:", bookingData);
+      // Close the booking form after successful submission
+      this.closeBookingForm();
+      // You could also show a success message here
+    },
   },
 };
 </script>
+
+<style scoped>
+.booking-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.booking-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.booking-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.booking-modal-header h4 {
+  margin: 0;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.booking-modal-body {
+  padding: 20px;
+}
+</style>
