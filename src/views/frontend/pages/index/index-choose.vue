@@ -1,44 +1,6 @@
 <template>
   <!-- Why Choose Us -->
-  <section class="section why-choose popular-explore">
-    <div class="choose-left">
-      <img src="@/assets/img/bg/choose-left.png" class="img-fluid" alt="Why Choose Us" />
-    </div>
-    <div class="container">
-      <!-- Heading title-->
-      <div class="section-heading" data-aos="fade-down">
-        <h2>Why Choose Us</h2>
-        <p>
-          We are innovative and passionate about the work we do.
-        </p>
-      </div>
-      <!-- /Heading title -->
-      <div class="why-choose-group">
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-12 d-flex"
-            v-for="item in Choose"
-            :key="item.id"
-            data-aos="fade-down"
-          >
-            <div class="card flex-fill">
-              <div class="card-body">
-                <div :class="item.Class">
-                  <img :src="getImageUrl(item.Image)" alt="" />
-                </div>
-                <div class="choose-content">
-                  <h4>{{ item.Title }}</h4>
-                  <p>
-                    {{ item.Content }}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
   <!-- /Why Choose Us -->
 
   <!-- About us Testimonials -->
@@ -46,16 +8,22 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2 class="title text-white">What People say about us?</h2>
-        <p class="description text-white">
+        <h2 class="title">What People say about us?</h2>
+        <p class="description">
           Discover what our customers have think about us
         </p>
       </div>
       <!-- /Heading title -->
-      <div class="owl-carousel about-testimonials testimonial-group mb-0 owl-theme">
+      <div
+        class="owl-carousel about-testimonials testimonial-group mb-0 owl-theme"
+      >
         <!-- Carousel Item -->
 
-        <Carousel :wrap-around="true" :settings="settings" :breakpoints="breakpoints">
+        <Carousel
+          :wrap-around="true"
+          :settings="settings"
+          :breakpoints="breakpoints"
+        >
           <Slide v-for="item in Testimonials" :key="item.id">
             <div class="testimonial-item d-flex">
               <div class="card flex-fill">
@@ -86,7 +54,7 @@
                     </div>
                   </div>
                   <p>
-                    {{item.Content}}
+                    {{ item.Content }}
                   </p>
                 </div>
               </div>
@@ -144,10 +112,12 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url)
+        .href;
     },
     getImageUrlOne(imageName) {
-      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/profiles/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

@@ -9,13 +9,6 @@
               alt="img"
               class="img-fluid"
             />
-            <div class="grid-img">
-              <img
-                src="@/assets/img/about/car-grid.png"
-                alt="img"
-                class="img-fluid"
-              />
-            </div>
           </div>
         </div>
         <div class="col-lg-5">
