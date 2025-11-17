@@ -9,9 +9,7 @@
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
         <h2 class="title">Que disent les gens de nous ?</h2>
-        <p class="description">
-          Découvrez ce que nos clients pensent de nous
-        </p>
+        <p class="description">Découvrez ce que nos clients pensent de nous</p>
       </div>
       <!-- /Heading title -->
       <div
