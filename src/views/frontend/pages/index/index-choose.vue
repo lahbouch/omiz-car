@@ -39,16 +39,7 @@
                     </div>
                     <div class="review-details">
                       <h6>{{ item.Name }}</h6>
-                      <div class="list-rating">
-                        <div class="list-rating-star">
-                          <i class="fas fa-star filled me-1"></i>
-                          <i class="fas fa-star filled me-1"></i>
-                          <i class="fas fa-star filled me-1"></i>
-                          <i class="fas fa-star filled me-1"></i>
-                          <i class="fas fa-star filled"></i>
-                        </div>
-                        <p><span>(5.0)</span></p>
-                      </div>
+                      
                     </div>
                   </div>
                   <p>
