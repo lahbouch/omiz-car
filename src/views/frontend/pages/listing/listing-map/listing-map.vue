@@ -2,6 +2,30 @@
   <div class="listing-page map-page">
     <layouts-header></layouts-header>
     <breadcrumb :title="title" :text="text" :text1="text1" />
+
+    <!-- Add search filter section -->
+    <section class="search-filter-section">
+      <div class="container">
+        <div class="search-filter-bar">
+          <div class="search-input-group">
+            <input
+              type="text"
+              v-model="searchQuery"
+              placeholder="Rechercher par nom de voiture, marque, modèle..."
+              class="form-control search-input"
+              @input="filterCars"
+            />
+            <button class="search-button" @click="filterCars">
+              <i class="feather-search"></i>
+            </button>
+          </div>
+          <div class="filter-results">
+            <span>{{ filteredCars.length }} véhicules trouvés</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <map-filter></map-filter>
 
     <section class="section car-listing">
@@ -34,7 +58,7 @@
 
                 <div
                   class="listview-car"
-                  v-for="item in Listing_Map"
+                  v-for="item in filteredCars"
                   :key="item.id"
                 >
                   <div class="card">
@@ -399,6 +423,8 @@ export default {
       showBookingForm: false,
       selectedCar: null,
       whatsappNumber: "212618181155",
+      searchQuery: "",
+      filteredCars: [],
     };
   },
   computed: {
@@ -457,6 +483,9 @@ export default {
 
           isSelected: false,
         }));
+
+        // Initially show all cars
+        this.filteredCars = [...this.Listing_Map];
 
         // Create locations for the map
         this.locations = this.Listing_Map.map((car, index) => ({
@@ -560,11 +589,75 @@ export default {
       this.closeBookingForm();
       // You could also show a success message here
     },
+    filterCars() {
+      if (!this.searchQuery.trim()) {
+        // If search query is empty, show all cars
+        this.filteredCars = [...this.Listing_Map];
+        return;
+      }
+
+      const query = this.searchQuery.toLowerCase().trim();
+      this.filteredCars = this.Listing_Map.filter((car) => {
+        return (
+          car.Name.toLowerCase().includes(query) ||
+          car.Category.toLowerCase().includes(query) ||
+          car.make.toLowerCase().includes(query) ||
+          car.transmission.toLowerCase().includes(query) ||
+          car.fuel_type.toLowerCase().includes(query) ||
+          car.year.includes(query)
+        );
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
+.search-filter-section {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.search-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input-group {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-results {
+  color: #6c757d;
+  font-size: 14px;
+}
+
 .booking-modal {
   position: fixed;
   top: 0;
@@ -615,5 +708,16 @@ export default {
 
 .booking-modal-body {
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .search-filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input-group {
+    max-width: none;
+  }
 }
 </style>
