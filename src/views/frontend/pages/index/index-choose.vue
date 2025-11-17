@@ -8,9 +8,9 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2 class="title">What People say about us?</h2>
+        <h2 class="title">Que disent les gens de nous ?</h2>
         <p class="description">
-          Discover what our customers have think about us
+          Découvrez ce que nos clients pensent de nous
         </p>
       </div>
       <!-- /Heading title -->
