@@ -19,5 +19,5 @@ export default defineConfig({
   server: {
     port: 3000 // Development server port
   },
-  base: '/vue/template/',
+  base: '/',
 })

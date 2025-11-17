@@ -79,7 +79,7 @@
                       ><i class="ti ti-eye me-1"></i>Reservations</router-link
                     >
                     <router-link
-                      to="/admin-template/rentals/add-car-simple"
+                      to="/admin-template/rentals/add-car"
                       class="btn btn-dark d-flex align-items-center"
                       ><i class="ti ti-plus me-1"></i>Add New Car</router-link
                     >

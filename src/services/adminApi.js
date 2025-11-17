@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance for admin API
 const adminApiClient = axios.create({
-  baseURL: 'http://localhost:8000/api', // Using port 8001 for Laravel backend
+  baseURL: 'http://localhost:8000/api', // Using port 8000 for Laravel backend
   withCredentials: false,
   headers: {
     Accept: 'application/json',

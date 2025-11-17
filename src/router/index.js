@@ -263,8 +263,8 @@ import Index_4 from '@/views/frontend/pages/index-4/index-4.vue'
 const routes = [
   { 
     path: '/',
-    name: 'login',
-    component: () => import('@/views/frontend/pages/pages/auth/login.vue')
+    name: 'home',
+    redirect: '/home'
   },
   {
     path: '/contact-us',
@@ -751,9 +751,8 @@ const routes = [
     { path: "pricing", component: () => import('@/views/admin/pages/rental/pricing.vue'), },
     { path: "extra-services", component: () => import('@/views/admin/pages/rental/extra-services.vue'), },
     { path: "cars", component: () => import('@/views/admin/pages/rental/cars/cars-list.vue'), },
-    { path: "add-car", component: () => import('@/views/admin/pages/rental/cars/add-car.vue'), },
-    { path: "add-car-simple", component: () => import('@/views/admin/pages/rental/cars/add-car-simple.vue'), },
-    { path: "edit-car", component: () => import('@/views/admin/pages/rental/cars/edit-car.vue'), },
+    { path: "add-car", component: () => import('@/views/admin/pages/rental/cars/add-car-simple.vue'), },
+    { path: "edit-car/:id", component: () => import('@/views/admin/pages/rental/cars/edit-car-simple.vue'), props: true },
     { path: "car-details", component: () => import('@/views/admin/pages/rental/car-details.vue'), },
   ]
 },
@@ -781,7 +780,7 @@ const routes = [
 
 
 export const router = createRouter({
-    history: createWebHistory('/vue/template/'),
+    history: createWebHistory('/'),
     linkActiveClass: 'active',
     routes
 });

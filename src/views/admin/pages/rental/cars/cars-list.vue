@@ -44,16 +44,10 @@
           </div>
           <div class="mb-2">
             <router-link
-              to="/admin-template/rentals/add-car-simple"
-              class="btn btn-primary d-flex align-items-center me-2"
-            >
-              <i class="ti ti-plus me-2"></i>Add New Car (Simple)
-            </router-link>
-            <router-link
               to="/admin-template/rentals/add-car"
-              class="btn btn-secondary d-flex align-items-center"
+              class="btn btn-primary d-flex align-items-center"
             >
-              <i class="ti ti-plus me-2"></i>Add New Car (Full)
+              <i class="ti ti-plus me-2"></i>Add New Car
             </router-link>
           </div>
         </div>

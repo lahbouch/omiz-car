@@ -44,8 +44,8 @@
                 "route": "/admin-template/rentals/cars",
                 "active_link" : "/admin-template/rentals/cars",
                 "active_link1" : "/admin-template/rentals/car-details",
-                "active_link2" : "/admin-template/rentals/add-car-simple",
-                "active_link3" : "/admin-template/rentals/edit-car",
+                "active_link2" : "/admin-template/rentals/add-car",
+                "active_link3" : "/admin-template/rentals/edit-car/:id",
                 "hasSubRoute": false,
                 "showSubRoute": false
             }
