@@ -10,33 +10,31 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Entreprise</h4>
+                <h4>{{ $t("Company") }}</h4>
                 <ul class="footer-links">
                   <li>
                     <router-link to="/pages/about-us"
-                      ><i class="fas fa-chevron-right"></i>Notre
-                      entreprise</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Our Company") }}</router-link
                     >
                   </li>
                   <li>
                     <router-link to="/listing/listing-map"
-                      ><i class="fas fa-chevron-right"></i>Nos
-                      véhicules</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Our Vehicles") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Devenir partenaire</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Become a Partner") }}</a
                     >
                   </li>
                   <li>
                     <router-link to="/pages/faq"
-                      ><i class="fas fa-chevron-right"></i>FAQ</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("FAQ") }}</router-link
                     >
                   </li>
                   <li>
                     <router-link to="/contact-us"
-                      ><i class="fas fa-chevron-right"></i>Contact</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Contact") }}</router-link
                     >
                   </li>
                 </ul>
@@ -46,32 +44,31 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Types de véhicules</h4>
+                <h4>{{ $t("Vehicle Types") }}</h4>
                 <ul class="footer-links">
                   <li>
                     <router-link to="/listing/listing-map"
-                      ><i class="fas fa-chevron-right"></i>Tous les
-                      véhicules</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("All Vehicles") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Berlines</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Sedans") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Citadines</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("City Cars") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>SUVs</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("SUVs") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Électriques</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Electric") }}</a
                     >
                   </li>
                 </ul>
@@ -81,34 +78,31 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Liens rapides</h4>
+                <h4>{{ $t("Quick Links") }}</h4>
                 <ul class="footer-links">
                   <li>
                     <router-link to="/contact-us"
-                      ><i class="fas fa-chevron-right"></i>Réserver
-                      maintenant</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Book Now") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Campagnes</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Campaigns") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Devenir partenaire</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Become a Partner") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Offres et
-                      promotions</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Offers and Promotions") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Services
-                      financiers</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Financial Services") }}</a
                     >
                   </li>
                 </ul>
@@ -118,31 +112,31 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Ressources</h4>
+                <h4>{{ $t("Resources") }}</h4>
                 <ul class="footer-links">
                   <li>
                     <router-link to="/pages/faq"
-                      ><i class="fas fa-chevron-right"></i>Support</router-link
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Support") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Sécurité</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Security") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Centre d'aide</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Help Center") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Préférences</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Preferences") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Clients</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Clients") }}</a
                     >
                   </li>
                 </ul>
@@ -152,32 +146,32 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Commencer</h4>
+                <h4>{{ $t("Get Started") }}</h4>
                 <ul class="footer-links">
                   <li>
                     <router-link to="/pages/about-us"
                       ><i class="fas fa-chevron-right"></i
-                      >Introduction</router-link
+                      >{{ $t("Introduction") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Documentation</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Documentation") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Utilisation</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Usage") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>API</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("API") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>Éléments</a
+                      ><i class="fas fa-chevron-right"></i>{{ $t("Elements") }}</a
                     >
                   </li>
                 </ul>
@@ -187,14 +181,14 @@
           <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
             <div class="footer-widget">
               <div class="widget-title">
-                <h4>Support 24/7</h4>
+                <h4>{{ $t("24/7 Support") }}</h4>
                 <ul class="footer-address">
                   <li>
-                    Vous souhaitez réserver un véhicule ? Contactez-nous !
+                    {{ $t("Want to book a vehicle? Contact us!") }}
                   </li>
-                  <li>Contact : +212 655 449 468</li>
-                  <li>Urgence : +212 666 609 899</li>
-                  <li>Email : omizcar@gmail.com</li>
+                  <li>{{ $t("Contact") }}: +212 655 449 468</li>
+                  <li>{{ $t("Emergency") }}: +212 666 609 899</li>
+                  <li>Email: omizcar@gmail.com</li>
                   <li class="social-link">
                     <ul>
                       <li>
@@ -204,27 +198,22 @@
                       </li>
                       <li>
                         <a href="javascript:void(0);"
-                          ><i class="fa-brands fa-instagram"></i
+                          ><i class="fab fa-instagram"></i
                         ></a>
                       </li>
                       <li>
                         <a href="javascript:void(0);"
-                          ><i class="fa-brands fa-behance"></i
+                          ><i class="fab fa-linkedin-in"></i
                         ></a>
                       </li>
                       <li>
                         <a href="javascript:void(0);"
-                          ><i class="fa-brands fa-twitter"></i
+                          ><i class="fab fa-twitter"></i
                         ></a>
                       </li>
                       <li>
                         <a href="javascript:void(0);"
-                          ><i class="fa-brands fa-pinterest-p"></i
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0);"
-                          ><i class="fa-brands fa-linkedin"></i
+                          ><i class="fab fa-youtube"></i
                         ></a>
                       </li>
                     </ul>
@@ -235,24 +224,40 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="copy-right">
-          <p>
-            Copyright &copy; {{ new Date().getFullYear() }}
-            <span> Omiz Car</span> . Tous droits réservés.
-          </p>
-        </div>
-        <div class="app-store-links d-flex align-items-center">
-          <span class="me-2"
-            ><a href="javascript:void(0);"
-              ><img src="@/assets/img/icons/google-play.svg" alt="Img" /></a
-          ></span>
-          <span
-            ><a href="javascript:void(0);"
-              ><img src="@/assets/img/icons/app-store.svg" alt="Img" /></a
-          ></span>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="copyright-text">
+                <p>
+                  {{ $t("Copyright") }} © {{ new Date().getFullYear() }}
+                  <span>Omiz Car</span>. {{ $t("All Rights Reserved") }}.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-list">
+                <ul>
+                  <li>
+                    <router-link to="/pages/privacy-policy"
+                      >{{ $t("Privacy Policy") }}</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link to="/pages/terms-condition"
+                      >{{ $t("Terms & Conditions") }}</router-link
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- /Footer Bottom -->
   </footer>
 </template>

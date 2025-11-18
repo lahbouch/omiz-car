@@ -3,9 +3,9 @@
     <div class="container">
       <!-- Heading title-->
       <div class="section-heading" data-aos="fade-down">
-        <h2 class="title text-white">Ce que disent nos clients</h2>
+        <h2 class="title text-white">{{ $t("What our clients say") }}</h2>
         <p class="description text-white">
-          Découvrez les témoignages de nos clients satisfaits
+          {{ $t("Discover testimonials from our satisfied customers") }}
         </p>
       </div>
       <!-- /Heading title -->
@@ -48,9 +48,7 @@
                     </div>
                   </div>
                   <p>
-                    Service impeccable d'Omiz Car ! Location rapide, voiture
-                    propre et bien entretenue. Livraison à l'aéroport parfaite.
-                    Je recommande vivement !
+                    {{ $t("Impeccable service from Omiz Car! Quick rental, clean and well-maintained car. Perfect airport delivery. I highly recommend!") }}
                   </p>
                 </div>
               </div>

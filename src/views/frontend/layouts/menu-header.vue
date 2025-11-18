@@ -2,7 +2,7 @@
   <ul class="main-nav">
     <li v-for="item in HeaderData" :key="item.tittle">
       <router-link :to="item.route || '/'">
-        {{ item.tittle }}
+        {{ $t(item.tittle) }}
       </router-link>
     </li>
   </ul>

@@ -115,9 +115,9 @@ export default {
   data() {
     return {
       testimonial: testimonial,
-      title: "Témoignages",
-      text: "Pages",
-      text1: "Avis Clients",
+      title: this.$t("Testimonials"),
+      text: this.$t("Pages"),
+      text1: this.$t("Customer Reviews"),
     };
   },
   methods: {

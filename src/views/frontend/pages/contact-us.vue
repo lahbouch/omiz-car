@@ -123,9 +123,9 @@ export default {
   data() {
     return {
       ContactUS: ContactUS,
-      title: "Contact",
-      text: "Pages",
-      text1: "Contact",
+      title: this.$t("Contact"),
+      text: this.$t("Pages"),
+      text1: this.$t("Contact"),
       contactForm: {
         name: "",
         email: "",

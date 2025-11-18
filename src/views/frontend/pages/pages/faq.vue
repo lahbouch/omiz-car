@@ -132,9 +132,9 @@
 export default {
   data() {
     return {
-      title: "FAQ",
-      text: "Pages",
-      text1: "Questions Fréquentes",
+      title: this.$t("FAQ"),
+      text: this.$t("Pages"),
+      text1: this.$t("Frequently Asked Questions"),
     };
   },
 };

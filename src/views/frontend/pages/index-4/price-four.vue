@@ -295,22 +295,26 @@
               <div class="col-lg-4 col-md-6">
                 <!-- Footer Widget -->
                 <div class="footer-widget footer-menu">
-                  <h5 class="footer-title">Liens rapides</h5>
+                  <h5 class="footer-title">{{ $t("Quick Links") }}</h5>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Mon compte</a>
+                      <a href="javascript:void(0)">{{ $t("My Account") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Campagnes</a>
+                      <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Devenir partenaire</a>
+                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Offres et promotions</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Offers and Promotions")
+                      }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Services financiers</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Financial Services")
+                      }}</a>
                     </li>
                   </ul>
                 </div>
@@ -319,24 +323,24 @@
               <div class="col-lg-4 col-md-6">
                 <!-- Footer Widget -->
                 <div class="footer-widget footer-menu">
-                  <h5 class="footer-title">Pages</h5>
+                  <h5 class="footer-title">{{ $t("Pages") }}</h5>
                   <ul>
                     <li>
-                      <router-link to="/pages/about-us">À propos</router-link>
+                      <router-link to="/pages/about-us">{{ $t("About Us") }}</router-link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Devenir partenaire</a>
+                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                     </li>
                     <li>
-                      <router-link to="/pages/faq">FAQ</router-link>
+                      <router-link to="/pages/faq">{{ $t("FAQ") }}</router-link>
                     </li>
                     <li>
                       <router-link to="/pages/testimonial"
-                        >Témoignages</router-link
+                        >{{ $t("Testimonials") }}</router-link
                       >
                     </li>
                     <li>
-                      <router-link to="/contact-us">Contact</router-link>
+                      <router-link to="/contact-us">{{ $t("Contact") }}</router-link>
                     </li>
                   </ul>
                 </div>
@@ -345,22 +349,22 @@
               <div class="col-lg-4 col-md-6">
                 <!-- Footer Widget -->
                 <div class="footer-widget footer-menu">
-                  <h5 class="footer-title">Liens utiles</h5>
+                  <h5 class="footer-title">{{ $t("Useful Links") }}</h5>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Mon compte</a>
+                      <a href="javascript:void(0)">{{ $t("My Account") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Campagnes</a>
+                      <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Devenir partenaire</a>
+                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Offres et promotions</a>
+                      <a href="javascript:void(0)">{{ $t("Offers and Promotions") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Services financiers</a>
+                      <a href="javascript:void(0)">{{ $t("Financial Services") }}</a>
                     </li>
                   </ul>
                 </div>
@@ -381,7 +385,7 @@
           <div class="row align-items-center row-gap-3">
             <div class="col-lg-4">
               <div class="copyright-text">
-                <p>Copyright &copy; 2025 Omiz Car. Tous droits réservés.</p>
+                <p>{{ $t("Copyright") }} &copy; 2025 Omiz Car. {{ $t("All Rights Reserved") }}.</p>
               </div>
             </div>
             <div class="col-lg-4">
@@ -401,17 +405,17 @@
               <ul class="privacy-link">
                 <li>
                   <router-link to="/pages/privacy-policy"
-                    >Confidentialité</router-link
+                    >{{ $t("Privacy") }}</router-link
                   >
                 </li>
                 <li>
                   <router-link to="/pages/terms-condition"
-                    >Conditions générales</router-link
+                    >{{ $t("Terms and Conditions") }}</router-link
                   >
                 </li>
                 <li>
                   <router-link to="/pages/refund-policy"
-                    >Politique de remboursement</router-link
+                    >{{ $t("Refund Policy") }}</router-link
                   >
                 </li>
               </ul>

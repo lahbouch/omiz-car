@@ -56,26 +56,19 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Entreprise</h5>
+              <h5 class="footer-title">{{ $t("Quick Links") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/pages/about-us"
-                    >Notre entreprise</router-link
-                  >
+                  <router-link to="/pages/about-us">{{ $t("About Us") }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/listing/listing-map"
-                    >Nos véhicules</router-link
-                  >
+                  <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Devenir partenaire</a>
+                  <router-link to="/pages/faq">{{ $t("FAQ") }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/pages/faq">FAQ</router-link>
-                </li>
-                <li>
-                  <router-link to="/contact-us">Contact</router-link>
+                  <router-link to="/contact-us">{{ $t("Contact") }}</router-link>
                 </li>
               </ul>
             </div>
@@ -84,24 +77,24 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Types de véhicules</h5>
+              <h5 class="footer-title">{{ $t("Vehicle Types") }}</h5>
               <ul>
                 <li>
                   <router-link to="/listing/listing-map"
-                    >Tous les véhicules</router-link
-                  >
+                    >{{ $t("All Vehicles") }}</router-link
+                    >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Berlines</a>
+                  <a href="javascript:void(0)">{{ $t("Sedans") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Citadines</a>
+                  <a href="javascript:void(0)">{{ $t("City Cars") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">SUVs</a>
+                  <a href="javascript:void(0)">{{ $t("SUVs") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Électriques</a>
+                  <a href="javascript:void(0)">{{ $t("Electric") }}</a>
                 </li>
               </ul>
             </div>
@@ -110,48 +103,24 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Liens rapides</h5>
+              <h5 class="footer-title">{{ $t("Quick Links") }}</h5>
               <ul>
                 <li>
                   <router-link to="/contact-us"
-                    >Réserver maintenant</router-link
-                  >
+                    >{{ $t("Book Now") }}</router-link
+                    >
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Campagnes</a>
+                  <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Devenir partenaire</a>
+                  <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Offres et promotions</a>
+                  <a href="javascript:void(0)">{{ $t("Offers and Promotions") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Services financiers</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /Footer Widget -->
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <!-- Footer Widget -->
-            <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Ressources</h5>
-              <ul>
-                <li>
-                  <router-link to="/pages/faq">Support</router-link>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Sécurité</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Centre d'aide</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Préférences</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Clients</a>
+                  <a href="javascript:void(0)">{{ $t("Financial Services") }}</a>
                 </li>
               </ul>
             </div>
@@ -160,22 +129,46 @@
           <div class="col-lg-2 col-md-6">
             <!-- Footer Widget -->
             <div class="footer-widget footer-menu">
-              <h5 class="footer-title">Commencer</h5>
+              <h5 class="footer-title">{{ $t("Resources") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/pages/about-us">Introduction</router-link>
+                  <router-link to="/pages/faq">{{ $t("Support") }}</router-link>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Documentation</a>
+                  <a href="javascript:void(0)">{{ $t("Security") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Utilisation</a>
+                  <a href="javascript:void(0)">{{ $t("Help Center") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">API</a>
+                  <a href="javascript:void(0)">{{ $t("Preferences") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Éléments</a>
+                  <a href="javascript:void(0)">{{ $t("Clients") }}</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /Footer Widget -->
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <!-- Footer Widget -->
+            <div class="footer-widget footer-menu">
+              <h5 class="footer-title">{{ $t("Get Started") }}</h5>
+              <ul>
+                <li>
+                  <router-link to="/pages/about-us">{{ $t("Introduction") }}</router-link>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">{{ $t("Documentation") }}</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">{{ $t("Usage") }}</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">{{ $t("API") }}</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">{{ $t("Elements") }}</a>
                 </li>
               </ul>
             </div>
@@ -195,8 +188,8 @@
             <div class="col-lg-6">
               <div class="copyright-text">
                 <p>
-                  Copyright © {{ new Date().getFullYear() }}
-                  <span>Omiz Car</span>. Tous droits réservés.
+                  {{ $t("Copyright") }} © {{ new Date().getFullYear() }}
+                  <span>Omiz Car</span>. {{ $t("All Rights Reserved") }}.
                 </p>
               </div>
             </div>
@@ -220,10 +213,7 @@
                           />French
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
-                          <img
-                            src="@/assets/img/flags/es.png"
-                            alt="Img"
-                          />Spanish
+                          <img src="@/assets/img/flags/es.png" alt="Img" />Spanish
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
                           <img

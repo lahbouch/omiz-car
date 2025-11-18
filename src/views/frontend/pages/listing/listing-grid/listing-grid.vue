@@ -242,9 +242,9 @@ import "vue3-carousel/dist/carousel.css";
 export default {
   data() {
     return {
-      title: "Notre flotte",
-      text: "Listings",
-      text1: "Notre flotte",
+      title: this.$t("Vehicles"),
+      text: this.$t("Listings"),
+      text1: this.$t("Our Fleet"),
       Mazda: Mazda,
       isSelected: false,
       settings: {

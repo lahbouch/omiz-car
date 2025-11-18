@@ -31,9 +31,9 @@
 export default {
   data() {
     return {
-      title: "About us",
-      text: "Pages",
-      text1: "About us",
+      title: this.$t("About Us"),
+      text: this.$t("Pages"),
+      text1: this.$t("About Us"),
     };
   },
 };
