@@ -420,22 +420,22 @@ export default {
       if (!imagePath) {
         return new URL("@/assets/admin/img/car/car.jpg", import.meta.url).href;
       }
-      
+
       // If it's already a full URL, return as is
       if (imagePath.startsWith("http")) {
         return imagePath;
       }
-      
+
       // If it's a storage path (uploaded images), use the Laravel storage URL
       if (imagePath.startsWith("storage/")) {
         return `http://localhost:8001/${imagePath}`;
       }
-      
+
       // If it's a car-images path (uploaded images), use the Laravel storage URL
       if (imagePath.startsWith("car-images/")) {
         return `http://localhost:8001/storage/${imagePath}`;
       }
-      
+
       // For local assets, try to construct the path
       try {
         return new URL(
