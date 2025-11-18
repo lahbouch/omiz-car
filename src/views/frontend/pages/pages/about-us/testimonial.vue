@@ -48,7 +48,11 @@
                     </div>
                   </div>
                   <p>
-                    {{ $t("Impeccable service from Omiz Car! Quick rental, clean and well-maintained car. Perfect airport delivery. I highly recommend!") }}
+                    {{
+                      $t(
+                        "Impeccable service from Omiz Car! Quick rental, clean and well-maintained car. Perfect airport delivery. I highly recommend!"
+                      )
+                    }}
                   </p>
                 </div>
               </div>

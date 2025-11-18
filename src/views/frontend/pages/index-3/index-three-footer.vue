@@ -59,7 +59,9 @@
               <h5 class="footer-title">{{ $t("Quick Links") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/pages/about-us">{{ $t("About Us") }}</router-link>
+                  <router-link to="/pages/about-us">{{
+                    $t("About Us")
+                  }}</router-link>
                 </li>
                 <li>
                   <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
@@ -68,7 +70,9 @@
                   <router-link to="/pages/faq">{{ $t("FAQ") }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/contact-us">{{ $t("Contact") }}</router-link>
+                  <router-link to="/contact-us">{{
+                    $t("Contact")
+                  }}</router-link>
                 </li>
               </ul>
             </div>
@@ -80,9 +84,9 @@
               <h5 class="footer-title">{{ $t("Vehicle Types") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/listing/listing-map"
-                    >{{ $t("All Vehicles") }}</router-link
-                    >
+                  <router-link to="/listing/listing-map">{{
+                    $t("All Vehicles")
+                  }}</router-link>
                 </li>
                 <li>
                   <a href="javascript:void(0)">{{ $t("Sedans") }}</a>
@@ -106,9 +110,9 @@
               <h5 class="footer-title">{{ $t("Quick Links") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/contact-us"
-                    >{{ $t("Book Now") }}</router-link
-                    >
+                  <router-link to="/contact-us">{{
+                    $t("Book Now")
+                  }}</router-link>
                 </li>
                 <li>
                   <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
@@ -117,10 +121,14 @@
                   <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">{{ $t("Offers and Promotions") }}</a>
+                  <a href="javascript:void(0)">{{
+                    $t("Offers and Promotions")
+                  }}</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">{{ $t("Financial Services") }}</a>
+                  <a href="javascript:void(0)">{{
+                    $t("Financial Services")
+                  }}</a>
                 </li>
               </ul>
             </div>
@@ -156,7 +164,9 @@
               <h5 class="footer-title">{{ $t("Get Started") }}</h5>
               <ul>
                 <li>
-                  <router-link to="/pages/about-us">{{ $t("Introduction") }}</router-link>
+                  <router-link to="/pages/about-us">{{
+                    $t("Introduction")
+                  }}</router-link>
                 </li>
                 <li>
                   <a href="javascript:void(0)">{{ $t("Documentation") }}</a>
@@ -213,7 +223,10 @@
                           />French
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
-                          <img src="@/assets/img/flags/es.png" alt="Img" />Spanish
+                          <img
+                            src="@/assets/img/flags/es.png"
+                            alt="Img"
+                          />Spanish
                         </a>
                         <a href="javascript:void(0);" class="dropdown-item">
                           <img

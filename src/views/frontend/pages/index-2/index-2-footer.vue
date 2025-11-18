@@ -14,27 +14,32 @@
                 <ul class="footer-links">
                   <li>
                     <router-link to="/pages/about-us"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Our Company") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Our Company") }}</router-link
                     >
                   </li>
                   <li>
                     <router-link to="/listing/listing-map"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Our Vehicles") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Our Vehicles") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Become a Partner") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Become a Partner") }}</a
                     >
                   </li>
                   <li>
                     <router-link to="/pages/faq"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("FAQ") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("FAQ") }}</router-link
                     >
                   </li>
                   <li>
                     <router-link to="/contact-us"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Contact") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Contact") }}</router-link
                     >
                   </li>
                 </ul>
@@ -48,7 +53,8 @@
                 <ul class="footer-links">
                   <li>
                     <router-link to="/listing/listing-map"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("All Vehicles") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("All Vehicles") }}</router-link
                     >
                   </li>
                   <li>
@@ -58,7 +64,8 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("City Cars") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("City Cars") }}</a
                     >
                   </li>
                   <li>
@@ -68,7 +75,8 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Electric") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Electric") }}</a
                     >
                   </li>
                 </ul>
@@ -82,27 +90,32 @@
                 <ul class="footer-links">
                   <li>
                     <router-link to="/contact-us"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Book Now") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Book Now") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Campaigns") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Campaigns") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Become a Partner") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Become a Partner") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Offers and Promotions") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Offers and Promotions") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Financial Services") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Financial Services") }}</a
                     >
                   </li>
                 </ul>
@@ -116,27 +129,32 @@
                 <ul class="footer-links">
                   <li>
                     <router-link to="/pages/faq"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Support") }}</router-link
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Support") }}</router-link
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Security") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Security") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Help Center") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Help Center") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Preferences") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Preferences") }}</a
                     >
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Clients") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Clients") }}</a
                     >
                   </li>
                 </ul>
@@ -156,7 +174,8 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Documentation") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Documentation") }}</a
                     >
                   </li>
                   <li>
@@ -171,7 +190,8 @@
                   </li>
                   <li>
                     <a href="javascript:void(0);"
-                      ><i class="fas fa-chevron-right"></i>{{ $t("Elements") }}</a
+                      ><i class="fas fa-chevron-right"></i
+                      >{{ $t("Elements") }}</a
                     >
                   </li>
                 </ul>
@@ -242,14 +262,14 @@
               <div class="footer-list">
                 <ul>
                   <li>
-                    <router-link to="/pages/privacy-policy"
-                      >{{ $t("Privacy Policy") }}</router-link
-                    >
+                    <router-link to="/pages/privacy-policy">{{
+                      $t("Privacy Policy")
+                    }}</router-link>
                   </li>
                   <li>
-                    <router-link to="/pages/terms-condition"
-                      >{{ $t("Terms & Conditions") }}</router-link
-                    >
+                    <router-link to="/pages/terms-condition">{{
+                      $t("Terms & Conditions")
+                    }}</router-link>
                   </li>
                 </ul>
               </div>

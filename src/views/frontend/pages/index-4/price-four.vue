@@ -304,7 +304,9 @@
                       <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Become a Partner")
+                      }}</a>
                     </li>
                     <li>
                       <a href="javascript:void(0)">{{
@@ -326,21 +328,27 @@
                   <h5 class="footer-title">{{ $t("Pages") }}</h5>
                   <ul>
                     <li>
-                      <router-link to="/pages/about-us">{{ $t("About Us") }}</router-link>
+                      <router-link to="/pages/about-us">{{
+                        $t("About Us")
+                      }}</router-link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Become a Partner")
+                      }}</a>
                     </li>
                     <li>
                       <router-link to="/pages/faq">{{ $t("FAQ") }}</router-link>
                     </li>
                     <li>
-                      <router-link to="/pages/testimonial"
-                        >{{ $t("Testimonials") }}</router-link
-                      >
+                      <router-link to="/pages/testimonial">{{
+                        $t("Testimonials")
+                      }}</router-link>
                     </li>
                     <li>
-                      <router-link to="/contact-us">{{ $t("Contact") }}</router-link>
+                      <router-link to="/contact-us">{{
+                        $t("Contact")
+                      }}</router-link>
                     </li>
                   </ul>
                 </div>
@@ -358,13 +366,19 @@
                       <a href="javascript:void(0)">{{ $t("Campaigns") }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">{{ $t("Become a Partner") }}</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Become a Partner")
+                      }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">{{ $t("Offers and Promotions") }}</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Offers and Promotions")
+                      }}</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">{{ $t("Financial Services") }}</a>
+                      <a href="javascript:void(0)">{{
+                        $t("Financial Services")
+                      }}</a>
                     </li>
                   </ul>
                 </div>
@@ -385,7 +399,10 @@
           <div class="row align-items-center row-gap-3">
             <div class="col-lg-4">
               <div class="copyright-text">
-                <p>{{ $t("Copyright") }} &copy; 2025 Omiz Car. {{ $t("All Rights Reserved") }}.</p>
+                <p>
+                  {{ $t("Copyright") }} &copy; 2025 Omiz Car.
+                  {{ $t("All Rights Reserved") }}.
+                </p>
               </div>
             </div>
             <div class="col-lg-4">
@@ -404,19 +421,19 @@
             <div class="col-lg-4">
               <ul class="privacy-link">
                 <li>
-                  <router-link to="/pages/privacy-policy"
-                    >{{ $t("Privacy") }}</router-link
-                  >
+                  <router-link to="/pages/privacy-policy">{{
+                    $t("Privacy")
+                  }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/pages/terms-condition"
-                    >{{ $t("Terms and Conditions") }}</router-link
-                  >
+                  <router-link to="/pages/terms-condition">{{
+                    $t("Terms and Conditions")
+                  }}</router-link>
                 </li>
                 <li>
-                  <router-link to="/pages/refund-policy"
-                    >{{ $t("Refund Policy") }}</router-link
-                  >
+                  <router-link to="/pages/refund-policy">{{
+                    $t("Refund Policy")
+                  }}</router-link>
                 </li>
               </ul>
             </div>
