@@ -5,7 +5,7 @@
         <div class="col-lg-7">
           <div class="rental-img">
             <img
-              src="@/assets/img/about/rent-car.png"
+              src="/src/assets/img/about/rent-car.png"
               alt="img"
               class="img-fluid"
             />
@@ -17,19 +17,21 @@
               class="section-heading heading-four text-start"
               data-aos="fade-down"
             >
-              <h2>Louez votre voiture en 3 étapes simples</h2>
-              <p>Découvrez comment réserver votre voiture avec Omiz Car</p>
+              <h2>{{ $t("Rent your car in 3 simple steps") }}</h2>
+              <p>{{ $t("Discover how to book your car with Omiz Car") }}</p>
             </div>
             <div class="step-item d-flex align-items-center">
               <span class="step-icon bg-primary me-3">
                 <i class="bx bx-calendar-heart"></i>
               </span>
               <div>
-                <h5>1. Choisissez la date et le lieu</h5>
+                <h5>{{ $t("1. Choose the date and location") }}</h5>
                 <p>
-                  Déterminez la date et le lieu de votre location. Considérez
-                  votre itinéraire de voyage et les lieux de prise en
-                  charge/retour
+                  {{
+                    $t(
+                      "Determine the date and location of your rental. Consider your travel itinerary and pick-up/return locations"
+                    )
+                  }}
                 </p>
               </div>
             </div>
@@ -38,10 +40,13 @@
                 <i class="bx bxs-edit-location"></i>
               </span>
               <div>
-                <h5>2. Sélectionnez votre véhicule</h5>
+                <h5>{{ $t("2. Select your vehicle") }}</h5>
                 <p>
-                  Vérifiez la disponibilité du type de véhicule souhaité pour
-                  vos dates et lieux choisis.
+                  {{
+                    $t(
+                      "Check the availability of the desired vehicle type for your chosen dates and locations."
+                    )
+                  }}
                 </p>
               </div>
             </div>
@@ -50,10 +55,13 @@
                 <i class="bx bx-coffee-togo"></i>
               </span>
               <div>
-                <h5>3. Réservez et recevez votre voiture</h5>
+                <h5>{{ $t("3. Book and receive your car") }}</h5>
                 <p>
-                  Confirmez votre réservation et recevez votre voiture selon vos
-                  préférences.
+                  {{
+                    $t(
+                      "Confirm your reservation and receive your car according to your preferences."
+                    )
+                  }}
                 </p>
               </div>
             </div>

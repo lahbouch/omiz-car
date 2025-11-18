@@ -3,8 +3,8 @@
   <section class="car-section">
     <div class="container">
       <div class="section-heading heading-four" data-aos="fade-down">
-        <h2>Découvrez notre flotte de 15 véhicules économiques</h2>
-        <p>Parfaitement entretenus pour votre confort et votre sécurité</p>
+        <h2>{{ $t("Discover our fleet of 15 economical vehicles") }}</h2>
+        <p>{{ $t("Perfectly maintained for your comfort and safety") }}</p>
       </div>
 
       <div class="row">
@@ -54,7 +54,7 @@
               </div>
               <div class="fav-item">
                 <div class="d-flex align-items-center gap-2">
-                  <span class="featured-text">Populaire</span>
+                  <span class="featured-text">{{ $t("Popular") }}</span>
                   <span
                     class="availability"
                     :class="item.available ? 'available' : 'not-available'"
@@ -73,53 +73,35 @@
             <div class="listing-content">
               <div
                 class="listing-features d-flex align-items-center justify-content-between"
-              >
-                <div class="list-rating">
-                  <h3 class="listing-title">
-                    <router-link :to="`/listing/listing-details/${item.id}`">
-                      {{ item.make }} {{ item.model }}
-                    </router-link>
-                  </h3>
-                  <div class="list-rating">
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star"></i>
-                    <span
-                      >(4.0)
-                      {{ Math.floor(Math.random() * 100) + 50 }} Reviews</span
-                    >
-                  </div>
-                </div>
-                <div>
-                  <h4 class="price">
-                    {{ item.daily_rate }} MAD <span>/ Day</span>
-                  </h4>
-                </div>
-              </div>
+              ></div>
               <div class="listing-details-group">
                 <ul>
                   <li>
-                    <img src="@/assets/img/icons/car-parts-01.svg" alt="Auto" />
+                    <img
+                      src="/src/assets/img/icons/car-parts-01.svg"
+                      alt="Auto"
+                    />
                     <p>{{ item.transmission || "Auto" }}</p>
                   </li>
                   <li>
                     <img
-                      src="@/assets/img/icons/car-parts-02.svg"
+                      src="/src/assets/img/icons/car-parts-02.svg"
                       alt="10 KM"
                     />
                     <p>{{ item.mileage || "10 KM" }}</p>
                   </li>
                   <li>
                     <img
-                      src="@/assets/img/icons/car-parts-03.svg"
+                      src="/src/assets/img/icons/car-parts-03.svg"
                       alt="Petrol"
                     />
                     <p>{{ item.fuel_type || "Petrol" }}</p>
                   </li>
                   <li>
-                    <img src="@/assets/img/icons/car-parts-05.svg" alt="2018" />
+                    <img
+                      src="/src/assets/img/icons/car-parts-05.svg"
+                      alt="2018"
+                    />
                     <p>{{ item.year }}</p>
                   </li>
                 </ul>
@@ -134,7 +116,7 @@
         <router-link
           to="/listing/listing-map"
           class="btn btn-secondary d-inline-flex align-items-center"
-          >Voir toutes les voitures<i class="bx bx-right-arrow-alt ms-1"></i
+          >{{ $t("See all cars") }}<i class="bx bx-right-arrow-alt ms-1"></i
         ></router-link>
       </div>
     </div>

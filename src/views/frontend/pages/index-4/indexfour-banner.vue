@@ -6,12 +6,15 @@
           <div class="col-lg-5" data-aos="fade-down">
             <div class="banner-content">
               <h1>
-                Votre voyage commence ici, <span>en toute confiance</span>
+                {{ $t("Your journey starts here") }},
+                <span>{{ $t("in complete confidence") }}</span>
               </h1>
               <p>
-                Location de voitures économiques à Tanger, Tétouan et environs
-                (50 km) Profitez d'un service professionnel, fiable et rapide
-                avec Omiz Car.
+                {{
+                  $t(
+                    "Economical car rental in Tangier, Tetouan and surrounding areas (50 km) Enjoy a professional, reliable and fast service with Omiz Car."
+                  )
+                }}
               </p>
               <div class="customer-list">
                 <div class="users-wrap">
@@ -39,23 +42,22 @@
                     </li>
                   </ul>
                   <div class="customer-info">
-                    <h4>500+ Clients</h4>
-                    <p>satisfaits de nos services</p>
+                    <h4>500+ {{ $t("Clients") }}</h4>
+                    <p>{{ $t("satisfied with our services") }}</p>
                   </div>
                 </div>
                 <div class="view-all d-flex align-items-center gap-3">
                   <router-link
                     to="/listing/listing-grid"
                     class="btn btn-primary d-inline-flex align-items-center"
-                    >Réservez sur WhatsApp<i
-                      class="bx bx-right-arrow-alt ms-1"
-                    ></i
+                    >{{ $t("Book on WhatsApp")
+                    }}<i class="bx bx-right-arrow-alt ms-1"></i
                   ></router-link>
                   <router-link
                     to="/listing/add-listing"
                     class="btn btn-secondary d-inline-flex align-items-center"
-                    ><i class="bx bxs-plus-circle me-1"></i>Découvrez nos
-                    offres</router-link
+                    ><i class="bx bxs-plus-circle me-1"></i
+                    >{{ $t("Discover our offers") }}</router-link
                   >
                 </div>
               </div>
@@ -66,15 +68,16 @@
               <div class="banner-img" data-aos="fade-down">
                 <div class="amount-icon">
                   <span class="day-amt">
-                    <p>À partir de</p>
+                    <p>{{ $t("Starting from") }}</p>
                     <h6>300 MAD</h6>
                   </span>
                 </div>
                 <span class="rent-tag"
-                  ><i class="bx bxs-circle"></i>Disponible à la location</span
+                  ><i class="bx bxs-circle"></i
+                  >{{ $t("Available for rent") }}</span
                 >
                 <img
-                  src="@/assets/img/banner/banner.png"
+                  src="/src/assets/img/banner/banner.png"
                   class="img-fluid"
                   alt="img"
                 />
@@ -147,7 +150,7 @@
     </div>
     <div class="banner-bgs">
       <img
-        src="@/assets/img/bg/banner-bg-01.png"
+        src="/src/assets/img/bg/banner-bg-01.png"
         class="bg-01 img-fluid"
         alt="img"
       />

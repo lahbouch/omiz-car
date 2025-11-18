@@ -12,7 +12,7 @@
 
     <rental-four></rental-four>
 
-    <index-choose></index-choose>
+    <index-choose-four></index-choose-four>
 
     <price-four></price-four>
   </div>

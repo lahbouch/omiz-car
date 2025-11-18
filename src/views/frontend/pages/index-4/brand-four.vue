@@ -2,8 +2,8 @@
   <section class="brand-section">
     <div class="container">
       <div class="section-heading heading-four" data-aos="fade-down">
-        <h2 class="text-white">Location par marques</h2>
-        <p>Découvrez les marques disponibles dans notre flotte</p>
+        <h2 class="text-white">{{ $t("Rental by brands") }}</h2>
+        <p>{{ $t("Discover the brands available in our fleet") }}</p>
       </div>
       <div class="brands-slider owl-carousel">
         <Carousel
@@ -26,7 +26,7 @@
         </Carousel>
       </div>
       <div class="brand-img text-center">
-        <img src="@/assets/img/bg/brand.png" alt="img" class="img-fluid" />
+        <img src="/src/assets/img/bg/brand.png" alt="img" class="img-fluid" />
       </div>
     </div>
   </section>

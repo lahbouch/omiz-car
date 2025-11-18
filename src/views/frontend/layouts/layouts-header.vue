@@ -24,26 +24,7 @@
           <div class="header-top-right d-flex align-items-center">
             <div class="header-top-flag-drops d-flex align-items-center">
               <div class="header-top-drpodowns me-3">
-                <div class="dropdown header-dropdown country-flag">
-                  <a
-                    class="dropdown-toggle nav-tog"
-                    data-bs-toggle="dropdown"
-                    href="javascript:void(0);"
-                  >
-                    <img src="@/assets/img/flags/us.png" alt="Img" />English
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-end">
-                    <a href="javascript:void(0);" class="dropdown-item">
-                      <img src="@/assets/img/flags/fr.png" alt="Img" />French
-                    </a>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                      <img src="@/assets/img/flags/es.png" alt="Img" />Spanish
-                    </a>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                      <img src="@/assets/img/flags/de.png" alt="Img" />German
-                    </a>
-                  </div>
-                </div>
+                <language-switcher></language-switcher>
               </div>
               <div class="header-top-drpodowns">
                 <div class="dropdown header-dropdown country-flag">

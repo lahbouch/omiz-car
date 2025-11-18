@@ -10,11 +10,13 @@ import VueApexCharts from "vue3-apexcharts";
 import DatePicker from 'vue3-datepicker'
 import Vue3Autocounter from 'vue3-autocounter';
 import SimpleLineIcons from "vue-simple-line";
+import i18n from './i18n';
 
 
 /********* components **********/
 import Breadcrumb from '@/components/breadcrumb.vue'
 import UserBreadcrumb from '@/components/user-breadcrumb.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 
 
 /********* Layouts components **********/
@@ -88,6 +90,7 @@ import rentalFour from '@/views/frontend/pages/index-4/rental-four.vue';
 import popularFour from '@/views/frontend/pages/index-4/popular-four.vue';
 import testimonialFour from '@/views/frontend/pages/index-4/testimonial-four.vue';
 import priceFour from '@/views/frontend/pages/index-4/price-four.vue';
+import IndexChooseFour from '@/views/frontend/pages/index-4/index-choose-four.vue';
 
 import AboutExperiences from '@/views/frontend/pages/pages/about-us/aboutexperiences.vue'
 import Service from '@/views/frontend/pages/pages/about-us/service.vue'
@@ -295,8 +298,9 @@ app.component('car-four',carFour)
 app.component('brand-four',brandFour)
 app.component('rental-four',rentalFour)
 app.component('popular-four',popularFour)
-app.component('testimonial-four',testimonialFour)
-app.component('price-four',priceFour)
+app.component('testimonial-four', testimonialFour)
+app.component('price-four', priceFour)
+app.component('index-choose-four', IndexChooseFour)
 
 app.component('aboutexperiences', AboutExperiences)
 app.component('service', Service)
@@ -439,8 +443,10 @@ app.component(VueFeather.name, VueFeather);
 app.component('vue3-autocounter', Vue3Autocounter)
 app.component('vue-select', VueSelect)
 app.component('datepicker', DatePicker)
+app.component('language-switcher', LanguageSwitcher)
 app.use(FlagIcon)
 app.use(VueApexCharts)
 .use(Antd)
-.use(SimpleLineIcons);  
+.use(SimpleLineIcons)
+.use(i18n);  
 app.use(router).mount('#app');

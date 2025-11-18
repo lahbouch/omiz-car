@@ -8,19 +8,19 @@
     >
       <div class="slide-list d-flex">
         <div class="support-item">
-          <h2>Meilleur tarif garanti</h2>
+          <h2>{{ $t("Best rate guaranteed") }}</h2>
         </div>
         <div class="support-item">
-          <h2>Annulation gratuite</h2>
+          <h2>{{ $t("Free cancellation") }}</h2>
         </div>
         <div class="support-item">
-          <h2>Meilleure sécurité</h2>
+          <h2>{{ $t("Best security") }}</h2>
         </div>
         <div class="support-item">
-          <h2>Flotte récente</h2>
+          <h2>{{ $t("Recent fleet") }}</h2>
         </div>
         <div class="support-item">
-          <h2>Fiabilité prouvée</h2>
+          <h2>{{ $t("Proven reliability") }}</h2>
         </div>
       </div>
     </div>
@@ -33,8 +33,10 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <div class="section-heading heading-four" data-aos="fade-down">
-            <h2>Questions fréquemment posées</h2>
-            <p>Trouvez les réponses à vos questions sur nos services</p>
+            <h2>{{ $t("Frequently asked questions") }}</h2>
+            <p>
+              {{ $t("Find the answers to your questions about our services") }}
+            </p>
           </div>
           <div class="accordion faq-accordion" id="faqAccordion">
             <div class="accordion-item">
@@ -47,7 +49,7 @@
                   aria-expanded="true"
                   aria-controls="faqOne"
                 >
-                  Quel âge dois-je avoir pour louer une voiture ?
+                  {{ $t("What age must I be to rent a car?") }}
                 </button>
               </h2>
               <div
@@ -57,10 +59,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    Pour louer une voiture avec Omiz Car, vous devez avoir au
-                    moins 18 ans et posséder un permis de conduire valide. Un
-                    dépôt de garantie peut être requis selon le type de véhicule
-                    choisi.
+                    {{
+                      $t(
+                        "To rent a car with Omiz Car, you must be at least 18 years old and have a valid driver's license. A deposit may be required depending on the type of vehicle chosen."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -75,7 +78,7 @@
                   aria-expanded="true"
                   aria-controls="faqTwo"
                 >
-                  De quels documents ai-je besoin pour louer une voiture ?
+                  {{ $t("What documents do I need to rent a car?") }}
                 </button>
               </h2>
               <div
@@ -85,9 +88,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    Vous devez présenter un permis de conduire valide et une
-                    pièce d'identité (carte nationale ou passeport). Un dépôt de
-                    garantie peut être requis selon le type de véhicule.
+                    {{
+                      $t(
+                        "You must present a valid driver's license and an identity document (national ID card or passport). A deposit may be required depending on the type of vehicle."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -102,7 +107,7 @@
                   aria-expanded="true"
                   aria-controls="faqThree"
                 >
-                  Quels types de véhicules sont disponibles à la location ?
+                  {{ $t("What types of vehicles are available for rent?") }}
                 </button>
               </h2>
               <div
@@ -112,9 +117,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    Nous proposons une flotte de 15 véhicules économiques
-                    récents (2018-2022), parfaitement entretenus pour votre
-                    confort et votre sécurité à Tanger, Tétouan et environs.
+                    {{
+                      $t(
+                        "We offer a fleet of 15 recent economical vehicles (2018-2022), perfectly maintained for your comfort and safety in Tangier, Tetouan and surroundings."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -129,7 +136,7 @@
                   aria-expanded="true"
                   aria-controls="faqFour"
                 >
-                  Puis-je louer une voiture avec une carte de débit ?
+                  {{ $t("Can I rent a car with a debit card?") }}
                 </button>
               </h2>
               <div
@@ -139,9 +146,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    Oui, nous acceptons les cartes de débit avec un dépôt de
-                    garantie supplémentaire. La carte doit être au nom du
-                    conducteur principal.
+                    {{
+                      $t(
+                        "Yes, we accept debit cards with an additional deposit. The card must be in the name of the primary driver."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -156,7 +165,7 @@
                   aria-expanded="true"
                   aria-controls="faqFive"
                 >
-                  Quelle est votre politique en matière de carburant ?
+                  {{ $t("What is your fuel policy?") }}
                 </button>
               </h2>
               <div
@@ -166,9 +175,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    La voiture doit être rendue avec le même niveau de carburant
-                    qu'à la prise en charge. Nous fournissons un plein au
-                    départ.
+                    {{
+                      $t(
+                        "The car must be returned with the same fuel level as at the time of pickup. We provide a full tank at departure."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -183,8 +194,9 @@
                   aria-expanded="true"
                   aria-controls="faqSix"
                 >
-                  Puis-je ajouter des conducteurs supplémentaires à mon contrat
-                  de location ?
+                  {{
+                    $t("Can I add additional drivers to my rental contract?")
+                  }}
                 </button>
               </h2>
               <div
@@ -194,9 +206,11 @@
               >
                 <div class="accordion-body">
                   <p>
-                    Oui, vous pouvez ajouter des conducteurs supplémentaires
-                    moyennant un supplément. Chaque conducteur doit présenter un
-                    permis de conduire valide.
+                    {{
+                      $t(
+                        "Yes, you can add additional drivers for a supplement. Each driver must present a valid driver's license."
+                      )
+                    }}
                   </p>
                 </div>
               </div>
@@ -224,22 +238,24 @@
               </div>
               <div class="footer-contact-info">
                 <p>
-                  Omiz Car vous offre une flotte de 15 véhicules économiques
-                  parfaitement entretenus pour répondre à tous vos besoins de
-                  déplacement à Tanger, Tétouan et environs.
+                  {{
+                    $t(
+                      "Omiz Car offers you a fleet of 15 economical vehicles perfectly maintained to meet all your travel needs in Tangier, Tetouan and surroundings."
+                    )
+                  }}
                 </p>
               </div>
               <div class="d-flex align-items-center gap-1 app-icon">
                 <a href="javascript:void(0);">
                   <img
-                    src="@/assets/img/icons/gpay.svg"
+                    src="/src/assets/img/icons/gpay.svg"
                     class="img-fluid"
                     alt="logo"
                   />
                 </a>
                 <a href="javascript:void(0);">
                   <img
-                    src="@/assets/img/icons/app.svg"
+                    src="/src/assets/img/icons/app.svg"
                     class="img-fluid"
                     alt="logo"
                   />
@@ -371,13 +387,13 @@
             <div class="col-lg-4">
               <div class="payment-list">
                 <a href="javascript:void(0);">
-                  <img src="@/assets/img/icons/payment-01.svg" alt="img" />
+                  <img src="/src/assets/img/icons/payment-01.svg" alt="img" />
                 </a>
                 <a href="javascript:void(0);">
-                  <img src="@/assets/img/icons/payment-02.svg" alt="img" />
+                  <img src="/src/assets/img/icons/payment-02.svg" alt="img" />
                 </a>
                 <a href="javascript:void(0);">
-                  <img src="@/assets/img/icons/payment-03.svg" alt="img" />
+                  <img src="/src/assets/img/icons/payment-03.svg" alt="img" />
                 </a>
               </div>
             </div>
