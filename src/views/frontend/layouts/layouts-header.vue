@@ -320,6 +320,7 @@
           </li>
           <!-- /User Menu -->
         </ul>
+        <language-switcher></language-switcher>
       </nav>
     </div>
   </header>
