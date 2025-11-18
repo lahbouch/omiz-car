@@ -415,9 +415,37 @@ export default {
     submitForm() {
       this.$router.push("/admin-template/bookings/reservations");
     },
-    getCarImageUrl(carName) {
-      // Return a default car image
-      return new URL("@/assets/admin/img/car/car-07.jpg", import.meta.url).href;
+    getCarImageUrl(imagePath) {
+      // Handle cases where the image path might be null or undefined
+      if (!imagePath) {
+        return new URL("@/assets/admin/img/car/car.jpg", import.meta.url).href;
+      }
+      
+      // If it's already a full URL, return as is
+      if (imagePath.startsWith("http")) {
+        return imagePath;
+      }
+      
+      // If it's a storage path (uploaded images), use the Laravel storage URL
+      if (imagePath.startsWith("storage/")) {
+        return `http://localhost:8001/${imagePath}`;
+      }
+      
+      // If it's a car-images path (uploaded images), use the Laravel storage URL
+      if (imagePath.startsWith("car-images/")) {
+        return `http://localhost:8001/storage/${imagePath}`;
+      }
+      
+      // For local assets, try to construct the path
+      try {
+        return new URL(
+          `/src/assets/admin/img/car/${imagePath}`,
+          import.meta.url
+        ).href;
+      } catch (error) {
+        // Fallback to default image if there's an error
+        return new URL("@/assets/admin/img/car/car.jpg", import.meta.url).href;
+      }
     },
     getStatusBadgeClass(status) {
       const statusClasses = {

@@ -412,7 +412,7 @@ const routes = [
     children: [
       { path: '', redirect: '/admin-template/bookings/reservations' },
       { path: "reservations", component: () => import('@/views/admin/pages/bookings/reservation/reservations-list.vue') },
-      { path: "reservation-details", component: ()  => import('@/views/admin/pages/bookings/reservation/reservation-details.vue') },
+      { path: "reservation-details/:id", component: ()  => import('@/views/admin/pages/bookings/reservation/reservation-details.vue') },
       { path: "add-reservation", component: () => import('@/views/admin/pages/bookings/reservation/add-reservation/add-reservation.vue') },
       { path: "edit-reservation", component: () => import('@/views/admin/pages/bookings/reservation/edit-reservation/edit-reservation.vue') },
       { path: "calendar", component: () => import('@/views/admin/pages/bookings/calendar.vue') },
