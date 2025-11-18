@@ -264,10 +264,10 @@ export default {
           return this.carData.image_path;
         } else if (this.carData.image_path.startsWith("storage/")) {
           // For images uploaded to storage
-          return `http://localhost:8000/${this.carData.image_path}`;
+          return `http://localhost:8001/${this.carData.image_path}`;
         } else {
           // For relative paths, assume they're in the car images directory
-          return `http://localhost:8000/storage/${this.carData.image_path}`;
+          return `http://localhost:8001/storage/${this.carData.image_path}`;
         }
       }
       // Fallback to default image

@@ -171,12 +171,12 @@ export default {
 
       // If it's a storage path (uploaded images), use the Laravel storage URL
       if (imagePath && imagePath.startsWith("storage/")) {
-        return `http://localhost:8000/${imagePath}`;
+        return `http://localhost:8001/${imagePath}`;
       }
 
       // If it's a car-images path (uploaded images), use the Laravel storage URL
       if (imagePath && imagePath.startsWith("car-images/")) {
-        return `http://localhost:8000/storage/${imagePath}`;
+        return `http://localhost:8001/storage/${imagePath}`;
       }
 
       // If it's just a filename, construct the path to default images

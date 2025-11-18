@@ -837,9 +837,9 @@ export default {
       if (imagePath) {
         // Handle uploaded images
         if (imagePath.startsWith("storage/")) {
-          return `http://localhost:8000/${imagePath}`;
+          return `http://localhost:8001/${imagePath}`;
         } else {
-          return `http://localhost:8000/storage/${imagePath}`;
+          return `http://localhost:8001/storage/${imagePath}`;
         }
       }
 
