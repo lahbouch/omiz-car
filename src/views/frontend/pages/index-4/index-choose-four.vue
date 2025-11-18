@@ -2,7 +2,7 @@
   <section class="section why-choose">
     <div class="choose-left">
       <img
-        src="../../../../../assets/img/bg/choose-left.png"
+        src="/src/assets/img/bg/choose-left.png"
         class="img-fluid"
         :alt="$t('Why Choose Us')"
       />
@@ -24,10 +24,7 @@
             <div class="card flex-fill">
               <div class="card-body">
                 <div class="choose-img choose-black">
-                  <img
-                    src="../../../../../assets/img/icons/bx-user-check.svg"
-                    alt=""
-                  />
+                  <img src="@/assets/img/icons/bx-user-check.svg" alt="" />
                 </div>
                 <div class="choose-content">
                   <h4>{{ $t("Easy and fast booking") }}</h4>
@@ -46,10 +43,7 @@
             <div class="card flex-fill">
               <div class="card-body">
                 <div class="choose-img choose-secondary">
-                  <img
-                    src="../../../../../assets/img/icons/bx-crown.svg"
-                    alt=""
-                  />
+                  <img src="@/assets/img/icons/bx-crown.svg" alt="" />
                 </div>
                 <div class="choose-content">
                   <h4>{{ $t("Airport delivery") }}</h4>
@@ -68,10 +62,7 @@
             <div class="card flex-fill">
               <div class="card-body">
                 <div class="choose-img choose-primary">
-                  <img
-                    src="../../../../../assets/img/icons/bx-badge-check.svg"
-                    alt=""
-                  />
+                  <img src="@/assets/img/icons/bx-history.svg" alt="" />
                 </div>
                 <div class="choose-content">
                   <h4>{{ $t("Guaranteed customer satisfaction") }}</h4>

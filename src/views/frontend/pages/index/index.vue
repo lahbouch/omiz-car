@@ -8,7 +8,6 @@
   <index-popular></index-popular>
 
   <index-cartypes></index-cartypes>
-
   <index-rental></index-rental>
 
   <index-choose></index-choose>

@@ -176,15 +176,15 @@
               <div class="copyright-menu">
                 <div class="vistors-details">
                   <ul class="d-flex">
-                    <li>
+                    <!-- <li>
                       <a href="javascript:void(0)"
                         ><img
                           class="img-fluid"
                           src="@/assets/img/icons/paypal.svg"
                           alt="Paypal"
                       /></a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                       <a href="javascript:void(0)"
                         ><img
                           class="img-fluid"
@@ -199,15 +199,15 @@
                           src="@/assets/img/icons/master.svg"
                           alt="Master"
                       /></a>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                       <a href="javascript:void(0)"
                         ><img
                           class="img-fluid"
                           src="@/assets/img/icons/applegpay.svg"
                           alt="applegpay"
                       /></a>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>

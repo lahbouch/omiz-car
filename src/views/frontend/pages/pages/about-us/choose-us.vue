@@ -2,7 +2,7 @@
   <section class="section why-choose">
     <div class="choose-left">
       <img
-        src="@/assets/img/bg/choose-left.png"
+        src="/src/assets/img/bg/choose-left.png"
         class="img-fluid"
         alt="Why Choose Us"
       />

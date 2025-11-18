@@ -245,7 +245,7 @@
                   }}
                 </p>
               </div>
-              <div class="d-flex align-items-center gap-1 app-icon">
+              <!-- <div class="d-flex align-items-center gap-1 app-icon">
                 <a href="javascript:void(0);">
                   <img
                     src="/src/assets/img/icons/gpay.svg"
@@ -260,7 +260,7 @@
                     alt="logo"
                   />
                 </a>
-              </div>
+              </div> -->
               <ul class="social-icon">
                 <li>
                   <a href="javascript:void(0)"
@@ -406,7 +406,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="payment-list">
+              <!-- <div class="payment-list">
                 <a href="javascript:void(0);">
                   <img src="/src/assets/img/icons/payment-01.svg" alt="img" />
                 </a>
@@ -416,7 +416,7 @@
                 <a href="javascript:void(0);">
                   <img src="/src/assets/img/icons/payment-03.svg" alt="img" />
                 </a>
-              </div>
+              </div> -->
             </div>
             <div class="col-lg-4">
               <ul class="privacy-link">
